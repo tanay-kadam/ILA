@@ -1,0 +1,4 @@
+base: tmlr_external_qwen.yaml
+experiment: tmlr_external_mistral_locked_recipes
+model: mistralai/Mistral-7B-Instruct-v0.3
+results_dir: results/tmlr_external_mistral

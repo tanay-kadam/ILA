@@ -1,0 +1,22 @@
+{
+  "model_id": "mistralai/Mistral-7B-Instruct-v0.3",
+  "revision": "c170c708c41dac9275d15a8fff4eca08d52bab71",
+  "snapshot_path": "/home/tkadam/.cache/huggingface/hub/models--mistralai--Mistral-7B-Instruct-v0.3/snapshots/c170c708c41dac9275d15a8fff4eca08d52bab71",
+  "checks": {
+    "armA_high": {
+      "n": 3676,
+      "n_truncated": 0,
+      "supervised_terminal_eos": 3676
+    },
+    "armA_low": {
+      "n": 3676,
+      "n_truncated": 0,
+      "supervised_terminal_eos": 3676
+    },
+    "armA_random": {
+      "n": 3676,
+      "n_truncated": 0,
+      "supervised_terminal_eos": 3676
+    }
+  }
+}

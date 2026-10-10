@@ -1,0 +1,13 @@
+base: stage1c_q7_lr1e5.yaml
+
+experiment: stage1c_natural_composition_matrix
+results_dir: results/stage1c_matrix
+
+train:
+  # The scheduler is constructed for 230 steps, matching the validated seed-0/1
+  # trajectories, but optimization stops at the selected stable checkpoint.
+  max_steps: 230
+  stop_after_steps: 15
+  snapshot_steps: []
+  save_merged_model: false
+

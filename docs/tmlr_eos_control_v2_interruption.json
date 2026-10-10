@@ -1,0 +1,9 @@
+{
+  "kind": "pre-full scheduler safeguard",
+  "reason": "waiting workers must exit when all jobs are claimed, allowing automatic final analysis",
+  "scientific_change": "none: loss, data, model, optimizer, evaluation and seed configurations unchanged",
+  "precheck_controller_sha256": "850bdda27fffc05fe8980f937892bf9035df810fd79a995b22d1da1e7b51fc13",
+  "worker_controller_sha256": "7766b8dd44e3f139fddd8f0c39431d0b6f68c81d6c948501a6b3587d57f19d30",
+  "v2_previous_status": "GPU_SMOKE_QWEN_WEIGHT10 2026-10-09T01:57:44\n",
+  "v2_status": "STOPPED_DURING_SMOKES_NO_FULL_RUNS"
+}

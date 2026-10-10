@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "failures": [],
+  "warnings": [
+    "heuristic_share is undefined when explainable variance is zero; do not interpret stored 0 as evidence that heuristics explain nothing",
+    "each new run sees 240 examples (15 steps \u00d7 effective batch 16), only about 6.0\u20136.5% of its 3,676\u20134,000-row subset",
+    "Arm B has one seed for 14/16 subsets; noise is estimated from Arm A plus b00/b01 replicates"
+  ],
+  "artifact_counts": {
+    "expected_runs": 29,
+    "new_training_runs": 27,
+    "reused_adapters": 2,
+    "raw_eval_rows": 29000,
+    "uid_hash_count_by_set": {
+      "gsm8k_test": 1,
+      "math500": 1
+    }
+  },
+  "recomputed_armB": {
+    "noise_var": 97.76892686666648,
+    "noise_df": 10,
+    "between_var": 57.01314784999996,
+    "F": 0.58314179849547,
+    "F_p_value": 0.832817870466669,
+    "cost_range_rel": 0.06024385294121302
+  },
+  "armA_mean_tokens": {
+    "armA_high": 496.78433333333334,
+    "armA_low": 501.29566666666665,
+    "armA_random": 509.422
+  },
+  "base_mean_tokens": 491.60800000000006,
+  "armA_relative_to_base": {
+    "armA_high": 0.01052939198168712,
+    "armA_low": 0.019706080183126806,
+    "armA_random": 0.03623618818245422
+  },
+  "run_metric_ranges": {
+    "accuracy_min": 0.809,
+    "accuracy_max": 0.826,
+    "truncation_min": 0.002,
+    "truncation_max": 0.008,
+    "mean_tokens_min": 488.058,
+    "mean_tokens_max": 520.425
+  }
+}

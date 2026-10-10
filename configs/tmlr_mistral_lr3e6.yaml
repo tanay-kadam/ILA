@@ -1,0 +1,6 @@
+base: tmlr_mistral_lr1e5.yaml
+experiment: tmlr_mistral_lr3e6
+results_dir: results/tmlr_mistral_lr3e6
+train:
+  learning_rate: 3.0e-6
+  snapshot_steps: []

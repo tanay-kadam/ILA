@@ -1,0 +1,10 @@
+# Step 1: scale check. Identical data (data/gate0), seeds, and hyperparameters as the
+# 0.5B Gate 0 run; only the base model changes. Qwen2.5 sizes share one tokenizer, so
+# the length matching done for 0.5B is exactly valid here.
+base: gate0.yaml
+experiment: gate0_1p5b
+model: Qwen/Qwen2.5-1.5B
+results_dir: results/gate0_1p5b
+
+eval:
+  hf_batch_size: 32

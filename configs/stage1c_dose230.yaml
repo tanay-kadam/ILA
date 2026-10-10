@@ -1,0 +1,8 @@
+base: stage1c_dose60.yaml
+experiment: stage1c_natural_composition_dose230
+results_dir: results/stage1c_dose230
+train:
+  max_steps: 230
+  stop_after_steps: 230
+  snapshot_steps: []
+  save_merged_model: false

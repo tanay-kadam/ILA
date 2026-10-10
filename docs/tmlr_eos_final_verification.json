@@ -1,0 +1,2023 @@
+{
+  "audit": "READ_ONLY_CURRENT_EOS_RUNTIME",
+  "paired_config_groups": 18,
+  "issues": [],
+  "runtime_records": [
+    {
+      "id": "qwen_weight1_armA_high_seed0",
+      "status": "completed",
+      "weight": 1.0,
+      "steps": 60,
+      "loss_calls": null,
+      "dataset_eligible_terminal_examples": 3676,
+      "nominal_examples_at60": 960,
+      "model_accepts_loss_kwargs": true,
+      "accumulated_denominator": null
+    },
+    {
+      "id": "qwen_weight10_armA_high_seed0",
+      "status": "completed",
+      "weight": 10.0,
+      "steps": 60,
+      "loss_calls": 480,
+      "dataset_eligible_terminal_examples": 3676,
+      "nominal_examples_at60": 960,
+      "model_accepts_loss_kwargs": true,
+      "accumulated_denominator": true
+    },
+    {
+      "id": "qwen_weight1_armA_high_seed1",
+      "status": "completed",
+      "weight": 1.0,
+      "steps": 60,
+      "loss_calls": null,
+      "dataset_eligible_terminal_examples": 3676,
+      "nominal_examples_at60": 960,
+      "model_accepts_loss_kwargs": true,
+      "accumulated_denominator": null
+    },
+    {
+      "id": "qwen_weight10_armA_high_seed1",
+      "status": "completed",
+      "weight": 10.0,
+      "steps": 60,
+      "loss_calls": 480,
+      "dataset_eligible_terminal_examples": 3676,
+      "nominal_examples_at60": 960,
+      "model_accepts_loss_kwargs": true,
+      "accumulated_denominator": true
+    },
+    {
+      "id": "qwen_weight1_armA_high_seed2",
+      "status": "completed",
+      "weight": 1.0,
+      "steps": 60,
+      "loss_calls": null,
+      "dataset_eligible_terminal_examples": 3676,
+      "nominal_examples_at60": 960,
+      "model_accepts_loss_kwargs": true,
+      "accumulated_denominator": null
+    },
+    {
+      "id": "qwen_weight10_armA_high_seed2",
+      "status": "completed",
+      "weight": 10.0,
+      "steps": 60,
+      "loss_calls": 480,
+      "dataset_eligible_terminal_examples": 3676,
+      "nominal_examples_at60": 960,
+      "model_accepts_loss_kwargs": true,
+      "accumulated_denominator": true
+    },
+    {
+      "id": "qwen_weight1_armA_low_seed0",
+      "status": "completed",
+      "weight": 1.0,
+      "steps": 60,
+      "loss_calls": null,
+      "dataset_eligible_terminal_examples": 3676,
+      "nominal_examples_at60": 960,
+      "model_accepts_loss_kwargs": true,
+      "accumulated_denominator": null
+    },
+    {
+      "id": "qwen_weight10_armA_low_seed0",
+      "status": "completed",
+      "weight": 10.0,
+      "steps": 60,
+      "loss_calls": 480,
+      "dataset_eligible_terminal_examples": 3676,
+      "nominal_examples_at60": 960,
+      "model_accepts_loss_kwargs": true,
+      "accumulated_denominator": true
+    },
+    {
+      "id": "qwen_weight1_armA_low_seed1",
+      "status": "completed",
+      "weight": 1.0,
+      "steps": 60,
+      "loss_calls": null,
+      "dataset_eligible_terminal_examples": 3676,
+      "nominal_examples_at60": 960,
+      "model_accepts_loss_kwargs": true,
+      "accumulated_denominator": null
+    },
+    {
+      "id": "qwen_weight10_armA_low_seed1",
+      "status": "completed",
+      "weight": 10.0,
+      "steps": 60,
+      "loss_calls": 480,
+      "dataset_eligible_terminal_examples": 3676,
+      "nominal_examples_at60": 960,
+      "model_accepts_loss_kwargs": true,
+      "accumulated_denominator": true
+    },
+    {
+      "id": "qwen_weight1_armA_low_seed2",
+      "status": "completed",
+      "weight": 1.0,
+      "steps": 60,
+      "loss_calls": null,
+      "dataset_eligible_terminal_examples": 3676,
+      "nominal_examples_at60": 960,
+      "model_accepts_loss_kwargs": true,
+      "accumulated_denominator": null
+    },
+    {
+      "id": "qwen_weight10_armA_low_seed2",
+      "status": "completed",
+      "weight": 10.0,
+      "steps": 60,
+      "loss_calls": 480,
+      "dataset_eligible_terminal_examples": 3676,
+      "nominal_examples_at60": 960,
+      "model_accepts_loss_kwargs": true,
+      "accumulated_denominator": true
+    },
+    {
+      "id": "qwen_weight1_armA_random_seed0",
+      "status": "completed",
+      "weight": 1.0,
+      "steps": 60,
+      "loss_calls": null,
+      "dataset_eligible_terminal_examples": 3676,
+      "nominal_examples_at60": 960,
+      "model_accepts_loss_kwargs": true,
+      "accumulated_denominator": null
+    },
+    {
+      "id": "qwen_weight10_armA_random_seed0",
+      "status": "completed",
+      "weight": 10.0,
+      "steps": 60,
+      "loss_calls": 480,
+      "dataset_eligible_terminal_examples": 3676,
+      "nominal_examples_at60": 960,
+      "model_accepts_loss_kwargs": true,
+      "accumulated_denominator": true
+    },
+    {
+      "id": "qwen_weight1_armA_random_seed1",
+      "status": "completed",
+      "weight": 1.0,
+      "steps": 60,
+      "loss_calls": null,
+      "dataset_eligible_terminal_examples": 3676,
+      "nominal_examples_at60": 960,
+      "model_accepts_loss_kwargs": true,
+      "accumulated_denominator": null
+    },
+    {
+      "id": "qwen_weight10_armA_random_seed1",
+      "status": "completed",
+      "weight": 10.0,
+      "steps": 60,
+      "loss_calls": 480,
+      "dataset_eligible_terminal_examples": 3676,
+      "nominal_examples_at60": 960,
+      "model_accepts_loss_kwargs": true,
+      "accumulated_denominator": true
+    },
+    {
+      "id": "qwen_weight1_armA_random_seed2",
+      "status": "completed",
+      "weight": 1.0,
+      "steps": 60,
+      "loss_calls": null,
+      "dataset_eligible_terminal_examples": 3676,
+      "nominal_examples_at60": 960,
+      "model_accepts_loss_kwargs": true,
+      "accumulated_denominator": null
+    },
+    {
+      "id": "qwen_weight10_armA_random_seed2",
+      "status": "completed",
+      "weight": 10.0,
+      "steps": 60,
+      "loss_calls": 480,
+      "dataset_eligible_terminal_examples": 3676,
+      "nominal_examples_at60": 960,
+      "model_accepts_loss_kwargs": true,
+      "accumulated_denominator": true
+    },
+    {
+      "id": "mistral_weight1_armA_high_seed0",
+      "status": "completed",
+      "weight": 1.0,
+      "steps": 60,
+      "loss_calls": null,
+      "dataset_eligible_terminal_examples": 3676,
+      "nominal_examples_at60": 960,
+      "model_accepts_loss_kwargs": true,
+      "accumulated_denominator": null
+    },
+    {
+      "id": "mistral_weight10_armA_high_seed0",
+      "status": "completed",
+      "weight": 10.0,
+      "steps": 60,
+      "loss_calls": 960,
+      "dataset_eligible_terminal_examples": 3676,
+      "nominal_examples_at60": 960,
+      "model_accepts_loss_kwargs": true,
+      "accumulated_denominator": true
+    },
+    {
+      "id": "mistral_weight1_armA_high_seed1",
+      "status": "completed",
+      "weight": 1.0,
+      "steps": 60,
+      "loss_calls": null,
+      "dataset_eligible_terminal_examples": 3676,
+      "nominal_examples_at60": 960,
+      "model_accepts_loss_kwargs": true,
+      "accumulated_denominator": null
+    },
+    {
+      "id": "mistral_weight10_armA_high_seed1",
+      "status": "completed",
+      "weight": 10.0,
+      "steps": 60,
+      "loss_calls": 960,
+      "dataset_eligible_terminal_examples": 3676,
+      "nominal_examples_at60": 960,
+      "model_accepts_loss_kwargs": true,
+      "accumulated_denominator": true
+    },
+    {
+      "id": "mistral_weight1_armA_high_seed2",
+      "status": "completed",
+      "weight": 1.0,
+      "steps": 60,
+      "loss_calls": null,
+      "dataset_eligible_terminal_examples": 3676,
+      "nominal_examples_at60": 960,
+      "model_accepts_loss_kwargs": true,
+      "accumulated_denominator": null
+    },
+    {
+      "id": "mistral_weight10_armA_high_seed2",
+      "status": "completed",
+      "weight": 10.0,
+      "steps": 60,
+      "loss_calls": 960,
+      "dataset_eligible_terminal_examples": 3676,
+      "nominal_examples_at60": 960,
+      "model_accepts_loss_kwargs": true,
+      "accumulated_denominator": true
+    },
+    {
+      "id": "mistral_weight1_armA_low_seed0",
+      "status": "completed",
+      "weight": 1.0,
+      "steps": 60,
+      "loss_calls": null,
+      "dataset_eligible_terminal_examples": 3676,
+      "nominal_examples_at60": 960,
+      "model_accepts_loss_kwargs": true,
+      "accumulated_denominator": null
+    },
+    {
+      "id": "mistral_weight10_armA_low_seed0",
+      "status": "completed",
+      "weight": 10.0,
+      "steps": 60,
+      "loss_calls": 960,
+      "dataset_eligible_terminal_examples": 3676,
+      "nominal_examples_at60": 960,
+      "model_accepts_loss_kwargs": true,
+      "accumulated_denominator": true
+    },
+    {
+      "id": "mistral_weight1_armA_low_seed1",
+      "status": "completed",
+      "weight": 1.0,
+      "steps": 60,
+      "loss_calls": null,
+      "dataset_eligible_terminal_examples": 3676,
+      "nominal_examples_at60": 960,
+      "model_accepts_loss_kwargs": true,
+      "accumulated_denominator": null
+    },
+    {
+      "id": "mistral_weight10_armA_low_seed1",
+      "status": "completed",
+      "weight": 10.0,
+      "steps": 60,
+      "loss_calls": 960,
+      "dataset_eligible_terminal_examples": 3676,
+      "nominal_examples_at60": 960,
+      "model_accepts_loss_kwargs": true,
+      "accumulated_denominator": true
+    },
+    {
+      "id": "mistral_weight1_armA_low_seed2",
+      "status": "completed",
+      "weight": 1.0,
+      "steps": 60,
+      "loss_calls": null,
+      "dataset_eligible_terminal_examples": 3676,
+      "nominal_examples_at60": 960,
+      "model_accepts_loss_kwargs": true,
+      "accumulated_denominator": null
+    },
+    {
+      "id": "mistral_weight10_armA_low_seed2",
+      "status": "completed",
+      "weight": 10.0,
+      "steps": 60,
+      "loss_calls": 960,
+      "dataset_eligible_terminal_examples": 3676,
+      "nominal_examples_at60": 960,
+      "model_accepts_loss_kwargs": true,
+      "accumulated_denominator": true
+    },
+    {
+      "id": "mistral_weight1_armA_random_seed0",
+      "status": "completed",
+      "weight": 1.0,
+      "steps": 60,
+      "loss_calls": null,
+      "dataset_eligible_terminal_examples": 3676,
+      "nominal_examples_at60": 960,
+      "model_accepts_loss_kwargs": true,
+      "accumulated_denominator": null
+    },
+    {
+      "id": "mistral_weight10_armA_random_seed0",
+      "status": "completed",
+      "weight": 10.0,
+      "steps": 60,
+      "loss_calls": 960,
+      "dataset_eligible_terminal_examples": 3676,
+      "nominal_examples_at60": 960,
+      "model_accepts_loss_kwargs": true,
+      "accumulated_denominator": true
+    },
+    {
+      "id": "mistral_weight1_armA_random_seed1",
+      "status": "completed",
+      "weight": 1.0,
+      "steps": 60,
+      "loss_calls": null,
+      "dataset_eligible_terminal_examples": 3676,
+      "nominal_examples_at60": 960,
+      "model_accepts_loss_kwargs": true,
+      "accumulated_denominator": null
+    },
+    {
+      "id": "mistral_weight10_armA_random_seed1",
+      "status": "completed",
+      "weight": 10.0,
+      "steps": 60,
+      "loss_calls": 960,
+      "dataset_eligible_terminal_examples": 3676,
+      "nominal_examples_at60": 960,
+      "model_accepts_loss_kwargs": true,
+      "accumulated_denominator": true
+    },
+    {
+      "id": "mistral_weight1_armA_random_seed2",
+      "status": "completed",
+      "weight": 1.0,
+      "steps": 60,
+      "loss_calls": null,
+      "dataset_eligible_terminal_examples": 3676,
+      "nominal_examples_at60": 960,
+      "model_accepts_loss_kwargs": true,
+      "accumulated_denominator": null
+    },
+    {
+      "id": "mistral_weight10_armA_random_seed2",
+      "status": "completed",
+      "weight": 10.0,
+      "steps": 60,
+      "loss_calls": 960,
+      "dataset_eligible_terminal_examples": 3676,
+      "nominal_examples_at60": 960,
+      "model_accepts_loss_kwargs": true,
+      "accumulated_denominator": true
+    }
+  ],
+  "evaluations_checked": [
+    {
+      "id": "qwen_weight1_armA_high_seed0",
+      "dataset": "svamp",
+      "n": 400,
+      "fingerprint_matches": true
+    },
+    {
+      "id": "qwen_weight1_armA_high_seed0",
+      "dataset": "aqua",
+      "n": 254,
+      "fingerprint_matches": true
+    },
+    {
+      "id": "qwen_weight10_armA_high_seed0",
+      "dataset": "svamp",
+      "n": 400,
+      "fingerprint_matches": true
+    },
+    {
+      "id": "qwen_weight10_armA_high_seed0",
+      "dataset": "aqua",
+      "n": 254,
+      "fingerprint_matches": true
+    },
+    {
+      "id": "qwen_weight1_armA_high_seed1",
+      "dataset": "svamp",
+      "n": 400,
+      "fingerprint_matches": true
+    },
+    {
+      "id": "qwen_weight1_armA_high_seed1",
+      "dataset": "aqua",
+      "n": 254,
+      "fingerprint_matches": true
+    },
+    {
+      "id": "qwen_weight10_armA_high_seed1",
+      "dataset": "svamp",
+      "n": 400,
+      "fingerprint_matches": true
+    },
+    {
+      "id": "qwen_weight10_armA_high_seed1",
+      "dataset": "aqua",
+      "n": 254,
+      "fingerprint_matches": true
+    },
+    {
+      "id": "qwen_weight1_armA_high_seed2",
+      "dataset": "svamp",
+      "n": 400,
+      "fingerprint_matches": true
+    },
+    {
+      "id": "qwen_weight1_armA_high_seed2",
+      "dataset": "aqua",
+      "n": 254,
+      "fingerprint_matches": true
+    },
+    {
+      "id": "qwen_weight10_armA_high_seed2",
+      "dataset": "svamp",
+      "n": 400,
+      "fingerprint_matches": true
+    },
+    {
+      "id": "qwen_weight10_armA_high_seed2",
+      "dataset": "aqua",
+      "n": 254,
+      "fingerprint_matches": true
+    },
+    {
+      "id": "qwen_weight1_armA_low_seed0",
+      "dataset": "svamp",
+      "n": 400,
+      "fingerprint_matches": true
+    },
+    {
+      "id": "qwen_weight1_armA_low_seed0",
+      "dataset": "aqua",
+      "n": 254,
+      "fingerprint_matches": true
+    },
+    {
+      "id": "qwen_weight10_armA_low_seed0",
+      "dataset": "svamp",
+      "n": 400,
+      "fingerprint_matches": true
+    },
+    {
+      "id": "qwen_weight10_armA_low_seed0",
+      "dataset": "aqua",
+      "n": 254,
+      "fingerprint_matches": true
+    },
+    {
+      "id": "qwen_weight1_armA_low_seed1",
+      "dataset": "svamp",
+      "n": 400,
+      "fingerprint_matches": true
+    },
+    {
+      "id": "qwen_weight1_armA_low_seed1",
+      "dataset": "aqua",
+      "n": 254,
+      "fingerprint_matches": true
+    },
+    {
+      "id": "qwen_weight10_armA_low_seed1",
+      "dataset": "svamp",
+      "n": 400,
+      "fingerprint_matches": true
+    },
+    {
+      "id": "qwen_weight10_armA_low_seed1",
+      "dataset": "aqua",
+      "n": 254,
+      "fingerprint_matches": true
+    },
+    {
+      "id": "qwen_weight1_armA_low_seed2",
+      "dataset": "svamp",
+      "n": 400,
+      "fingerprint_matches": true
+    },
+    {
+      "id": "qwen_weight1_armA_low_seed2",
+      "dataset": "aqua",
+      "n": 254,
+      "fingerprint_matches": true
+    },
+    {
+      "id": "qwen_weight10_armA_low_seed2",
+      "dataset": "svamp",
+      "n": 400,
+      "fingerprint_matches": true
+    },
+    {
+      "id": "qwen_weight10_armA_low_seed2",
+      "dataset": "aqua",
+      "n": 254,
+      "fingerprint_matches": true
+    },
+    {
+      "id": "qwen_weight1_armA_random_seed0",
+      "dataset": "svamp",
+      "n": 400,
+      "fingerprint_matches": true
+    },
+    {
+      "id": "qwen_weight1_armA_random_seed0",
+      "dataset": "aqua",
+      "n": 254,
+      "fingerprint_matches": true
+    },
+    {
+      "id": "qwen_weight10_armA_random_seed0",
+      "dataset": "svamp",
+      "n": 400,
+      "fingerprint_matches": true
+    },
+    {
+      "id": "qwen_weight10_armA_random_seed0",
+      "dataset": "aqua",
+      "n": 254,
+      "fingerprint_matches": true
+    },
+    {
+      "id": "qwen_weight1_armA_random_seed1",
+      "dataset": "svamp",
+      "n": 400,
+      "fingerprint_matches": true
+    },
+    {
+      "id": "qwen_weight1_armA_random_seed1",
+      "dataset": "aqua",
+      "n": 254,
+      "fingerprint_matches": true
+    },
+    {
+      "id": "qwen_weight10_armA_random_seed1",
+      "dataset": "svamp",
+      "n": 400,
+      "fingerprint_matches": true
+    },
+    {
+      "id": "qwen_weight10_armA_random_seed1",
+      "dataset": "aqua",
+      "n": 254,
+      "fingerprint_matches": true
+    },
+    {
+      "id": "qwen_weight1_armA_random_seed2",
+      "dataset": "svamp",
+      "n": 400,
+      "fingerprint_matches": true
+    },
+    {
+      "id": "qwen_weight1_armA_random_seed2",
+      "dataset": "aqua",
+      "n": 254,
+      "fingerprint_matches": true
+    },
+    {
+      "id": "qwen_weight10_armA_random_seed2",
+      "dataset": "svamp",
+      "n": 400,
+      "fingerprint_matches": true
+    },
+    {
+      "id": "qwen_weight10_armA_random_seed2",
+      "dataset": "aqua",
+      "n": 254,
+      "fingerprint_matches": true
+    },
+    {
+      "id": "mistral_weight1_armA_high_seed0",
+      "dataset": "svamp",
+      "n": 400,
+      "fingerprint_matches": true
+    },
+    {
+      "id": "mistral_weight1_armA_high_seed0",
+      "dataset": "aqua",
+      "n": 254,
+      "fingerprint_matches": true
+    },
+    {
+      "id": "mistral_weight10_armA_high_seed0",
+      "dataset": "svamp",
+      "n": 400,
+      "fingerprint_matches": true
+    },
+    {
+      "id": "mistral_weight10_armA_high_seed0",
+      "dataset": "aqua",
+      "n": 254,
+      "fingerprint_matches": true
+    },
+    {
+      "id": "mistral_weight1_armA_high_seed1",
+      "dataset": "svamp",
+      "n": 400,
+      "fingerprint_matches": true
+    },
+    {
+      "id": "mistral_weight1_armA_high_seed1",
+      "dataset": "aqua",
+      "n": 254,
+      "fingerprint_matches": true
+    },
+    {
+      "id": "mistral_weight10_armA_high_seed1",
+      "dataset": "svamp",
+      "n": 400,
+      "fingerprint_matches": true
+    },
+    {
+      "id": "mistral_weight10_armA_high_seed1",
+      "dataset": "aqua",
+      "n": 254,
+      "fingerprint_matches": true
+    },
+    {
+      "id": "mistral_weight1_armA_high_seed2",
+      "dataset": "svamp",
+      "n": 400,
+      "fingerprint_matches": true
+    },
+    {
+      "id": "mistral_weight1_armA_high_seed2",
+      "dataset": "aqua",
+      "n": 254,
+      "fingerprint_matches": true
+    },
+    {
+      "id": "mistral_weight10_armA_high_seed2",
+      "dataset": "svamp",
+      "n": 400,
+      "fingerprint_matches": true
+    },
+    {
+      "id": "mistral_weight10_armA_high_seed2",
+      "dataset": "aqua",
+      "n": 254,
+      "fingerprint_matches": true
+    },
+    {
+      "id": "mistral_weight1_armA_low_seed0",
+      "dataset": "svamp",
+      "n": 400,
+      "fingerprint_matches": true
+    },
+    {
+      "id": "mistral_weight1_armA_low_seed0",
+      "dataset": "aqua",
+      "n": 254,
+      "fingerprint_matches": true
+    },
+    {
+      "id": "mistral_weight10_armA_low_seed0",
+      "dataset": "svamp",
+      "n": 400,
+      "fingerprint_matches": true
+    },
+    {
+      "id": "mistral_weight10_armA_low_seed0",
+      "dataset": "aqua",
+      "n": 254,
+      "fingerprint_matches": true
+    },
+    {
+      "id": "mistral_weight1_armA_low_seed1",
+      "dataset": "svamp",
+      "n": 400,
+      "fingerprint_matches": true
+    },
+    {
+      "id": "mistral_weight1_armA_low_seed1",
+      "dataset": "aqua",
+      "n": 254,
+      "fingerprint_matches": true
+    },
+    {
+      "id": "mistral_weight10_armA_low_seed1",
+      "dataset": "svamp",
+      "n": 400,
+      "fingerprint_matches": true
+    },
+    {
+      "id": "mistral_weight10_armA_low_seed1",
+      "dataset": "aqua",
+      "n": 254,
+      "fingerprint_matches": true
+    },
+    {
+      "id": "mistral_weight1_armA_low_seed2",
+      "dataset": "svamp",
+      "n": 400,
+      "fingerprint_matches": true
+    },
+    {
+      "id": "mistral_weight1_armA_low_seed2",
+      "dataset": "aqua",
+      "n": 254,
+      "fingerprint_matches": true
+    },
+    {
+      "id": "mistral_weight10_armA_low_seed2",
+      "dataset": "svamp",
+      "n": 400,
+      "fingerprint_matches": true
+    },
+    {
+      "id": "mistral_weight10_armA_low_seed2",
+      "dataset": "aqua",
+      "n": 254,
+      "fingerprint_matches": true
+    },
+    {
+      "id": "mistral_weight1_armA_random_seed0",
+      "dataset": "svamp",
+      "n": 400,
+      "fingerprint_matches": true
+    },
+    {
+      "id": "mistral_weight1_armA_random_seed0",
+      "dataset": "aqua",
+      "n": 254,
+      "fingerprint_matches": true
+    },
+    {
+      "id": "mistral_weight10_armA_random_seed0",
+      "dataset": "svamp",
+      "n": 400,
+      "fingerprint_matches": true
+    },
+    {
+      "id": "mistral_weight10_armA_random_seed0",
+      "dataset": "aqua",
+      "n": 254,
+      "fingerprint_matches": true
+    },
+    {
+      "id": "mistral_weight1_armA_random_seed1",
+      "dataset": "svamp",
+      "n": 400,
+      "fingerprint_matches": true
+    },
+    {
+      "id": "mistral_weight1_armA_random_seed1",
+      "dataset": "aqua",
+      "n": 254,
+      "fingerprint_matches": true
+    },
+    {
+      "id": "mistral_weight10_armA_random_seed1",
+      "dataset": "svamp",
+      "n": 400,
+      "fingerprint_matches": true
+    },
+    {
+      "id": "mistral_weight10_armA_random_seed1",
+      "dataset": "aqua",
+      "n": 254,
+      "fingerprint_matches": true
+    },
+    {
+      "id": "mistral_weight1_armA_random_seed2",
+      "dataset": "svamp",
+      "n": 400,
+      "fingerprint_matches": true
+    },
+    {
+      "id": "mistral_weight1_armA_random_seed2",
+      "dataset": "aqua",
+      "n": 254,
+      "fingerprint_matches": true
+    },
+    {
+      "id": "mistral_weight10_armA_random_seed2",
+      "dataset": "svamp",
+      "n": 400,
+      "fingerprint_matches": true
+    },
+    {
+      "id": "mistral_weight10_armA_random_seed2",
+      "dataset": "aqua",
+      "n": 254,
+      "fingerprint_matches": true
+    }
+  ],
+  "done_jobs": 36,
+  "failed_jobs": 0,
+  "current_status": "COMPLETED_VERIFIED_EOS_CONTROL_ANALYSIS_READY 2026-10-09T07:53:46",
+  "source_hash_checks": {
+    "scripts/tmlr_eos_control.py": {
+      "expected": "850bdda27fffc05fe8980f937892bf9035df810fd79a995b22d1da1e7b51fc13",
+      "actual": "7766b8dd44e3f139fddd8f0c39431d0b6f68c81d6c948501a6b3587d57f19d30"
+    },
+    "scripts/train_terminal_eos.py": {
+      "expected": "2fb9e5baa1365aeeaeccbee0b87113ed11184c6aa2f9bca6885178adfd3a4c31",
+      "actual": "2fb9e5baa1365aeeaeccbee0b87113ed11184c6aa2f9bca6885178adfd3a4c31"
+    },
+    "src/ila/terminal_eos_loss.py": {
+      "expected": "104fed2dedbe2a75f5b0e482563cc6d2737e3e91c51a9d6a2f5d77528bd4135d",
+      "actual": "104fed2dedbe2a75f5b0e482563cc6d2737e3e91c51a9d6a2f5d77528bd4135d"
+    },
+    "scripts/train_sft.py": {
+      "expected": "8b55eab375fe2d5db4e914988af9ddcbd455be57a0560d1effaef0cad3225eea",
+      "actual": "8b55eab375fe2d5db4e914988af9ddcbd455be57a0560d1effaef0cad3225eea"
+    },
+    "scripts/evaluate.py": {
+      "expected": "7381e1f1207cd81214c6d0447e523f189dee414c826d7d3241591550385ebbad",
+      "actual": "7381e1f1207cd81214c6d0447e523f189dee414c826d7d3241591550385ebbad"
+    },
+    "scripts/analyze_tmlr_eos.py": {
+      "expected": "5835a117a3235acd012ec80fe20d26aa1920aaa06aaa18975ac7761cf558a465",
+      "actual": "5835a117a3235acd012ec80fe20d26aa1920aaa06aaa18975ac7761cf558a465"
+    }
+  },
+  "scope": "all36 completed trainings/all72 evaluations; independently rederived raw scores/cost/loops, hashes and seed summaries; not independent human or publication-final review",
+  "model_files_verified": 21,
+  "raw_metric_checks": [
+    {
+      "job": "qwen_weight1_armA_high_seed0",
+      "dataset": "svamp",
+      "point": {
+        "n": 400,
+        "mean_tokens": 4302.75,
+        "truncation_rate": 0.6675,
+        "finished_mean_tokens": 606.406015037594,
+        "capped_row_contribution": 4101.12,
+        "finished_row_contribution": 201.63,
+        "accuracy": 0.3275,
+        "tokens_per_correct": 13138.167938931298,
+        "likely_loop_rate": 0.6675
+      },
+      "outputs_sha256": "32f0a865e0cba6400d08faca6c6a6ac92ea2b61c89581c6773d6be707fe61986"
+    },
+    {
+      "job": "qwen_weight1_armA_high_seed0",
+      "dataset": "aqua",
+      "point": {
+        "n": 254,
+        "mean_tokens": 3944.814960629921,
+        "truncation_rate": 0.5787401574803149,
+        "finished_mean_tokens": 923.5046728971963,
+        "capped_row_contribution": 3555.779527559055,
+        "finished_row_contribution": 389.03543307086613,
+        "accuracy": 0.38188976377952755,
+        "tokens_per_correct": 10329.721649484536,
+        "likely_loop_rate": 0.5787401574803149
+      },
+      "outputs_sha256": "87540da20b724d3b92cf1a5b016e90fa009ec8a8c8e6946739d854d35ecabc7f"
+    },
+    {
+      "job": "qwen_weight10_armA_high_seed0",
+      "dataset": "svamp",
+      "point": {
+        "n": 400,
+        "mean_tokens": 4177.55,
+        "truncation_rate": 0.645,
+        "finished_mean_tokens": 604.7042253521126,
+        "capped_row_contribution": 3962.88,
+        "finished_row_contribution": 214.67,
+        "accuracy": 0.3625,
+        "tokens_per_correct": 11524.275862068966,
+        "likely_loop_rate": 0.645
+      },
+      "outputs_sha256": "a806986ea95d50a6cc59a7c25f90a2eed3bf133c2a8282443626038214c7b527"
+    },
+    {
+      "job": "qwen_weight10_armA_high_seed0",
+      "dataset": "aqua",
+      "point": {
+        "n": 254,
+        "mean_tokens": 3698.515748031496,
+        "truncation_rate": 0.531496062992126,
+        "finished_mean_tokens": 924.2268907563025,
+        "capped_row_contribution": 3265.511811023622,
+        "finished_row_contribution": 433.003937007874,
+        "accuracy": 0.44881889763779526,
+        "tokens_per_correct": 8240.552631578947,
+        "likely_loop_rate": 0.5275590551181102
+      },
+      "outputs_sha256": "df5ec96eb5a34a03b018897bc0dc57580db019076ce678cb07adb0e26d9f6fee"
+    },
+    {
+      "job": "qwen_weight1_armA_high_seed1",
+      "dataset": "svamp",
+      "point": {
+        "n": 400,
+        "mean_tokens": 3707.1775,
+        "truncation_rate": 0.5625,
+        "finished_mean_tokens": 574.12,
+        "capped_row_contribution": 3456.0,
+        "finished_row_contribution": 251.1775,
+        "accuracy": 0.4375,
+        "tokens_per_correct": 8473.548571428571,
+        "likely_loop_rate": 0.5625
+      },
+      "outputs_sha256": "bdf55182bdeaf758cd2992e3db73c049f0e730608408a13043155c5ab122a03a"
+    },
+    {
+      "job": "qwen_weight1_armA_high_seed1",
+      "dataset": "aqua",
+      "point": {
+        "n": 254,
+        "mean_tokens": 3809.299212598425,
+        "truncation_rate": 0.5551181102362205,
+        "finished_mean_tokens": 896.0884955752213,
+        "capped_row_contribution": 3410.6456692913384,
+        "finished_row_contribution": 398.65354330708664,
+        "accuracy": 0.42913385826771655,
+        "tokens_per_correct": 8876.715596330276,
+        "likely_loop_rate": 0.562992125984252
+      },
+      "outputs_sha256": "8d422295314ce86cc9aa97542d577dbf22e2a6db6b6981274539f8f519466817"
+    },
+    {
+      "job": "qwen_weight10_armA_high_seed1",
+      "dataset": "svamp",
+      "point": {
+        "n": 400,
+        "mean_tokens": 3674.015,
+        "truncation_rate": 0.5575,
+        "finished_mean_tokens": 562.1129943502825,
+        "capped_row_contribution": 3425.28,
+        "finished_row_contribution": 248.735,
+        "accuracy": 0.4475,
+        "tokens_per_correct": 8210.089385474861,
+        "likely_loop_rate": 0.5575
+      },
+      "outputs_sha256": "a8dd7689d4d0d3690c28409d65134fff6311032dae3b49bfa4531300cc3681a0"
+    },
+    {
+      "job": "qwen_weight10_armA_high_seed1",
+      "dataset": "aqua",
+      "point": {
+        "n": 254,
+        "mean_tokens": 3712.035433070866,
+        "truncation_rate": 0.5354330708661418,
+        "finished_mean_tokens": 909.0932203389831,
+        "capped_row_contribution": 3289.700787401575,
+        "finished_row_contribution": 422.3346456692913,
+        "accuracy": 0.4251968503937008,
+        "tokens_per_correct": 8730.157407407407,
+        "likely_loop_rate": 0.5354330708661418
+      },
+      "outputs_sha256": "1e7c901fa2828067e5a15d079ee6e8a35560ef37a30132b5da846aeb71fdd41a"
+    },
+    {
+      "job": "qwen_weight1_armA_high_seed2",
+      "dataset": "svamp",
+      "point": {
+        "n": 400,
+        "mean_tokens": 4016.4325,
+        "truncation_rate": 0.615,
+        "finished_mean_tokens": 617.8506493506494,
+        "capped_row_contribution": 3778.56,
+        "finished_row_contribution": 237.8725,
+        "accuracy": 0.38,
+        "tokens_per_correct": 10569.559210526315,
+        "likely_loop_rate": 0.615
+      },
+      "outputs_sha256": "48797d68a1f13a909126716b3aadb3b6db9f1eafa0317d9217508a405e042bb0"
+    },
+    {
+      "job": "qwen_weight1_armA_high_seed2",
+      "dataset": "aqua",
+      "point": {
+        "n": 254,
+        "mean_tokens": 3822.4606299212596,
+        "truncation_rate": 0.5551181102362205,
+        "finished_mean_tokens": 925.6725663716815,
+        "capped_row_contribution": 3410.6456692913384,
+        "finished_row_contribution": 411.81496062992125,
+        "accuracy": 0.40551181102362205,
+        "tokens_per_correct": 9426.26213592233,
+        "likely_loop_rate": 0.547244094488189
+      },
+      "outputs_sha256": "7a24abb7c3eb2192dadd028dec5d3e0485c0449977f11466fe276b865b204756"
+    },
+    {
+      "job": "qwen_weight10_armA_high_seed2",
+      "dataset": "svamp",
+      "point": {
+        "n": 400,
+        "mean_tokens": 3935.305,
+        "truncation_rate": 0.6,
+        "finished_mean_tokens": 622.2625,
+        "capped_row_contribution": 3686.4,
+        "finished_row_contribution": 248.905,
+        "accuracy": 0.395,
+        "tokens_per_correct": 9962.79746835443,
+        "likely_loop_rate": 0.6
+      },
+      "outputs_sha256": "89e8c6631364ba5869a7f32b31e29e1c15ed85ef623276ee368545d0d87da503"
+    },
+    {
+      "job": "qwen_weight10_armA_high_seed2",
+      "dataset": "aqua",
+      "point": {
+        "n": 254,
+        "mean_tokens": 3765.1771653543306,
+        "truncation_rate": 0.547244094488189,
+        "finished_mean_tokens": 889.9043478260869,
+        "capped_row_contribution": 3362.267716535433,
+        "finished_row_contribution": 402.90944881889766,
+        "accuracy": 0.4251968503937008,
+        "tokens_per_correct": 8855.138888888889,
+        "likely_loop_rate": 0.5511811023622047
+      },
+      "outputs_sha256": "6215e531a1db441eb00529469482dbe53c1999b1c14e3de19c42e6d324cae4d5"
+    },
+    {
+      "job": "qwen_weight1_armA_low_seed0",
+      "dataset": "svamp",
+      "point": {
+        "n": 400,
+        "mean_tokens": 2219.285,
+        "truncation_rate": 0.29,
+        "finished_mean_tokens": 616.2323943661971,
+        "capped_row_contribution": 1781.76,
+        "finished_row_contribution": 437.525,
+        "accuracy": 0.6825,
+        "tokens_per_correct": 3251.6996336996335,
+        "likely_loop_rate": 0.2925
+      },
+      "outputs_sha256": "399fae74eb328ede46162d892ff934d92a9ef3fae5af3a0a09edbcb40c5f8234"
+    },
+    {
+      "job": "qwen_weight1_armA_low_seed0",
+      "dataset": "aqua",
+      "point": {
+        "n": 254,
+        "mean_tokens": 2759.9606299212596,
+        "truncation_rate": 0.35039370078740156,
+        "finished_mean_tokens": 934.630303030303,
+        "capped_row_contribution": 2152.818897637795,
+        "finished_row_contribution": 607.1417322834645,
+        "accuracy": 0.594488188976378,
+        "tokens_per_correct": 4642.582781456954,
+        "likely_loop_rate": 0.35039370078740156
+      },
+      "outputs_sha256": "0f66893b18f5d2ffa43eb87ac3f68fc9e08969f2c6bacbc6c012f2315e37ead7"
+    },
+    {
+      "job": "qwen_weight10_armA_low_seed0",
+      "dataset": "svamp",
+      "point": {
+        "n": 400,
+        "mean_tokens": 2298.6175,
+        "truncation_rate": 0.305,
+        "finished_mean_tokens": 611.0755395683453,
+        "capped_row_contribution": 1873.92,
+        "finished_row_contribution": 424.6975,
+        "accuracy": 0.67,
+        "tokens_per_correct": 3430.7723880597014,
+        "likely_loop_rate": 0.3075
+      },
+      "outputs_sha256": "392f8425599d8510e05d2408009416f33150b441d467c6efef7cfe15fc890b2e"
+    },
+    {
+      "job": "qwen_weight10_armA_low_seed0",
+      "dataset": "aqua",
+      "point": {
+        "n": 254,
+        "mean_tokens": 2782.582677165354,
+        "truncation_rate": 0.3543307086614173,
+        "finished_mean_tokens": 937.9024390243902,
+        "capped_row_contribution": 2177.0078740157483,
+        "finished_row_contribution": 605.5748031496063,
+        "accuracy": 0.6062992125984252,
+        "tokens_per_correct": 4589.454545454545,
+        "likely_loop_rate": 0.35826771653543305
+      },
+      "outputs_sha256": "13cdfd7184b2129ad02c1e3b9f9b20e57fb36812ac89671ee73002975b6dd2de"
+    },
+    {
+      "job": "qwen_weight1_armA_low_seed1",
+      "dataset": "svamp",
+      "point": {
+        "n": 400,
+        "mean_tokens": 2097.1125,
+        "truncation_rate": 0.265,
+        "finished_mean_tokens": 638.030612244898,
+        "capped_row_contribution": 1628.16,
+        "finished_row_contribution": 468.9525,
+        "accuracy": 0.715,
+        "tokens_per_correct": 2933.0244755244757,
+        "likely_loop_rate": 0.2625
+      },
+      "outputs_sha256": "a11e7ae047e0320273994445c37b7772e091d61a99b6549056fb2b8efabef989"
+    },
+    {
+      "job": "qwen_weight1_armA_low_seed1",
+      "dataset": "aqua",
+      "point": {
+        "n": 254,
+        "mean_tokens": 2991.9251968503936,
+        "truncation_rate": 0.38976377952755903,
+        "finished_mean_tokens": 978.6645161290322,
+        "capped_row_contribution": 2394.7086614173227,
+        "finished_row_contribution": 597.2165354330708,
+        "accuracy": 0.5826771653543307,
+        "tokens_per_correct": 5134.790540540541,
+        "likely_loop_rate": 0.3858267716535433
+      },
+      "outputs_sha256": "faabd710d2c3cc2ae3bac1e88e7ac912d4ba4ed85f7ee6dcf99a46fd1cc29f5a"
+    },
+    {
+      "job": "qwen_weight10_armA_low_seed1",
+      "dataset": "svamp",
+      "point": {
+        "n": 400,
+        "mean_tokens": 1987.1625,
+        "truncation_rate": 0.2475,
+        "finished_mean_tokens": 619.9634551495017,
+        "capped_row_contribution": 1520.64,
+        "finished_row_contribution": 466.5225,
+        "accuracy": 0.725,
+        "tokens_per_correct": 2740.9137931034484,
+        "likely_loop_rate": 0.2475
+      },
+      "outputs_sha256": "700cc132d284f6eb03e8c33c4db48d297c096cf3ca68536a37b37baa858f7778"
+    },
+    {
+      "job": "qwen_weight10_armA_low_seed1",
+      "dataset": "aqua",
+      "point": {
+        "n": 254,
+        "mean_tokens": 2868.948818897638,
+        "truncation_rate": 0.3700787401574803,
+        "finished_mean_tokens": 944.85625,
+        "capped_row_contribution": 2273.763779527559,
+        "finished_row_contribution": 595.1850393700787,
+        "accuracy": 0.594488188976378,
+        "tokens_per_correct": 4825.913907284768,
+        "likely_loop_rate": 0.3661417322834646
+      },
+      "outputs_sha256": "82013564efde64ecd878dffc061573f16fe7dc83da8400d081a2570ab19150b8"
+    },
+    {
+      "job": "qwen_weight1_armA_low_seed2",
+      "dataset": "svamp",
+      "point": {
+        "n": 400,
+        "mean_tokens": 1844.32,
+        "truncation_rate": 0.225,
+        "finished_mean_tokens": 596.0258064516129,
+        "capped_row_contribution": 1382.4,
+        "finished_row_contribution": 461.92,
+        "accuracy": 0.75,
+        "tokens_per_correct": 2459.0933333333332,
+        "likely_loop_rate": 0.225
+      },
+      "outputs_sha256": "47d6d143da064f291e71a67dded85569c4f84925a7ac7590e5a8d8362d0995e4"
+    },
+    {
+      "job": "qwen_weight1_armA_low_seed2",
+      "dataset": "aqua",
+      "point": {
+        "n": 254,
+        "mean_tokens": 2725.759842519685,
+        "truncation_rate": 0.35039370078740156,
+        "finished_mean_tokens": 881.9818181818182,
+        "capped_row_contribution": 2152.818897637795,
+        "finished_row_contribution": 572.9409448818898,
+        "accuracy": 0.6141732283464567,
+        "tokens_per_correct": 4438.096153846154,
+        "likely_loop_rate": 0.35039370078740156
+      },
+      "outputs_sha256": "13885d89ffd4749a348332e73e283d3db22b32a1885f318e35c79bff1b30fba2"
+    },
+    {
+      "job": "qwen_weight10_armA_low_seed2",
+      "dataset": "svamp",
+      "point": {
+        "n": 400,
+        "mean_tokens": 1957.36,
+        "truncation_rate": 0.245,
+        "finished_mean_tokens": 598.7814569536424,
+        "capped_row_contribution": 1505.28,
+        "finished_row_contribution": 452.08,
+        "accuracy": 0.73,
+        "tokens_per_correct": 2681.3150684931506,
+        "likely_loop_rate": 0.245
+      },
+      "outputs_sha256": "833de39cce1b9053e0abacc1263dfc5c48619306b51bfe7fc904f5b1d482a46a"
+    },
+    {
+      "job": "qwen_weight10_armA_low_seed2",
+      "dataset": "aqua",
+      "point": {
+        "n": 254,
+        "mean_tokens": 2597.7047244094488,
+        "truncation_rate": 0.3188976377952756,
+        "finished_mean_tokens": 937.3005780346821,
+        "capped_row_contribution": 1959.3070866141732,
+        "finished_row_contribution": 638.3976377952756,
+        "accuracy": 0.6496062992125984,
+        "tokens_per_correct": 3998.890909090909,
+        "likely_loop_rate": 0.3188976377952756
+      },
+      "outputs_sha256": "e7c82439a59dbfe60fc7f998033d4e5a59f15245b369f99ccc994e32b7d8e9dc"
+    },
+    {
+      "job": "qwen_weight1_armA_random_seed0",
+      "dataset": "svamp",
+      "point": {
+        "n": 400,
+        "mean_tokens": 3318.3775,
+        "truncation_rate": 0.4875,
+        "finished_mean_tokens": 630.590243902439,
+        "capped_row_contribution": 2995.2,
+        "finished_row_contribution": 323.1775,
+        "accuracy": 0.5025,
+        "tokens_per_correct": 6603.73631840796,
+        "likely_loop_rate": 0.4875
+      },
+      "outputs_sha256": "4d61fc2f42ca043f23a3ed738bba9246b8cc7635cd4f8e09e515edd28e3838e2"
+    },
+    {
+      "job": "qwen_weight1_armA_random_seed0",
+      "dataset": "aqua",
+      "point": {
+        "n": 254,
+        "mean_tokens": 3142.9133858267714,
+        "truncation_rate": 0.4251968503937008,
+        "finished_mean_tokens": 922.931506849315,
+        "capped_row_contribution": 2612.4094488188975,
+        "finished_row_contribution": 530.503937007874,
+        "accuracy": 0.547244094488189,
+        "tokens_per_correct": 5743.1654676258995,
+        "likely_loop_rate": 0.4251968503937008
+      },
+      "outputs_sha256": "2453eb8baa32bcd90e552b6782292d5a9478fa2345a3b61bd807d2404b6145de"
+    },
+    {
+      "job": "qwen_weight10_armA_random_seed0",
+      "dataset": "svamp",
+      "point": {
+        "n": 400,
+        "mean_tokens": 3268.2175,
+        "truncation_rate": 0.4775,
+        "finished_mean_tokens": 640.11004784689,
+        "capped_row_contribution": 2933.76,
+        "finished_row_contribution": 334.4575,
+        "accuracy": 0.5175,
+        "tokens_per_correct": 6315.396135265701,
+        "likely_loop_rate": 0.4775
+      },
+      "outputs_sha256": "42e0e0b850f13a516a6d55b6319dcaf3ef8b8d1f7f18bfac7678f77be18d02d5"
+    },
+    {
+      "job": "qwen_weight10_armA_random_seed0",
+      "dataset": "aqua",
+      "point": {
+        "n": 254,
+        "mean_tokens": 3148.9566929133857,
+        "truncation_rate": 0.4251968503937008,
+        "finished_mean_tokens": 933.445205479452,
+        "capped_row_contribution": 2612.4094488188975,
+        "finished_row_contribution": 536.5472440944882,
+        "accuracy": 0.531496062992126,
+        "tokens_per_correct": 5924.7037037037035,
+        "likely_loop_rate": 0.421259842519685
+      },
+      "outputs_sha256": "d0e390a262df1d497ff4290eceb4729bf70e1f737bc716deb2e9978e7c397332"
+    },
+    {
+      "job": "qwen_weight1_armA_random_seed1",
+      "dataset": "svamp",
+      "point": {
+        "n": 400,
+        "mean_tokens": 2862.2275,
+        "truncation_rate": 0.405,
+        "finished_mean_tokens": 628.4159663865546,
+        "capped_row_contribution": 2488.32,
+        "finished_row_contribution": 373.9075,
+        "accuracy": 0.585,
+        "tokens_per_correct": 4892.696581196581,
+        "likely_loop_rate": 0.405
+      },
+      "outputs_sha256": "1d18d9a3b0a95ff1172680ab83523734f791a29446ee920ab9e23130887a527f"
+    },
+    {
+      "job": "qwen_weight1_armA_random_seed1",
+      "dataset": "aqua",
+      "point": {
+        "n": 254,
+        "mean_tokens": 3316.732283464567,
+        "truncation_rate": 0.452755905511811,
+        "finished_mean_tokens": 977.6258992805756,
+        "capped_row_contribution": 2781.732283464567,
+        "finished_row_contribution": 535.0,
+        "accuracy": 0.49606299212598426,
+        "tokens_per_correct": 6686.111111111111,
+        "likely_loop_rate": 0.452755905511811
+      },
+      "outputs_sha256": "8e206a759b9e24c5df043c3aed31e35b0349b7de7b5092b8dabfbc40ce70885c"
+    },
+    {
+      "job": "qwen_weight10_armA_random_seed1",
+      "dataset": "svamp",
+      "point": {
+        "n": 400,
+        "mean_tokens": 2929.51,
+        "truncation_rate": 0.4175,
+        "finished_mean_tokens": 625.5622317596567,
+        "capped_row_contribution": 2565.12,
+        "finished_row_contribution": 364.39,
+        "accuracy": 0.5725,
+        "tokens_per_correct": 5117.048034934498,
+        "likely_loop_rate": 0.4175
+      },
+      "outputs_sha256": "3b7488bf9e3a554a52ef1e3c02e17ed8e64a550253cf9206dfc773a73d5e3978"
+    },
+    {
+      "job": "qwen_weight10_armA_random_seed1",
+      "dataset": "aqua",
+      "point": {
+        "n": 254,
+        "mean_tokens": 3287.6771653543306,
+        "truncation_rate": 0.44881889763779526,
+        "finished_mean_tokens": 961.8142857142857,
+        "capped_row_contribution": 2757.5433070866143,
+        "finished_row_contribution": 530.1338582677165,
+        "accuracy": 0.5236220472440944,
+        "tokens_per_correct": 6278.721804511279,
+        "likely_loop_rate": 0.44881889763779526
+      },
+      "outputs_sha256": "eab509409eb306d072328711f2c5670da1bbf016ed75a56107a962ea6550683b"
+    },
+    {
+      "job": "qwen_weight1_armA_random_seed2",
+      "dataset": "svamp",
+      "point": {
+        "n": 400,
+        "mean_tokens": 2769.0025,
+        "truncation_rate": 0.39,
+        "finished_mean_tokens": 611.2172131147541,
+        "capped_row_contribution": 2396.16,
+        "finished_row_contribution": 372.8425,
+        "accuracy": 0.5925,
+        "tokens_per_correct": 4673.4219409282705,
+        "likely_loop_rate": 0.39
+      },
+      "outputs_sha256": "0ae59399c74a07ede5e2903be6d747dbb54039c6f4bcef446beff72519b133e6"
+    },
+    {
+      "job": "qwen_weight1_armA_random_seed2",
+      "dataset": "aqua",
+      "point": {
+        "n": 254,
+        "mean_tokens": 2843.3858267716537,
+        "truncation_rate": 0.3700787401574803,
+        "finished_mean_tokens": 904.275,
+        "capped_row_contribution": 2273.763779527559,
+        "finished_row_contribution": 569.6220472440945,
+        "accuracy": 0.5787401574803149,
+        "tokens_per_correct": 4913.061224489796,
+        "likely_loop_rate": 0.3661417322834646
+      },
+      "outputs_sha256": "db0e7672e23c0781746d2afc2627c1c7c7c6dc96a8d70f7cac1dd18e5a44938f"
+    },
+    {
+      "job": "qwen_weight10_armA_random_seed2",
+      "dataset": "svamp",
+      "point": {
+        "n": 400,
+        "mean_tokens": 2681.17,
+        "truncation_rate": 0.375,
+        "finished_mean_tokens": 603.472,
+        "capped_row_contribution": 2304.0,
+        "finished_row_contribution": 377.17,
+        "accuracy": 0.61,
+        "tokens_per_correct": 4395.360655737705,
+        "likely_loop_rate": 0.375
+      },
+      "outputs_sha256": "ae1fa03af3260cc86bede263932a6c9f03ee421a04e92b36a5daca30a1875064"
+    },
+    {
+      "job": "qwen_weight10_armA_random_seed2",
+      "dataset": "aqua",
+      "point": {
+        "n": 254,
+        "mean_tokens": 2786.047244094488,
+        "truncation_rate": 0.36220472440944884,
+        "finished_mean_tokens": 879.0617283950618,
+        "capped_row_contribution": 2225.3858267716537,
+        "finished_row_contribution": 560.6614173228346,
+        "accuracy": 0.5748031496062992,
+        "tokens_per_correct": 4846.958904109589,
+        "likely_loop_rate": 0.35039370078740156
+      },
+      "outputs_sha256": "8c2fd74c3196ed405aa7f18113fba7e92b9145c868d463f532b0fc8502199497"
+    },
+    {
+      "job": "mistral_weight1_armA_high_seed0",
+      "dataset": "svamp",
+      "point": {
+        "n": 400,
+        "mean_tokens": 4813.085,
+        "truncation_rate": 0.7475,
+        "finished_mean_tokens": 873.049504950495,
+        "capped_row_contribution": 4592.64,
+        "finished_row_contribution": 220.445,
+        "accuracy": 0.2125,
+        "tokens_per_correct": 22649.811764705883,
+        "likely_loop_rate": 0.7475
+      },
+      "outputs_sha256": "051fa08c8da5bdd4fcb8c2b5845d56f0cb1d52c2331af7a0f6325d6aaf8df50d"
+    },
+    {
+      "job": "mistral_weight1_armA_high_seed0",
+      "dataset": "aqua",
+      "point": {
+        "n": 254,
+        "mean_tokens": 5154.889763779527,
+        "truncation_rate": 0.7874015748031497,
+        "finished_mean_tokens": 1491.5185185185185,
+        "capped_row_contribution": 4837.795275590551,
+        "finished_row_contribution": 317.09448818897636,
+        "accuracy": 0.13385826771653545,
+        "tokens_per_correct": 38510.05882352941,
+        "likely_loop_rate": 0.7834645669291339
+      },
+      "outputs_sha256": "3bd60060b1f056b78c053e09379ff3a6fe05a4c3edb5829aeba59de324f03f9a"
+    },
+    {
+      "job": "mistral_weight10_armA_high_seed0",
+      "dataset": "svamp",
+      "point": {
+        "n": 400,
+        "mean_tokens": 4731.3275,
+        "truncation_rate": 0.7325,
+        "finished_mean_tokens": 862.981308411215,
+        "capped_row_contribution": 4500.48,
+        "finished_row_contribution": 230.8475,
+        "accuracy": 0.23,
+        "tokens_per_correct": 20570.989130434784,
+        "likely_loop_rate": 0.73
+      },
+      "outputs_sha256": "4385495a21f619207c23ab9c08c1480beb48dcfc0bf7f366f71ed895611cd4da"
+    },
+    {
+      "job": "mistral_weight10_armA_high_seed0",
+      "dataset": "aqua",
+      "point": {
+        "n": 254,
+        "mean_tokens": 5326.866141732284,
+        "truncation_rate": 0.8307086614173228,
+        "finished_mean_tokens": 1317.2093023255813,
+        "capped_row_contribution": 5103.8740157480315,
+        "finished_row_contribution": 222.99212598425197,
+        "accuracy": 0.12598425196850394,
+        "tokens_per_correct": 42282.0,
+        "likely_loop_rate": 0.8307086614173228
+      },
+      "outputs_sha256": "21d235045b4661275c19d9cf34f18246bd4ba1cb48e92e17dfb744b289078a66"
+    },
+    {
+      "job": "mistral_weight1_armA_high_seed1",
+      "dataset": "svamp",
+      "point": {
+        "n": 400,
+        "mean_tokens": 4807.22,
+        "truncation_rate": 0.7425,
+        "finished_mean_tokens": 952.6213592233009,
+        "capped_row_contribution": 4561.92,
+        "finished_row_contribution": 245.3,
+        "accuracy": 0.215,
+        "tokens_per_correct": 22359.162790697676,
+        "likely_loop_rate": 0.7475
+      },
+      "outputs_sha256": "40f2294cb609e1e642b07484dfa195eb504776836e50990cd9f74b767e968ff4"
+    },
+    {
+      "job": "mistral_weight1_armA_high_seed1",
+      "dataset": "aqua",
+      "point": {
+        "n": 254,
+        "mean_tokens": 5459.311023622047,
+        "truncation_rate": 0.8464566929133859,
+        "finished_mean_tokens": 1684.7435897435898,
+        "capped_row_contribution": 5200.629921259842,
+        "finished_row_contribution": 258.68110236220474,
+        "accuracy": 0.08661417322834646,
+        "tokens_per_correct": 63030.22727272727,
+        "likely_loop_rate": 0.84251968503937
+      },
+      "outputs_sha256": "af1f43c2f6807de8a11ef78ee7f662952ddafe7f6ebb053cf6eb653df28e229e"
+    },
+    {
+      "job": "mistral_weight10_armA_high_seed1",
+      "dataset": "svamp",
+      "point": {
+        "n": 400,
+        "mean_tokens": 4849.265,
+        "truncation_rate": 0.755,
+        "finished_mean_tokens": 859.3673469387755,
+        "capped_row_contribution": 4638.72,
+        "finished_row_contribution": 210.545,
+        "accuracy": 0.2,
+        "tokens_per_correct": 24246.325,
+        "likely_loop_rate": 0.7575
+      },
+      "outputs_sha256": "fa7dbc0d865f7d28a2c2ef4e01a8e5b0f204dff4c8ca561e81c19d9c5b8aee7e"
+    },
+    {
+      "job": "mistral_weight10_armA_high_seed1",
+      "dataset": "aqua",
+      "point": {
+        "n": 254,
+        "mean_tokens": 5371.307086614173,
+        "truncation_rate": 0.8346456692913385,
+        "finished_mean_tokens": 1471.047619047619,
+        "capped_row_contribution": 5128.062992125984,
+        "finished_row_contribution": 243.24409448818898,
+        "accuracy": 0.1141732283464567,
+        "tokens_per_correct": 47045.24137931035,
+        "likely_loop_rate": 0.8346456692913385
+      },
+      "outputs_sha256": "e1a93faded4bad94180e84eac7334760de1473d74f9c28c961e204a09e189c28"
+    },
+    {
+      "job": "mistral_weight1_armA_high_seed2",
+      "dataset": "svamp",
+      "point": {
+        "n": 400,
+        "mean_tokens": 3770.55,
+        "truncation_rate": 0.5475,
+        "finished_mean_tokens": 898.8066298342542,
+        "capped_row_contribution": 3363.84,
+        "finished_row_contribution": 406.71,
+        "accuracy": 0.385,
+        "tokens_per_correct": 9793.636363636364,
+        "likely_loop_rate": 0.555
+      },
+      "outputs_sha256": "892745fc3ba33fc4eaff10a610abeba6993e31de40e26e2486454e3593744172"
+    },
+    {
+      "job": "mistral_weight1_armA_high_seed2",
+      "dataset": "aqua",
+      "point": {
+        "n": 254,
+        "mean_tokens": 4913.342519685039,
+        "truncation_rate": 0.7440944881889764,
+        "finished_mean_tokens": 1334.9692307692308,
+        "capped_row_contribution": 4571.716535433071,
+        "finished_row_contribution": 341.62598425196853,
+        "accuracy": 0.13385826771653545,
+        "tokens_per_correct": 36705.55882352941,
+        "likely_loop_rate": 0.7519685039370079
+      },
+      "outputs_sha256": "675487e17b7ed0d31563e757e209a7aecd8a0954a81cc0b33ee72537c98b7b91"
+    },
+    {
+      "job": "mistral_weight10_armA_high_seed2",
+      "dataset": "svamp",
+      "point": {
+        "n": 400,
+        "mean_tokens": 3742.7675,
+        "truncation_rate": 0.5525,
+        "finished_mean_tokens": 778.1173184357542,
+        "capped_row_contribution": 3394.56,
+        "finished_row_contribution": 348.2075,
+        "accuracy": 0.375,
+        "tokens_per_correct": 9980.713333333333,
+        "likely_loop_rate": 0.555
+      },
+      "outputs_sha256": "a11f81a9e76efb71c0dadd4b4fcfe8aa5f63a9945800b26305b6eb483dadd0af"
+    },
+    {
+      "job": "mistral_weight10_armA_high_seed2",
+      "dataset": "aqua",
+      "point": {
+        "n": 254,
+        "mean_tokens": 4620.976377952756,
+        "truncation_rate": 0.6889763779527559,
+        "finished_mean_tokens": 1247.1898734177216,
+        "capped_row_contribution": 4233.070866141732,
+        "finished_row_contribution": 387.90551181102364,
+        "accuracy": 0.1732283464566929,
+        "tokens_per_correct": 26675.636363636364,
+        "likely_loop_rate": 0.6850393700787402
+      },
+      "outputs_sha256": "ee960b6addc3f1d026d2008c5412d47345b9b8a3b3876bca883227a590c988a9"
+    },
+    {
+      "job": "mistral_weight1_armA_low_seed0",
+      "dataset": "svamp",
+      "point": {
+        "n": 400,
+        "mean_tokens": 1475.75,
+        "truncation_rate": 0.1225,
+        "finished_mean_tokens": 824.05698005698,
+        "capped_row_contribution": 752.64,
+        "finished_row_contribution": 723.11,
+        "accuracy": 0.65,
+        "tokens_per_correct": 2270.3846153846152,
+        "likely_loop_rate": 0.125
+      },
+      "outputs_sha256": "bbc8d373d88edf22ae6928e157ee84f5a2ef798dedaa24931b21cf56cc96be17"
+    },
+    {
+      "job": "mistral_weight1_armA_low_seed0",
+      "dataset": "aqua",
+      "point": {
+        "n": 254,
+        "mean_tokens": 2989.4133858267714,
+        "truncation_rate": 0.33070866141732286,
+        "finished_mean_tokens": 1430.6764705882354,
+        "capped_row_contribution": 2031.8740157480315,
+        "finished_row_contribution": 957.5393700787401,
+        "accuracy": 0.2992125984251969,
+        "tokens_per_correct": 9990.934210526315,
+        "likely_loop_rate": 0.3228346456692913
+      },
+      "outputs_sha256": "82106b655d4e2b6c8b85adc9fddc4b399227f04954e8935c176fb7afed5bee65"
+    },
+    {
+      "job": "mistral_weight10_armA_low_seed0",
+      "dataset": "svamp",
+      "point": {
+        "n": 400,
+        "mean_tokens": 1660.81,
+        "truncation_rate": 0.1625,
+        "finished_mean_tokens": 790.9373134328358,
+        "capped_row_contribution": 998.4,
+        "finished_row_contribution": 662.41,
+        "accuracy": 0.6325,
+        "tokens_per_correct": 2625.786561264822,
+        "likely_loop_rate": 0.16
+      },
+      "outputs_sha256": "b6ff100dfb0404237fbecf00a68eef52288e1fcc0c84c329582ba37c797f8773"
+    },
+    {
+      "job": "mistral_weight10_armA_low_seed0",
+      "dataset": "aqua",
+      "point": {
+        "n": 254,
+        "mean_tokens": 2748.287401574803,
+        "truncation_rate": 0.28346456692913385,
+        "finished_mean_tokens": 1404.9285714285713,
+        "capped_row_contribution": 1741.6062992125985,
+        "finished_row_contribution": 1006.6811023622047,
+        "accuracy": 0.3110236220472441,
+        "tokens_per_correct": 8836.26582278481,
+        "likely_loop_rate": 0.2795275590551181
+      },
+      "outputs_sha256": "54aa6cabea56c63b8c09e30df6b36f17f911042472cfaf69a7a878a124285eb1"
+    },
+    {
+      "job": "mistral_weight1_armA_low_seed1",
+      "dataset": "svamp",
+      "point": {
+        "n": 400,
+        "mean_tokens": 1915.37,
+        "truncation_rate": 0.2025,
+        "finished_mean_tokens": 841.6426332288402,
+        "capped_row_contribution": 1244.16,
+        "finished_row_contribution": 671.21,
+        "accuracy": 0.635,
+        "tokens_per_correct": 3016.3307086614172,
+        "likely_loop_rate": 0.205
+      },
+      "outputs_sha256": "4c1d892961438bdac5247d33bf87fa1fdde352e536fd5a041b22700b0010aade"
+    },
+    {
+      "job": "mistral_weight1_armA_low_seed1",
+      "dataset": "aqua",
+      "point": {
+        "n": 254,
+        "mean_tokens": 3403.9094488188975,
+        "truncation_rate": 0.4251968503937008,
+        "finished_mean_tokens": 1376.9931506849316,
+        "capped_row_contribution": 2612.4094488188975,
+        "finished_row_contribution": 791.5,
+        "accuracy": 0.3110236220472441,
+        "tokens_per_correct": 10944.215189873417,
+        "likely_loop_rate": 0.41732283464566927
+      },
+      "outputs_sha256": "b1e6526dad6b020f990fc8ff49afb8df9f6f6b01001c096ca0649bc4794e9df9"
+    },
+    {
+      "job": "mistral_weight10_armA_low_seed1",
+      "dataset": "svamp",
+      "point": {
+        "n": 400,
+        "mean_tokens": 1924.945,
+        "truncation_rate": 0.2075,
+        "finished_mean_tokens": 820.2712933753943,
+        "capped_row_contribution": 1274.88,
+        "finished_row_contribution": 650.065,
+        "accuracy": 0.6425,
+        "tokens_per_correct": 2996.023346303502,
+        "likely_loop_rate": 0.21
+      },
+      "outputs_sha256": "dd2a0d3a7c1c93ed01683baf3ab978661a0ac6e019d8ffb3f600d9969edabe1b"
+    },
+    {
+      "job": "mistral_weight10_armA_low_seed1",
+      "dataset": "aqua",
+      "point": {
+        "n": 254,
+        "mean_tokens": 3220.948818897638,
+        "truncation_rate": 0.3858267716535433,
+        "finished_mean_tokens": 1384.673076923077,
+        "capped_row_contribution": 2370.51968503937,
+        "finished_row_contribution": 850.4291338582677,
+        "accuracy": 0.31496062992125984,
+        "tokens_per_correct": 10226.5125,
+        "likely_loop_rate": 0.38976377952755903
+      },
+      "outputs_sha256": "68801346d283072ffe5e94eea0478ea9deb1563651bd73953296a58e85fa8d2f"
+    },
+    {
+      "job": "mistral_weight1_armA_low_seed2",
+      "dataset": "svamp",
+      "point": {
+        "n": 400,
+        "mean_tokens": 2257.9125,
+        "truncation_rate": 0.265,
+        "finished_mean_tokens": 856.8061224489796,
+        "capped_row_contribution": 1628.16,
+        "finished_row_contribution": 629.7525,
+        "accuracy": 0.535,
+        "tokens_per_correct": 4220.397196261682,
+        "likely_loop_rate": 0.265
+      },
+      "outputs_sha256": "18182d94e8cae81f91caafe048c612284509a4e0aa88b7621b6a447ddc78c454"
+    },
+    {
+      "job": "mistral_weight1_armA_low_seed2",
+      "dataset": "aqua",
+      "point": {
+        "n": 254,
+        "mean_tokens": 3639.551181102362,
+        "truncation_rate": 0.4645669291338583,
+        "finished_mean_tokens": 1466.5735294117646,
+        "capped_row_contribution": 2854.299212598425,
+        "finished_row_contribution": 785.2519685039371,
+        "accuracy": 0.2952755905511811,
+        "tokens_per_correct": 12325.946666666667,
+        "likely_loop_rate": 0.468503937007874
+      },
+      "outputs_sha256": "9eafbfbc12694d160f8c19c33a37bc68e8838a19621d7bcd339ee6e1c48eb82e"
+    },
+    {
+      "job": "mistral_weight10_armA_low_seed2",
+      "dataset": "svamp",
+      "point": {
+        "n": 400,
+        "mean_tokens": 2050.515,
+        "truncation_rate": 0.22,
+        "finished_mean_tokens": 895.9423076923077,
+        "capped_row_contribution": 1351.68,
+        "finished_row_contribution": 698.835,
+        "accuracy": 0.5825,
+        "tokens_per_correct": 3520.197424892704,
+        "likely_loop_rate": 0.2175
+      },
+      "outputs_sha256": "42aa428b7d87d6372c1c98b8c331ab3deb8e68568aa5bb5fe5a61613b290cea1"
+    },
+    {
+      "job": "mistral_weight10_armA_low_seed2",
+      "dataset": "aqua",
+      "point": {
+        "n": 254,
+        "mean_tokens": 3533.228346456693,
+        "truncation_rate": 0.42913385826771655,
+        "finished_mean_tokens": 1570.6482758620689,
+        "capped_row_contribution": 2636.5984251968503,
+        "finished_row_contribution": 896.6299212598425,
+        "accuracy": 0.2559055118110236,
+        "tokens_per_correct": 13806.76923076923,
+        "likely_loop_rate": 0.4330708661417323
+      },
+      "outputs_sha256": "378825a78a8c5277ef5bdddc90b1e4e23c0b3666a8d13ecf1c9b9861ef10d085"
+    },
+    {
+      "job": "mistral_weight1_armA_random_seed0",
+      "dataset": "svamp",
+      "point": {
+        "n": 400,
+        "mean_tokens": 2737.79,
+        "truncation_rate": 0.3575,
+        "finished_mean_tokens": 842.5058365758755,
+        "capped_row_contribution": 2196.48,
+        "finished_row_contribution": 541.31,
+        "accuracy": 0.53,
+        "tokens_per_correct": 5165.641509433963,
+        "likely_loop_rate": 0.3525
+      },
+      "outputs_sha256": "8ea8226f7f5cdb8ea1f7d5056e2a3b2d5b25f23e65674e3005420ea8c5d3884e"
+    },
+    {
+      "job": "mistral_weight1_armA_random_seed0",
+      "dataset": "aqua",
+      "point": {
+        "n": 254,
+        "mean_tokens": 4214.05905511811,
+        "truncation_rate": 0.594488188976378,
+        "finished_mean_tokens": 1384.7281553398059,
+        "capped_row_contribution": 3652.535433070866,
+        "finished_row_contribution": 561.5236220472441,
+        "accuracy": 0.24015748031496062,
+        "tokens_per_correct": 17547.06557377049,
+        "likely_loop_rate": 0.5826771653543307
+      },
+      "outputs_sha256": "9adb296d3102e918fadba67b8eba271d4c7bcad6e98ad77a05db19c1bc2ede9a"
+    },
+    {
+      "job": "mistral_weight10_armA_random_seed0",
+      "dataset": "svamp",
+      "point": {
+        "n": 400,
+        "mean_tokens": 2685.595,
+        "truncation_rate": 0.3425,
+        "finished_mean_tokens": 884.0684410646388,
+        "capped_row_contribution": 2104.32,
+        "finished_row_contribution": 581.275,
+        "accuracy": 0.5475,
+        "tokens_per_correct": 4905.196347031963,
+        "likely_loop_rate": 0.34
+      },
+      "outputs_sha256": "5d1f95b2f10114cd31c51f3e9998a6b6a0365eb9871751d9e90c7be9699e5241"
+    },
+    {
+      "job": "mistral_weight10_armA_random_seed0",
+      "dataset": "aqua",
+      "point": {
+        "n": 254,
+        "mean_tokens": 4030.267716535433,
+        "truncation_rate": 0.5511811023622047,
+        "finished_mean_tokens": 1434.4561403508771,
+        "capped_row_contribution": 3386.4566929133857,
+        "finished_row_contribution": 643.8110236220473,
+        "accuracy": 0.27165354330708663,
+        "tokens_per_correct": 14836.057971014492,
+        "likely_loop_rate": 0.5433070866141733
+      },
+      "outputs_sha256": "fa6e4acd8bc8003a842d57c3a8e40409b07917e4a344f1ec37846ffcf11f52cc"
+    },
+    {
+      "job": "mistral_weight1_armA_random_seed1",
+      "dataset": "svamp",
+      "point": {
+        "n": 400,
+        "mean_tokens": 3127.385,
+        "truncation_rate": 0.4275,
+        "finished_mean_tokens": 874.8034934497816,
+        "capped_row_contribution": 2626.56,
+        "finished_row_contribution": 500.825,
+        "accuracy": 0.475,
+        "tokens_per_correct": 6583.968421052631,
+        "likely_loop_rate": 0.435
+      },
+      "outputs_sha256": "789a5c5725d5903e660a17ec816c46620173c44534489e6b73667651394aff5c"
+    },
+    {
+      "job": "mistral_weight1_armA_random_seed1",
+      "dataset": "aqua",
+      "point": {
+        "n": 254,
+        "mean_tokens": 4313.956692913386,
+        "truncation_rate": 0.610236220472441,
+        "finished_mean_tokens": 1448.7373737373737,
+        "capped_row_contribution": 3749.2913385826773,
+        "finished_row_contribution": 564.6653543307086,
+        "accuracy": 0.25196850393700787,
+        "tokens_per_correct": 17121.015625,
+        "likely_loop_rate": 0.6220472440944882
+      },
+      "outputs_sha256": "908336235ee0364dde26fb7f925c8c9e8d755198a9c87d7caf9b64f430087d03"
+    },
+    {
+      "job": "mistral_weight10_armA_random_seed1",
+      "dataset": "svamp",
+      "point": {
+        "n": 400,
+        "mean_tokens": 3000.6125,
+        "truncation_rate": 0.405,
+        "finished_mean_tokens": 860.9957983193277,
+        "capped_row_contribution": 2488.32,
+        "finished_row_contribution": 512.2925,
+        "accuracy": 0.5025,
+        "tokens_per_correct": 5971.36815920398,
+        "likely_loop_rate": 0.41
+      },
+      "outputs_sha256": "22329138c1ef394d57332ce8f6e7fabe6b5a2c5a01a53eb14acfdff35fce6d1b"
+    },
+    {
+      "job": "mistral_weight10_armA_random_seed1",
+      "dataset": "aqua",
+      "point": {
+        "n": 254,
+        "mean_tokens": 4363.614173228347,
+        "truncation_rate": 0.6181102362204725,
+        "finished_mean_tokens": 1481.958762886598,
+        "capped_row_contribution": 3797.6692913385828,
+        "finished_row_contribution": 565.9448818897638,
+        "accuracy": 0.2204724409448819,
+        "tokens_per_correct": 19792.10714285714,
+        "likely_loop_rate": 0.610236220472441
+      },
+      "outputs_sha256": "a38d4c48543b8e8810302e9dbf737b274659e109a49917ea55122cf499ee0a6a"
+    },
+    {
+      "job": "mistral_weight1_armA_random_seed2",
+      "dataset": "svamp",
+      "point": {
+        "n": 400,
+        "mean_tokens": 3324.365,
+        "truncation_rate": 0.46,
+        "finished_mean_tokens": 922.4537037037037,
+        "capped_row_contribution": 2826.24,
+        "finished_row_contribution": 498.125,
+        "accuracy": 0.4425,
+        "tokens_per_correct": 7512.689265536723,
+        "likely_loop_rate": 0.4575
+      },
+      "outputs_sha256": "79784da1d802daf2c48cd866672b3e5c5b4e8cd55766ddfd1da60a5b73a02b11"
+    },
+    {
+      "job": "mistral_weight1_armA_random_seed2",
+      "dataset": "aqua",
+      "point": {
+        "n": 254,
+        "mean_tokens": 4387.866141732284,
+        "truncation_rate": 0.6181102362204725,
+        "finished_mean_tokens": 1545.4639175257732,
+        "capped_row_contribution": 3797.6692913385828,
+        "finished_row_contribution": 590.1968503937007,
+        "accuracy": 0.23622047244094488,
+        "tokens_per_correct": 18575.3,
+        "likely_loop_rate": 0.6220472440944882
+      },
+      "outputs_sha256": "15b12d7dc156d3b0f2465f8e6456ea1adfb1920949efe8f4c06a7e170cc6342e"
+    },
+    {
+      "job": "mistral_weight10_armA_random_seed2",
+      "dataset": "svamp",
+      "point": {
+        "n": 400,
+        "mean_tokens": 3619.49,
+        "truncation_rate": 0.525,
+        "finished_mean_tokens": 829.2421052631579,
+        "capped_row_contribution": 3225.6,
+        "finished_row_contribution": 393.89,
+        "accuracy": 0.4125,
+        "tokens_per_correct": 8774.521212121212,
+        "likely_loop_rate": 0.525
+      },
+      "outputs_sha256": "9cf7e43420484826d8b81488d025b138e6d5e64b59848fb79d2f47a70b1bd1fd"
+    },
+    {
+      "job": "mistral_weight10_armA_random_seed2",
+      "dataset": "aqua",
+      "point": {
+        "n": 254,
+        "mean_tokens": 4612.326771653543,
+        "truncation_rate": 0.6850393700787402,
+        "finished_mean_tokens": 1280.9375,
+        "capped_row_contribution": 4208.881889763779,
+        "finished_row_contribution": 403.4448818897638,
+        "accuracy": 0.18503937007874016,
+        "tokens_per_correct": 24926.191489361703,
+        "likely_loop_rate": 0.6811023622047244
+      },
+      "outputs_sha256": "65363dbdc3e02b29f56a3f6fdb3d0f94031a37de63e9e356efc2858e3757d536"
+    }
+  ],
+  "verification_status": "PASS"
+}

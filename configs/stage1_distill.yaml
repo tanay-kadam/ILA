@@ -1,0 +1,71 @@
+# Stage 1 (distill variant, added after Qwen2.5-1.5B-Instruct failed the pilot twice): natural-data gate. Does training-trace composition change inference cost beyond
+# seed noise, and how much of that is explained by cheap heuristics?
+# Decision rules below are fixed before any run; do not edit after seeing results.
+
+experiment: stage1
+model: deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
+data_dir: data/stage1
+results_dir: results/stage1_distill
+
+prompt_template: "Question: {question}\nPlease reason step by step, and put your final answer within \\boxed{{}}.\nAnswer:\n"
+answer_format: boxed
+
+# "styles" are training-set names (train_<name>.jsonl); the queue scripts treat them as styles.
+arm_a_sets: [armA_high, armA_low, armA_random]
+arm_a_seeds: [0, 1, 2]
+arm_b_sets: [b00, b01, b02, b03, b04, b05, b06, b07, b08, b09, b10, b11, b12, b13, b14, b15]
+arm_b_seed: 0
+arm_b_replicates: {sets: [b00, b01], seeds: [1, 2]}
+
+data:
+  pool_n: 20000
+  min_tokens: 1000
+  max_tokens: 2500                # pilot fallback: first pilot used 4000 and failed (see README)
+  max_problem_tokens: 400
+  ngram: 13
+  selection_seed: 0
+  arm_size: 4000
+  n_clusters: 16
+  n_subsets_b: 16
+  subset_size: 4000
+  dirichlet_alpha: 0.5
+  gsm8k_eval_n: 500
+
+train:
+  method: lora
+  lora_r: 64
+  lora_alpha: 128
+  lora_dropout: 0.05
+  target_modules: [q_proj, k_proj, v_proj, o_proj, gate_proj, up_proj, down_proj]
+  learning_rate: 1.0e-4
+  epochs: 2
+  per_device_batch_size: 2
+  grad_accum: 8
+  max_len: 3072
+  gradient_checkpointing: true
+  warmup_ratio: 0.03
+  lr_scheduler: cosine
+  weight_decay: 0.0
+  bf16: true
+  max_steps: -1
+
+eval:
+  backend: vllm                   # vllm 0.10.2 + cu126 torch in .venv-vllm (verified on the 12.7 driver)
+  hf_batch_size: 32
+  markers: reflection_restart
+  sets:
+    gsm8k_test: {file: eval_gsm8k_test.jsonl, max_new_tokens: 6144}
+    math500:    {file: eval_math500.jsonl,    max_new_tokens: 6144}
+
+pilot:
+  max_truncation_rate: 0.20
+  base_model_math500_accuracy: null   # fill in from a base-model eval before judging the pilot
+
+analysis:
+  n_boot: 2000
+  boot_seed: 12345
+  f_test_alpha: 0.05
+  min_cost_range_rel: 0.05
+  ridge_alphas: [0.01, 0.1, 1.0, 10.0, 100.0]
+  heuristic_share_stop: 0.80
+  heuristic_share_go: 0.60

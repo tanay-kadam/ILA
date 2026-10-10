@@ -1,0 +1,11 @@
+# Step 2: same experiment as gate0.yaml, but every style phrase is drawn from a pool of
+# paraphrases, so no fixed wording identifies a style. Same model, questions, seeds, and
+# hyperparameters; only the surface wording of the revisiting/elaboration text changes.
+# Decision rules are unchanged from gate0.yaml.
+base: gate0.yaml
+experiment: gate0_para
+data_dir: data/gate0_para
+results_dir: results/gate0_para
+
+data:
+  paraphrase: true

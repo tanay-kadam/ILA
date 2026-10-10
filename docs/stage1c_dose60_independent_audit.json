@@ -1,0 +1,1725 @@
+{
+  "status": "PASS",
+  "failures": [],
+  "baseline": {
+    "gsm8k_test": {
+      "accuracy": 0.91,
+      "truncation": 0
+    },
+    "math500": {
+      "accuracy": 0.722,
+      "truncation": 0.01
+    }
+  },
+  "arm_means": {
+    "armA_high": {
+      "mean_tokens": 4210.1613333333335,
+      "accuracy": 0.3516666666666667,
+      "truncation_rate": 0.629,
+      "likely_loop_rate": 0.622,
+      "first_box_correct_rate": 0.3486666666666667,
+      "last_complete_box_correct_rate": 0.35233333333333333
+    },
+    "armA_low": {
+      "mean_tokens": 2802.1793333333335,
+      "accuracy": 0.578,
+      "truncation_rate": 0.353,
+      "likely_loop_rate": 0.34400000000000003,
+      "first_box_correct_rate": 0.574,
+      "last_complete_box_correct_rate": 0.578
+    },
+    "armA_random": {
+      "mean_tokens": 3553.2076666666667,
+      "accuracy": 0.45966666666666667,
+      "truncation_rate": 0.49766666666666665,
+      "likely_loop_rate": 0.48933333333333334,
+      "first_box_correct_rate": 0.45366666666666666,
+      "last_complete_box_correct_rate": 0.45966666666666667
+    }
+  },
+  "gate_recomputation": {
+    "armA_high": {
+      "delta_tokens": 656.9536666666668,
+      "preferred": "armA_random",
+      "accuracy_loss": -0.10799999999999998,
+      "accuracy_pass": true,
+      "max_truncation": 0.629,
+      "truncation_pass": false
+    },
+    "armA_low": {
+      "delta_tokens": -751.0283333333332,
+      "preferred": "armA_low",
+      "accuracy_loss": -0.11833333333333329,
+      "accuracy_pass": true,
+      "max_truncation": 0.49766666666666665,
+      "truncation_pass": false
+    }
+  },
+  "runs": {
+    "armA_high/seed0": {
+      "gsm8k_test": {
+        "n": 500,
+        "accuracy": 0.416,
+        "truncation_rate": 0.576,
+        "mean_tokens": 3858.566,
+        "median_tokens": 6144.0,
+        "p90_tokens": 6144,
+        "correct_rate": 0.416,
+        "truncated_rate": 0.576,
+        "likely_loop_rate": 0.576,
+        "first_box_correct_rate": 0.412,
+        "last_complete_box_correct_rate": 0.416,
+        "correct_first_but_recorded_wrong_rate": 0.0,
+        "last_complete_correct_but_recorded_wrong_rate": 0.0,
+        "no_complete_box_rate": 0.57,
+        "truncated_loop_rate": 0.576,
+        "accuracy_drop_from_base": 0.49400000000000005
+      },
+      "math500": {
+        "n": 500,
+        "accuracy": 0.264,
+        "truncation_rate": 0.718,
+        "mean_tokens": 4741.742,
+        "median_tokens": 6144.0,
+        "p90_tokens": 6144,
+        "correct_rate": 0.264,
+        "truncated_rate": 0.718,
+        "likely_loop_rate": 0.702,
+        "first_box_correct_rate": 0.262,
+        "last_complete_box_correct_rate": 0.264,
+        "correct_first_but_recorded_wrong_rate": 0.0,
+        "last_complete_correct_but_recorded_wrong_rate": 0.0,
+        "no_complete_box_rate": 0.702,
+        "truncated_loop_rate": 0.702,
+        "accuracy_drop_from_base": 0.45799999999999996
+      }
+    },
+    "armA_high/seed1": {
+      "gsm8k_test": {
+        "n": 500,
+        "accuracy": 0.456,
+        "truncation_rate": 0.532,
+        "mean_tokens": 3602.164,
+        "median_tokens": 6144.0,
+        "p90_tokens": 6144,
+        "correct_rate": 0.456,
+        "truncated_rate": 0.532,
+        "likely_loop_rate": 0.532,
+        "first_box_correct_rate": 0.454,
+        "last_complete_box_correct_rate": 0.456,
+        "correct_first_but_recorded_wrong_rate": 0.0,
+        "last_complete_correct_but_recorded_wrong_rate": 0.0,
+        "no_complete_box_rate": 0.526,
+        "truncated_loop_rate": 0.532,
+        "accuracy_drop_from_base": 0.454
+      },
+      "math500": {
+        "n": 500,
+        "accuracy": 0.3,
+        "truncation_rate": 0.66,
+        "mean_tokens": 4474.826,
+        "median_tokens": 6144.0,
+        "p90_tokens": 6144,
+        "correct_rate": 0.3,
+        "truncated_rate": 0.66,
+        "likely_loop_rate": 0.648,
+        "first_box_correct_rate": 0.296,
+        "last_complete_box_correct_rate": 0.302,
+        "correct_first_but_recorded_wrong_rate": 0.002,
+        "last_complete_correct_but_recorded_wrong_rate": 0.002,
+        "no_complete_box_rate": 0.64,
+        "truncated_loop_rate": 0.648,
+        "accuracy_drop_from_base": 0.422
+      }
+    },
+    "armA_high/seed2": {
+      "gsm8k_test": {
+        "n": 500,
+        "accuracy": 0.414,
+        "truncation_rate": 0.578,
+        "mean_tokens": 3875.362,
+        "median_tokens": 6144.0,
+        "p90_tokens": 6144,
+        "correct_rate": 0.414,
+        "truncated_rate": 0.578,
+        "likely_loop_rate": 0.578,
+        "first_box_correct_rate": 0.416,
+        "last_complete_box_correct_rate": 0.416,
+        "correct_first_but_recorded_wrong_rate": 0.004,
+        "last_complete_correct_but_recorded_wrong_rate": 0.002,
+        "no_complete_box_rate": 0.568,
+        "truncated_loop_rate": 0.578,
+        "accuracy_drop_from_base": 0.49600000000000005
+      },
+      "math500": {
+        "n": 500,
+        "accuracy": 0.26,
+        "truncation_rate": 0.71,
+        "mean_tokens": 4708.308,
+        "median_tokens": 6144.0,
+        "p90_tokens": 6144,
+        "correct_rate": 0.26,
+        "truncated_rate": 0.71,
+        "likely_loop_rate": 0.696,
+        "first_box_correct_rate": 0.252,
+        "last_complete_box_correct_rate": 0.26,
+        "correct_first_but_recorded_wrong_rate": 0.0,
+        "last_complete_correct_but_recorded_wrong_rate": 0.0,
+        "no_complete_box_rate": 0.688,
+        "truncated_loop_rate": 0.696,
+        "accuracy_drop_from_base": 0.46199999999999997
+      }
+    },
+    "armA_low/seed0": {
+      "gsm8k_test": {
+        "n": 500,
+        "accuracy": 0.7,
+        "truncation_rate": 0.256,
+        "mean_tokens": 2152.172,
+        "median_tokens": 848.5,
+        "p90_tokens": 6144,
+        "correct_rate": 0.7,
+        "truncated_rate": 0.256,
+        "likely_loop_rate": 0.256,
+        "first_box_correct_rate": 0.698,
+        "last_complete_box_correct_rate": 0.7,
+        "correct_first_but_recorded_wrong_rate": 0.0,
+        "last_complete_correct_but_recorded_wrong_rate": 0.0,
+        "no_complete_box_rate": 0.254,
+        "truncated_loop_rate": 0.256,
+        "accuracy_drop_from_base": 0.21000000000000008
+      },
+      "math500": {
+        "n": 500,
+        "accuracy": 0.408,
+        "truncation_rate": 0.5,
+        "mean_tokens": 3727.238,
+        "median_tokens": 4922.5,
+        "p90_tokens": 6144,
+        "correct_rate": 0.408,
+        "truncated_rate": 0.5,
+        "likely_loop_rate": 0.484,
+        "first_box_correct_rate": 0.408,
+        "last_complete_box_correct_rate": 0.408,
+        "correct_first_but_recorded_wrong_rate": 0.0,
+        "last_complete_correct_but_recorded_wrong_rate": 0.0,
+        "no_complete_box_rate": 0.494,
+        "truncated_loop_rate": 0.482,
+        "accuracy_drop_from_base": 0.314
+      }
+    },
+    "armA_low/seed1": {
+      "gsm8k_test": {
+        "n": 500,
+        "accuracy": 0.73,
+        "truncation_rate": 0.228,
+        "mean_tokens": 2022.298,
+        "median_tokens": 875.5,
+        "p90_tokens": 6144,
+        "correct_rate": 0.73,
+        "truncated_rate": 0.228,
+        "likely_loop_rate": 0.228,
+        "first_box_correct_rate": 0.722,
+        "last_complete_box_correct_rate": 0.73,
+        "correct_first_but_recorded_wrong_rate": 0.0,
+        "last_complete_correct_but_recorded_wrong_rate": 0.0,
+        "no_complete_box_rate": 0.228,
+        "truncated_loop_rate": 0.228,
+        "accuracy_drop_from_base": 0.18000000000000005
+      },
+      "math500": {
+        "n": 500,
+        "accuracy": 0.44,
+        "truncation_rate": 0.478,
+        "mean_tokens": 3587.444,
+        "median_tokens": 2462.5,
+        "p90_tokens": 6144,
+        "correct_rate": 0.44,
+        "truncated_rate": 0.478,
+        "likely_loop_rate": 0.458,
+        "first_box_correct_rate": 0.438,
+        "last_complete_box_correct_rate": 0.44,
+        "correct_first_but_recorded_wrong_rate": 0.002,
+        "last_complete_correct_but_recorded_wrong_rate": 0.0,
+        "no_complete_box_rate": 0.478,
+        "truncated_loop_rate": 0.454,
+        "accuracy_drop_from_base": 0.282
+      }
+    },
+    "armA_low/seed2": {
+      "gsm8k_test": {
+        "n": 500,
+        "accuracy": 0.746,
+        "truncation_rate": 0.202,
+        "mean_tokens": 1858.696,
+        "median_tokens": 809.0,
+        "p90_tokens": 6144,
+        "correct_rate": 0.746,
+        "truncated_rate": 0.202,
+        "likely_loop_rate": 0.202,
+        "first_box_correct_rate": 0.742,
+        "last_complete_box_correct_rate": 0.746,
+        "correct_first_but_recorded_wrong_rate": 0.0,
+        "last_complete_correct_but_recorded_wrong_rate": 0.0,
+        "no_complete_box_rate": 0.2,
+        "truncated_loop_rate": 0.202,
+        "accuracy_drop_from_base": 0.16400000000000003
+      },
+      "math500": {
+        "n": 500,
+        "accuracy": 0.444,
+        "truncation_rate": 0.454,
+        "mean_tokens": 3465.228,
+        "median_tokens": 2154.0,
+        "p90_tokens": 6144,
+        "correct_rate": 0.444,
+        "truncated_rate": 0.454,
+        "likely_loop_rate": 0.436,
+        "first_box_correct_rate": 0.436,
+        "last_complete_box_correct_rate": 0.444,
+        "correct_first_but_recorded_wrong_rate": 0.0,
+        "last_complete_correct_but_recorded_wrong_rate": 0.0,
+        "no_complete_box_rate": 0.452,
+        "truncated_loop_rate": 0.434,
+        "accuracy_drop_from_base": 0.27799999999999997
+      }
+    },
+    "armA_random/seed0": {
+      "gsm8k_test": {
+        "n": 500,
+        "accuracy": 0.536,
+        "truncation_rate": 0.45,
+        "mean_tokens": 3202.094,
+        "median_tokens": 1073.0,
+        "p90_tokens": 6144,
+        "correct_rate": 0.536,
+        "truncated_rate": 0.45,
+        "likely_loop_rate": 0.452,
+        "first_box_correct_rate": 0.53,
+        "last_complete_box_correct_rate": 0.536,
+        "correct_first_but_recorded_wrong_rate": 0.0,
+        "last_complete_correct_but_recorded_wrong_rate": 0.0,
+        "no_complete_box_rate": 0.444,
+        "truncated_loop_rate": 0.45,
+        "accuracy_drop_from_base": 0.374
+      },
+      "math500": {
+        "n": 500,
+        "accuracy": 0.324,
+        "truncation_rate": 0.624,
+        "mean_tokens": 4304.614,
+        "median_tokens": 6144.0,
+        "p90_tokens": 6144,
+        "correct_rate": 0.324,
+        "truncated_rate": 0.624,
+        "likely_loop_rate": 0.608,
+        "first_box_correct_rate": 0.314,
+        "last_complete_box_correct_rate": 0.324,
+        "correct_first_but_recorded_wrong_rate": 0.0,
+        "last_complete_correct_but_recorded_wrong_rate": 0.0,
+        "no_complete_box_rate": 0.616,
+        "truncated_loop_rate": 0.608,
+        "accuracy_drop_from_base": 0.39799999999999996
+      }
+    },
+    "armA_random/seed1": {
+      "gsm8k_test": {
+        "n": 500,
+        "accuracy": 0.604,
+        "truncation_rate": 0.382,
+        "mean_tokens": 2831.796,
+        "median_tokens": 932.0,
+        "p90_tokens": 6144,
+        "correct_rate": 0.604,
+        "truncated_rate": 0.382,
+        "likely_loop_rate": 0.382,
+        "first_box_correct_rate": 0.602,
+        "last_complete_box_correct_rate": 0.604,
+        "correct_first_but_recorded_wrong_rate": 0.0,
+        "last_complete_correct_but_recorded_wrong_rate": 0.0,
+        "no_complete_box_rate": 0.378,
+        "truncated_loop_rate": 0.382,
+        "accuracy_drop_from_base": 0.30600000000000005
+      },
+      "math500": {
+        "n": 500,
+        "accuracy": 0.338,
+        "truncation_rate": 0.59,
+        "mean_tokens": 4160.332,
+        "median_tokens": 6144.0,
+        "p90_tokens": 6144,
+        "correct_rate": 0.338,
+        "truncated_rate": 0.59,
+        "likely_loop_rate": 0.576,
+        "first_box_correct_rate": 0.336,
+        "last_complete_box_correct_rate": 0.338,
+        "correct_first_but_recorded_wrong_rate": 0.0,
+        "last_complete_correct_but_recorded_wrong_rate": 0.0,
+        "no_complete_box_rate": 0.584,
+        "truncated_loop_rate": 0.574,
+        "accuracy_drop_from_base": 0.38399999999999995
+      }
+    },
+    "armA_random/seed2": {
+      "gsm8k_test": {
+        "n": 500,
+        "accuracy": 0.608,
+        "truncation_rate": 0.356,
+        "mean_tokens": 2670.558,
+        "median_tokens": 876.0,
+        "p90_tokens": 6144,
+        "correct_rate": 0.608,
+        "truncated_rate": 0.356,
+        "likely_loop_rate": 0.356,
+        "first_box_correct_rate": 0.604,
+        "last_complete_box_correct_rate": 0.608,
+        "correct_first_but_recorded_wrong_rate": 0.0,
+        "last_complete_correct_but_recorded_wrong_rate": 0.0,
+        "no_complete_box_rate": 0.354,
+        "truncated_loop_rate": 0.356,
+        "accuracy_drop_from_base": 0.30200000000000005
+      },
+      "math500": {
+        "n": 500,
+        "accuracy": 0.348,
+        "truncation_rate": 0.584,
+        "mean_tokens": 4149.852,
+        "median_tokens": 6144.0,
+        "p90_tokens": 6144,
+        "correct_rate": 0.348,
+        "truncated_rate": 0.584,
+        "likely_loop_rate": 0.562,
+        "first_box_correct_rate": 0.336,
+        "last_complete_box_correct_rate": 0.348,
+        "correct_first_but_recorded_wrong_rate": 0.0,
+        "last_complete_correct_but_recorded_wrong_rate": 0.0,
+        "no_complete_box_rate": 0.572,
+        "truncated_loop_rate": 0.56,
+        "accuracy_drop_from_base": 0.374
+      }
+    }
+  },
+  "provenance": {
+    "armA_high/seed0": {
+      "source": "results/stage1c_dose60/armA_high/seed0",
+      "adapter": "results/stage1c_dose60/armA_high/seed0/adapter",
+      "actual_source_steps": 60,
+      "train_file": "data/stage1/train_armA_high.jsonl",
+      "data_sha256": "4e00d21174622dba90f3f84a3b1b101ccc82c7b275ce287c448352ba3140a1f5",
+      "n_train": 3676,
+      "versions": {
+        "python": "3.12.14",
+        "torch": "2.14.1+cu126",
+        "transformers": "5.18.0"
+      },
+      "logs_through60": {
+        "10": {
+          "loss": 0.8240681648254394,
+          "grad_norm": 0.5488054752349854,
+          "learning_rate": 9.998015453460651e-06
+        },
+        "20": {
+          "loss": 0.7310225009918213,
+          "grad_norm": 0.303487628698349,
+          "learning_rate": 9.928721598423125e-06
+        },
+        "30": {
+          "loss": 0.660823917388916,
+          "grad_norm": 0.2571834325790405,
+          "learning_rate": 9.761770174399943e-06
+        },
+        "40": {
+          "loss": 0.6381582736968994,
+          "grad_norm": 0.21093817055225372,
+          "learning_rate": 9.500469152815987e-06
+        },
+        "50": {
+          "loss": 0.6162107944488525,
+          "grad_norm": 0.1955515295267105,
+          "learning_rate": 9.149995945710424e-06
+        },
+        "60": {
+          "loss": 0.5904471397399902,
+          "grad_norm": 0.1940818876028061,
+          "learning_rate": 8.717294820621407e-06
+        }
+      },
+      "train_config": {
+        "method": "lora",
+        "lora_r": 64,
+        "lora_alpha": 128,
+        "lora_dropout": 0.05,
+        "target_modules": [
+          "q_proj",
+          "k_proj",
+          "v_proj",
+          "o_proj",
+          "gate_proj",
+          "up_proj",
+          "down_proj"
+        ],
+        "learning_rate": 1e-05,
+        "epochs": 2,
+        "per_device_batch_size": 2,
+        "grad_accum": 8,
+        "max_len": 3072,
+        "gradient_checkpointing": true,
+        "warmup_ratio": 0.03,
+        "lr_scheduler": "cosine",
+        "weight_decay": 0.0,
+        "bf16": true,
+        "max_steps": 230,
+        "snapshot_steps": [],
+        "stop_after_steps": 60,
+        "save_merged_model": false
+      },
+      "adapter_config": {
+        "alora_invocation_tokens": null,
+        "alpha_pattern": {},
+        "arrow_config": null,
+        "auto_mapping": null,
+        "base_model_name_or_path": "Qwen/Qwen2.5-7B-Instruct",
+        "bias": "none",
+        "corda_config": null,
+        "ensure_weight_tying": false,
+        "eva_config": null,
+        "exclude_modules": null,
+        "fan_in_fan_out": false,
+        "inference_mode": true,
+        "init_lora_weights": true,
+        "kasa_config": null,
+        "layer_replication": null,
+        "layers_pattern": null,
+        "layers_to_transform": null,
+        "loftq_config": {},
+        "lora_alpha": 128,
+        "lora_bias": false,
+        "lora_dropout": 0.05,
+        "lora_ga_config": null,
+        "megatron_config": null,
+        "megatron_core": "megatron.core",
+        "modules_to_save": null,
+        "monteclora_config": null,
+        "peft_type": "LORA",
+        "peft_version": "0.21.2",
+        "qalora_group_size": 16,
+        "r": 64,
+        "rank_pattern": {},
+        "revision": null,
+        "target_modules": [
+          "up_proj",
+          "k_proj",
+          "gate_proj",
+          "q_proj",
+          "v_proj",
+          "o_proj",
+          "down_proj"
+        ],
+        "target_parameters": null,
+        "task_type": "CAUSAL_LM",
+        "trainable_token_indices": null,
+        "use_bdlora": null,
+        "use_dora": false,
+        "use_qalora": false,
+        "use_rslora": false,
+        "velora_config": null
+      }
+    },
+    "armA_high/seed1": {
+      "source": "results/stage1c_dose60/armA_high/seed1",
+      "adapter": "results/stage1c_dose60/armA_high/seed1/adapter",
+      "actual_source_steps": 60,
+      "train_file": "data/stage1/train_armA_high.jsonl",
+      "data_sha256": "4e00d21174622dba90f3f84a3b1b101ccc82c7b275ce287c448352ba3140a1f5",
+      "n_train": 3676,
+      "versions": {
+        "python": "3.12.14",
+        "torch": "2.14.1+cu126",
+        "transformers": "5.18.0"
+      },
+      "logs_through60": {
+        "10": {
+          "loss": 0.8545402526855469,
+          "grad_norm": 0.6230881810188293,
+          "learning_rate": 9.998015453460651e-06
+        },
+        "20": {
+          "loss": 0.7421081066131592,
+          "grad_norm": 0.38867202401161194,
+          "learning_rate": 9.928721598423125e-06
+        },
+        "30": {
+          "loss": 0.6962973117828369,
+          "grad_norm": 0.26115143299102783,
+          "learning_rate": 9.761770174399943e-06
+        },
+        "40": {
+          "loss": 0.6549597263336182,
+          "grad_norm": 0.2070196121931076,
+          "learning_rate": 9.500469152815987e-06
+        },
+        "50": {
+          "loss": 0.6047616958618164,
+          "grad_norm": 0.19454236328601837,
+          "learning_rate": 9.149995945710424e-06
+        },
+        "60": {
+          "loss": 0.6030924797058106,
+          "grad_norm": 0.19678208231925964,
+          "learning_rate": 8.717294820621407e-06
+        }
+      },
+      "train_config": {
+        "method": "lora",
+        "lora_r": 64,
+        "lora_alpha": 128,
+        "lora_dropout": 0.05,
+        "target_modules": [
+          "q_proj",
+          "k_proj",
+          "v_proj",
+          "o_proj",
+          "gate_proj",
+          "up_proj",
+          "down_proj"
+        ],
+        "learning_rate": 1e-05,
+        "epochs": 2,
+        "per_device_batch_size": 2,
+        "grad_accum": 8,
+        "max_len": 3072,
+        "gradient_checkpointing": true,
+        "warmup_ratio": 0.03,
+        "lr_scheduler": "cosine",
+        "weight_decay": 0.0,
+        "bf16": true,
+        "max_steps": 230,
+        "snapshot_steps": [],
+        "stop_after_steps": 60,
+        "save_merged_model": false
+      },
+      "adapter_config": {
+        "alora_invocation_tokens": null,
+        "alpha_pattern": {},
+        "arrow_config": null,
+        "auto_mapping": null,
+        "base_model_name_or_path": "Qwen/Qwen2.5-7B-Instruct",
+        "bias": "none",
+        "corda_config": null,
+        "ensure_weight_tying": false,
+        "eva_config": null,
+        "exclude_modules": null,
+        "fan_in_fan_out": false,
+        "inference_mode": true,
+        "init_lora_weights": true,
+        "kasa_config": null,
+        "layer_replication": null,
+        "layers_pattern": null,
+        "layers_to_transform": null,
+        "loftq_config": {},
+        "lora_alpha": 128,
+        "lora_bias": false,
+        "lora_dropout": 0.05,
+        "lora_ga_config": null,
+        "megatron_config": null,
+        "megatron_core": "megatron.core",
+        "modules_to_save": null,
+        "monteclora_config": null,
+        "peft_type": "LORA",
+        "peft_version": "0.21.2",
+        "qalora_group_size": 16,
+        "r": 64,
+        "rank_pattern": {},
+        "revision": null,
+        "target_modules": [
+          "up_proj",
+          "gate_proj",
+          "o_proj",
+          "down_proj",
+          "v_proj",
+          "k_proj",
+          "q_proj"
+        ],
+        "target_parameters": null,
+        "task_type": "CAUSAL_LM",
+        "trainable_token_indices": null,
+        "use_bdlora": null,
+        "use_dora": false,
+        "use_qalora": false,
+        "use_rslora": false,
+        "velora_config": null
+      }
+    },
+    "armA_high/seed2": {
+      "source": "results/stage1c_dose60/armA_high/seed2",
+      "adapter": "results/stage1c_dose60/armA_high/seed2/adapter",
+      "actual_source_steps": 60,
+      "train_file": "data/stage1/train_armA_high.jsonl",
+      "data_sha256": "4e00d21174622dba90f3f84a3b1b101ccc82c7b275ce287c448352ba3140a1f5",
+      "n_train": 3676,
+      "versions": {
+        "python": "3.12.14",
+        "torch": "2.14.1+cu126",
+        "transformers": "5.18.0"
+      },
+      "logs_through60": {
+        "10": {
+          "loss": 0.8401641845703125,
+          "grad_norm": 0.6001691222190857,
+          "learning_rate": 9.998015453460651e-06
+        },
+        "20": {
+          "loss": 0.7203018188476562,
+          "grad_norm": 0.3392118215560913,
+          "learning_rate": 9.928721598423125e-06
+        },
+        "30": {
+          "loss": 0.6814267635345459,
+          "grad_norm": 0.22886398434638977,
+          "learning_rate": 9.761770174399943e-06
+        },
+        "40": {
+          "loss": 0.6204155445098877,
+          "grad_norm": 0.2055690735578537,
+          "learning_rate": 9.500469152815987e-06
+        },
+        "50": {
+          "loss": 0.6049673557281494,
+          "grad_norm": 0.19299361109733582,
+          "learning_rate": 9.149995945710424e-06
+        },
+        "60": {
+          "loss": 0.5795785427093506,
+          "grad_norm": 0.20337922871112823,
+          "learning_rate": 8.717294820621407e-06
+        }
+      },
+      "train_config": {
+        "method": "lora",
+        "lora_r": 64,
+        "lora_alpha": 128,
+        "lora_dropout": 0.05,
+        "target_modules": [
+          "q_proj",
+          "k_proj",
+          "v_proj",
+          "o_proj",
+          "gate_proj",
+          "up_proj",
+          "down_proj"
+        ],
+        "learning_rate": 1e-05,
+        "epochs": 2,
+        "per_device_batch_size": 2,
+        "grad_accum": 8,
+        "max_len": 3072,
+        "gradient_checkpointing": true,
+        "warmup_ratio": 0.03,
+        "lr_scheduler": "cosine",
+        "weight_decay": 0.0,
+        "bf16": true,
+        "max_steps": 230,
+        "snapshot_steps": [],
+        "stop_after_steps": 60,
+        "save_merged_model": false
+      },
+      "adapter_config": {
+        "alora_invocation_tokens": null,
+        "alpha_pattern": {},
+        "arrow_config": null,
+        "auto_mapping": null,
+        "base_model_name_or_path": "Qwen/Qwen2.5-7B-Instruct",
+        "bias": "none",
+        "corda_config": null,
+        "ensure_weight_tying": false,
+        "eva_config": null,
+        "exclude_modules": null,
+        "fan_in_fan_out": false,
+        "inference_mode": true,
+        "init_lora_weights": true,
+        "kasa_config": null,
+        "layer_replication": null,
+        "layers_pattern": null,
+        "layers_to_transform": null,
+        "loftq_config": {},
+        "lora_alpha": 128,
+        "lora_bias": false,
+        "lora_dropout": 0.05,
+        "lora_ga_config": null,
+        "megatron_config": null,
+        "megatron_core": "megatron.core",
+        "modules_to_save": null,
+        "monteclora_config": null,
+        "peft_type": "LORA",
+        "peft_version": "0.21.2",
+        "qalora_group_size": 16,
+        "r": 64,
+        "rank_pattern": {},
+        "revision": null,
+        "target_modules": [
+          "gate_proj",
+          "down_proj",
+          "up_proj",
+          "o_proj",
+          "v_proj",
+          "q_proj",
+          "k_proj"
+        ],
+        "target_parameters": null,
+        "task_type": "CAUSAL_LM",
+        "trainable_token_indices": null,
+        "use_bdlora": null,
+        "use_dora": false,
+        "use_qalora": false,
+        "use_rslora": false,
+        "velora_config": null
+      }
+    },
+    "armA_low/seed0": {
+      "source": "results/stage1c_dose60/armA_low/seed0",
+      "adapter": "results/stage1c_dose60/armA_low/seed0/adapter",
+      "actual_source_steps": 60,
+      "train_file": "data/stage1/train_armA_low.jsonl",
+      "data_sha256": "239aa6bdb9d0cc9582411e20155ee393ac967395fb7e5b544631d516daa11475",
+      "n_train": 3676,
+      "versions": {
+        "python": "3.12.14",
+        "torch": "2.14.1+cu126",
+        "transformers": "5.18.0"
+      },
+      "logs_through60": {
+        "10": {
+          "loss": 0.6534237861633301,
+          "grad_norm": 0.44207119941711426,
+          "learning_rate": 9.998015453460651e-06
+        },
+        "20": {
+          "loss": 0.5778164386749267,
+          "grad_norm": 0.25765594840049744,
+          "learning_rate": 9.928721598423125e-06
+        },
+        "30": {
+          "loss": 0.5240888118743896,
+          "grad_norm": 0.1967504769563675,
+          "learning_rate": 9.761770174399943e-06
+        },
+        "40": {
+          "loss": 0.48297991752624514,
+          "grad_norm": 0.1845911592245102,
+          "learning_rate": 9.500469152815987e-06
+        },
+        "50": {
+          "loss": 0.47028751373291017,
+          "grad_norm": 0.16658423840999603,
+          "learning_rate": 9.149995945710424e-06
+        },
+        "60": {
+          "loss": 0.46078171730041506,
+          "grad_norm": 0.1618904024362564,
+          "learning_rate": 8.717294820621407e-06
+        }
+      },
+      "train_config": {
+        "method": "lora",
+        "lora_r": 64,
+        "lora_alpha": 128,
+        "lora_dropout": 0.05,
+        "target_modules": [
+          "q_proj",
+          "k_proj",
+          "v_proj",
+          "o_proj",
+          "gate_proj",
+          "up_proj",
+          "down_proj"
+        ],
+        "learning_rate": 1e-05,
+        "epochs": 2,
+        "per_device_batch_size": 2,
+        "grad_accum": 8,
+        "max_len": 3072,
+        "gradient_checkpointing": true,
+        "warmup_ratio": 0.03,
+        "lr_scheduler": "cosine",
+        "weight_decay": 0.0,
+        "bf16": true,
+        "max_steps": 230,
+        "snapshot_steps": [],
+        "stop_after_steps": 60,
+        "save_merged_model": false
+      },
+      "adapter_config": {
+        "alora_invocation_tokens": null,
+        "alpha_pattern": {},
+        "arrow_config": null,
+        "auto_mapping": null,
+        "base_model_name_or_path": "Qwen/Qwen2.5-7B-Instruct",
+        "bias": "none",
+        "corda_config": null,
+        "ensure_weight_tying": false,
+        "eva_config": null,
+        "exclude_modules": null,
+        "fan_in_fan_out": false,
+        "inference_mode": true,
+        "init_lora_weights": true,
+        "kasa_config": null,
+        "layer_replication": null,
+        "layers_pattern": null,
+        "layers_to_transform": null,
+        "loftq_config": {},
+        "lora_alpha": 128,
+        "lora_bias": false,
+        "lora_dropout": 0.05,
+        "lora_ga_config": null,
+        "megatron_config": null,
+        "megatron_core": "megatron.core",
+        "modules_to_save": null,
+        "monteclora_config": null,
+        "peft_type": "LORA",
+        "peft_version": "0.21.2",
+        "qalora_group_size": 16,
+        "r": 64,
+        "rank_pattern": {},
+        "revision": null,
+        "target_modules": [
+          "q_proj",
+          "o_proj",
+          "k_proj",
+          "gate_proj",
+          "up_proj",
+          "down_proj",
+          "v_proj"
+        ],
+        "target_parameters": null,
+        "task_type": "CAUSAL_LM",
+        "trainable_token_indices": null,
+        "use_bdlora": null,
+        "use_dora": false,
+        "use_qalora": false,
+        "use_rslora": false,
+        "velora_config": null
+      }
+    },
+    "armA_low/seed1": {
+      "source": "results/stage1c_dose60/armA_low/seed1",
+      "adapter": "results/stage1c_dose60/armA_low/seed1/adapter",
+      "actual_source_steps": 60,
+      "train_file": "data/stage1/train_armA_low.jsonl",
+      "data_sha256": "239aa6bdb9d0cc9582411e20155ee393ac967395fb7e5b544631d516daa11475",
+      "n_train": 3676,
+      "versions": {
+        "python": "3.12.14",
+        "torch": "2.14.1+cu126",
+        "transformers": "5.18.0"
+      },
+      "logs_through60": {
+        "10": {
+          "loss": 0.6486868858337402,
+          "grad_norm": 0.443409264087677,
+          "learning_rate": 9.998015453460651e-06
+        },
+        "20": {
+          "loss": 0.56563401222229,
+          "grad_norm": 0.273690789937973,
+          "learning_rate": 9.928721598423125e-06
+        },
+        "30": {
+          "loss": 0.5220914363861084,
+          "grad_norm": 0.19475944340229034,
+          "learning_rate": 9.761770174399943e-06
+        },
+        "40": {
+          "loss": 0.491395902633667,
+          "grad_norm": 0.18405646085739136,
+          "learning_rate": 9.500469152815987e-06
+        },
+        "50": {
+          "loss": 0.4541782379150391,
+          "grad_norm": 0.16770480573177338,
+          "learning_rate": 9.149995945710424e-06
+        },
+        "60": {
+          "loss": 0.4461218357086182,
+          "grad_norm": 0.16434012353420258,
+          "learning_rate": 8.717294820621407e-06
+        }
+      },
+      "train_config": {
+        "method": "lora",
+        "lora_r": 64,
+        "lora_alpha": 128,
+        "lora_dropout": 0.05,
+        "target_modules": [
+          "q_proj",
+          "k_proj",
+          "v_proj",
+          "o_proj",
+          "gate_proj",
+          "up_proj",
+          "down_proj"
+        ],
+        "learning_rate": 1e-05,
+        "epochs": 2,
+        "per_device_batch_size": 2,
+        "grad_accum": 8,
+        "max_len": 3072,
+        "gradient_checkpointing": true,
+        "warmup_ratio": 0.03,
+        "lr_scheduler": "cosine",
+        "weight_decay": 0.0,
+        "bf16": true,
+        "max_steps": 230,
+        "snapshot_steps": [],
+        "stop_after_steps": 60,
+        "save_merged_model": false
+      },
+      "adapter_config": {
+        "alora_invocation_tokens": null,
+        "alpha_pattern": {},
+        "arrow_config": null,
+        "auto_mapping": null,
+        "base_model_name_or_path": "Qwen/Qwen2.5-7B-Instruct",
+        "bias": "none",
+        "corda_config": null,
+        "ensure_weight_tying": false,
+        "eva_config": null,
+        "exclude_modules": null,
+        "fan_in_fan_out": false,
+        "inference_mode": true,
+        "init_lora_weights": true,
+        "kasa_config": null,
+        "layer_replication": null,
+        "layers_pattern": null,
+        "layers_to_transform": null,
+        "loftq_config": {},
+        "lora_alpha": 128,
+        "lora_bias": false,
+        "lora_dropout": 0.05,
+        "lora_ga_config": null,
+        "megatron_config": null,
+        "megatron_core": "megatron.core",
+        "modules_to_save": null,
+        "monteclora_config": null,
+        "peft_type": "LORA",
+        "peft_version": "0.21.2",
+        "qalora_group_size": 16,
+        "r": 64,
+        "rank_pattern": {},
+        "revision": null,
+        "target_modules": [
+          "v_proj",
+          "up_proj",
+          "down_proj",
+          "q_proj",
+          "k_proj",
+          "gate_proj",
+          "o_proj"
+        ],
+        "target_parameters": null,
+        "task_type": "CAUSAL_LM",
+        "trainable_token_indices": null,
+        "use_bdlora": null,
+        "use_dora": false,
+        "use_qalora": false,
+        "use_rslora": false,
+        "velora_config": null
+      }
+    },
+    "armA_low/seed2": {
+      "source": "results/stage1c_dose60/armA_low/seed2",
+      "adapter": "results/stage1c_dose60/armA_low/seed2/adapter",
+      "actual_source_steps": 60,
+      "train_file": "data/stage1/train_armA_low.jsonl",
+      "data_sha256": "239aa6bdb9d0cc9582411e20155ee393ac967395fb7e5b544631d516daa11475",
+      "n_train": 3676,
+      "versions": {
+        "python": "3.12.14",
+        "torch": "2.14.1+cu126",
+        "transformers": "5.18.0"
+      },
+      "logs_through60": {
+        "10": {
+          "loss": 0.646245288848877,
+          "grad_norm": 0.47793424129486084,
+          "learning_rate": 9.998015453460651e-06
+        },
+        "20": {
+          "loss": 0.564672327041626,
+          "grad_norm": 0.2667578458786011,
+          "learning_rate": 9.928721598423125e-06
+        },
+        "30": {
+          "loss": 0.5233934879302978,
+          "grad_norm": 0.204080730676651,
+          "learning_rate": 9.761770174399943e-06
+        },
+        "40": {
+          "loss": 0.48143839836120605,
+          "grad_norm": 0.18422767519950867,
+          "learning_rate": 9.500469152815987e-06
+        },
+        "50": {
+          "loss": 0.45974125862121584,
+          "grad_norm": 0.16502630710601807,
+          "learning_rate": 9.149995945710424e-06
+        },
+        "60": {
+          "loss": 0.44246687889099123,
+          "grad_norm": 0.18430398404598236,
+          "learning_rate": 8.717294820621407e-06
+        }
+      },
+      "train_config": {
+        "method": "lora",
+        "lora_r": 64,
+        "lora_alpha": 128,
+        "lora_dropout": 0.05,
+        "target_modules": [
+          "q_proj",
+          "k_proj",
+          "v_proj",
+          "o_proj",
+          "gate_proj",
+          "up_proj",
+          "down_proj"
+        ],
+        "learning_rate": 1e-05,
+        "epochs": 2,
+        "per_device_batch_size": 2,
+        "grad_accum": 8,
+        "max_len": 3072,
+        "gradient_checkpointing": true,
+        "warmup_ratio": 0.03,
+        "lr_scheduler": "cosine",
+        "weight_decay": 0.0,
+        "bf16": true,
+        "max_steps": 230,
+        "snapshot_steps": [],
+        "stop_after_steps": 60,
+        "save_merged_model": false
+      },
+      "adapter_config": {
+        "alora_invocation_tokens": null,
+        "alpha_pattern": {},
+        "arrow_config": null,
+        "auto_mapping": null,
+        "base_model_name_or_path": "Qwen/Qwen2.5-7B-Instruct",
+        "bias": "none",
+        "corda_config": null,
+        "ensure_weight_tying": false,
+        "eva_config": null,
+        "exclude_modules": null,
+        "fan_in_fan_out": false,
+        "inference_mode": true,
+        "init_lora_weights": true,
+        "kasa_config": null,
+        "layer_replication": null,
+        "layers_pattern": null,
+        "layers_to_transform": null,
+        "loftq_config": {},
+        "lora_alpha": 128,
+        "lora_bias": false,
+        "lora_dropout": 0.05,
+        "lora_ga_config": null,
+        "megatron_config": null,
+        "megatron_core": "megatron.core",
+        "modules_to_save": null,
+        "monteclora_config": null,
+        "peft_type": "LORA",
+        "peft_version": "0.21.2",
+        "qalora_group_size": 16,
+        "r": 64,
+        "rank_pattern": {},
+        "revision": null,
+        "target_modules": [
+          "down_proj",
+          "q_proj",
+          "gate_proj",
+          "k_proj",
+          "o_proj",
+          "up_proj",
+          "v_proj"
+        ],
+        "target_parameters": null,
+        "task_type": "CAUSAL_LM",
+        "trainable_token_indices": null,
+        "use_bdlora": null,
+        "use_dora": false,
+        "use_qalora": false,
+        "use_rslora": false,
+        "velora_config": null
+      }
+    },
+    "armA_random/seed0": {
+      "source": "results/stage1c_q7_lr1e5/armA_random/seed0",
+      "adapter": "results/stage1c_q7_lr1e5/armA_random/seed0/trajectory_adapters/step060",
+      "actual_source_steps": 230,
+      "train_file": "data/stage1/train_armA_random.jsonl",
+      "data_sha256": "d4a76693cbb15932690f6d8288da00e01d0081be668cfc024f431883052959fa",
+      "n_train": 3676,
+      "versions": {
+        "python": "3.12.14",
+        "torch": "2.14.1+cu126",
+        "transformers": "5.18.0"
+      },
+      "logs_through60": {
+        "10": {
+          "loss": 0.7429149627685547,
+          "grad_norm": 0.5096485614776611,
+          "learning_rate": 9.998015453460651e-06
+        },
+        "20": {
+          "loss": 0.6409892082214356,
+          "grad_norm": 0.27679991722106934,
+          "learning_rate": 9.928721598423125e-06
+        },
+        "30": {
+          "loss": 0.5947887897491455,
+          "grad_norm": 0.21126645803451538,
+          "learning_rate": 9.761770174399943e-06
+        },
+        "40": {
+          "loss": 0.5533846378326416,
+          "grad_norm": 0.2054765224456787,
+          "learning_rate": 9.500469152815987e-06
+        },
+        "50": {
+          "loss": 0.5316481113433837,
+          "grad_norm": 0.1788959950208664,
+          "learning_rate": 9.149995945710424e-06
+        },
+        "60": {
+          "loss": 0.5139554977416992,
+          "grad_norm": 0.17307837307453156,
+          "learning_rate": 8.717294820621407e-06
+        }
+      },
+      "train_config": {
+        "method": "lora",
+        "lora_r": 64,
+        "lora_alpha": 128,
+        "lora_dropout": 0.05,
+        "target_modules": [
+          "q_proj",
+          "k_proj",
+          "v_proj",
+          "o_proj",
+          "gate_proj",
+          "up_proj",
+          "down_proj"
+        ],
+        "learning_rate": 1e-05,
+        "epochs": 2,
+        "per_device_batch_size": 2,
+        "grad_accum": 8,
+        "max_len": 3072,
+        "gradient_checkpointing": true,
+        "warmup_ratio": 0.03,
+        "lr_scheduler": "cosine",
+        "weight_decay": 0.0,
+        "bf16": true,
+        "max_steps": 230,
+        "snapshot_steps": [
+          15,
+          30,
+          60,
+          115,
+          230
+        ]
+      },
+      "adapter_config": {
+        "alora_invocation_tokens": null,
+        "alpha_pattern": {},
+        "arrow_config": null,
+        "auto_mapping": null,
+        "base_model_name_or_path": "Qwen/Qwen2.5-7B-Instruct",
+        "bias": "none",
+        "corda_config": null,
+        "ensure_weight_tying": false,
+        "eva_config": null,
+        "exclude_modules": null,
+        "fan_in_fan_out": false,
+        "inference_mode": true,
+        "init_lora_weights": true,
+        "kasa_config": null,
+        "layer_replication": null,
+        "layers_pattern": null,
+        "layers_to_transform": null,
+        "loftq_config": {},
+        "lora_alpha": 128,
+        "lora_bias": false,
+        "lora_dropout": 0.05,
+        "lora_ga_config": null,
+        "megatron_config": null,
+        "megatron_core": "megatron.core",
+        "modules_to_save": null,
+        "monteclora_config": null,
+        "peft_type": "LORA",
+        "peft_version": "0.21.2",
+        "qalora_group_size": 16,
+        "r": 64,
+        "rank_pattern": {},
+        "revision": null,
+        "target_modules": [
+          "v_proj",
+          "up_proj",
+          "gate_proj",
+          "k_proj",
+          "down_proj",
+          "o_proj",
+          "q_proj"
+        ],
+        "target_parameters": null,
+        "task_type": "CAUSAL_LM",
+        "trainable_token_indices": null,
+        "use_bdlora": null,
+        "use_dora": false,
+        "use_qalora": false,
+        "use_rslora": false,
+        "velora_config": null
+      }
+    },
+    "armA_random/seed1": {
+      "source": "results/stage1c_q7_lr1e5_replfix/armA_random/seed1",
+      "adapter": "results/stage1c_q7_lr1e5_replfix/armA_random/seed1/trajectory_adapters/step060",
+      "actual_source_steps": 230,
+      "train_file": "data/stage1/train_armA_random.jsonl",
+      "data_sha256": "d4a76693cbb15932690f6d8288da00e01d0081be668cfc024f431883052959fa",
+      "n_train": 3676,
+      "versions": {
+        "python": "3.12.14",
+        "torch": "2.14.1+cu126",
+        "transformers": "5.18.0"
+      },
+      "logs_through60": {
+        "10": {
+          "loss": 0.7292542934417725,
+          "grad_norm": 0.4906397759914398,
+          "learning_rate": 9.998015453460651e-06
+        },
+        "20": {
+          "loss": 0.6582524299621582,
+          "grad_norm": 0.30171430110931396,
+          "learning_rate": 9.928721598423125e-06
+        },
+        "30": {
+          "loss": 0.6116152286529541,
+          "grad_norm": 0.2130517214536667,
+          "learning_rate": 9.761770174399943e-06
+        },
+        "40": {
+          "loss": 0.5755269050598144,
+          "grad_norm": 0.20422661304473877,
+          "learning_rate": 9.500469152815987e-06
+        },
+        "50": {
+          "loss": 0.5387916564941406,
+          "grad_norm": 0.17834754288196564,
+          "learning_rate": 9.149995945710424e-06
+        },
+        "60": {
+          "loss": 0.5075756072998047,
+          "grad_norm": 0.18606528639793396,
+          "learning_rate": 8.717294820621407e-06
+        }
+      },
+      "train_config": {
+        "method": "lora",
+        "lora_r": 64,
+        "lora_alpha": 128,
+        "lora_dropout": 0.05,
+        "target_modules": [
+          "q_proj",
+          "k_proj",
+          "v_proj",
+          "o_proj",
+          "gate_proj",
+          "up_proj",
+          "down_proj"
+        ],
+        "learning_rate": 1e-05,
+        "epochs": 2,
+        "per_device_batch_size": 2,
+        "grad_accum": 8,
+        "max_len": 3072,
+        "gradient_checkpointing": true,
+        "warmup_ratio": 0.03,
+        "lr_scheduler": "cosine",
+        "weight_decay": 0.0,
+        "bf16": true,
+        "max_steps": 230,
+        "snapshot_steps": [
+          15,
+          30,
+          60,
+          115,
+          230
+        ]
+      },
+      "adapter_config": {
+        "alora_invocation_tokens": null,
+        "alpha_pattern": {},
+        "arrow_config": null,
+        "auto_mapping": null,
+        "base_model_name_or_path": "Qwen/Qwen2.5-7B-Instruct",
+        "bias": "none",
+        "corda_config": null,
+        "ensure_weight_tying": false,
+        "eva_config": null,
+        "exclude_modules": null,
+        "fan_in_fan_out": false,
+        "inference_mode": true,
+        "init_lora_weights": true,
+        "kasa_config": null,
+        "layer_replication": null,
+        "layers_pattern": null,
+        "layers_to_transform": null,
+        "loftq_config": {},
+        "lora_alpha": 128,
+        "lora_bias": false,
+        "lora_dropout": 0.05,
+        "lora_ga_config": null,
+        "megatron_config": null,
+        "megatron_core": "megatron.core",
+        "modules_to_save": null,
+        "monteclora_config": null,
+        "peft_type": "LORA",
+        "peft_version": "0.21.2",
+        "qalora_group_size": 16,
+        "r": 64,
+        "rank_pattern": {},
+        "revision": null,
+        "target_modules": [
+          "v_proj",
+          "up_proj",
+          "q_proj",
+          "gate_proj",
+          "down_proj",
+          "k_proj",
+          "o_proj"
+        ],
+        "target_parameters": null,
+        "task_type": "CAUSAL_LM",
+        "trainable_token_indices": null,
+        "use_bdlora": null,
+        "use_dora": false,
+        "use_qalora": false,
+        "use_rslora": false,
+        "velora_config": null
+      }
+    },
+    "armA_random/seed2": {
+      "source": "results/stage1c_dose60/armA_random/seed2",
+      "adapter": "results/stage1c_dose60/armA_random/seed2/adapter",
+      "actual_source_steps": 60,
+      "train_file": "data/stage1/train_armA_random.jsonl",
+      "data_sha256": "d4a76693cbb15932690f6d8288da00e01d0081be668cfc024f431883052959fa",
+      "n_train": 3676,
+      "versions": {
+        "python": "3.12.14",
+        "torch": "2.14.1+cu126",
+        "transformers": "5.18.0"
+      },
+      "logs_through60": {
+        "10": {
+          "loss": 0.7635722160339355,
+          "grad_norm": 0.5380429029464722,
+          "learning_rate": 9.998015453460651e-06
+        },
+        "20": {
+          "loss": 0.6408204078674317,
+          "grad_norm": 0.30444398522377014,
+          "learning_rate": 9.928721598423125e-06
+        },
+        "30": {
+          "loss": 0.5936828136444092,
+          "grad_norm": 0.20895598828792572,
+          "learning_rate": 9.761770174399943e-06
+        },
+        "40": {
+          "loss": 0.5600660800933838,
+          "grad_norm": 0.21110382676124573,
+          "learning_rate": 9.500469152815987e-06
+        },
+        "50": {
+          "loss": 0.5362908363342285,
+          "grad_norm": 0.18046122789382935,
+          "learning_rate": 9.149995945710424e-06
+        },
+        "60": {
+          "loss": 0.5155639171600341,
+          "grad_norm": 0.17846500873565674,
+          "learning_rate": 8.717294820621407e-06
+        }
+      },
+      "train_config": {
+        "method": "lora",
+        "lora_r": 64,
+        "lora_alpha": 128,
+        "lora_dropout": 0.05,
+        "target_modules": [
+          "q_proj",
+          "k_proj",
+          "v_proj",
+          "o_proj",
+          "gate_proj",
+          "up_proj",
+          "down_proj"
+        ],
+        "learning_rate": 1e-05,
+        "epochs": 2,
+        "per_device_batch_size": 2,
+        "grad_accum": 8,
+        "max_len": 3072,
+        "gradient_checkpointing": true,
+        "warmup_ratio": 0.03,
+        "lr_scheduler": "cosine",
+        "weight_decay": 0.0,
+        "bf16": true,
+        "max_steps": 230,
+        "snapshot_steps": [],
+        "stop_after_steps": 60,
+        "save_merged_model": false
+      },
+      "adapter_config": {
+        "alora_invocation_tokens": null,
+        "alpha_pattern": {},
+        "arrow_config": null,
+        "auto_mapping": null,
+        "base_model_name_or_path": "Qwen/Qwen2.5-7B-Instruct",
+        "bias": "none",
+        "corda_config": null,
+        "ensure_weight_tying": false,
+        "eva_config": null,
+        "exclude_modules": null,
+        "fan_in_fan_out": false,
+        "inference_mode": true,
+        "init_lora_weights": true,
+        "kasa_config": null,
+        "layer_replication": null,
+        "layers_pattern": null,
+        "layers_to_transform": null,
+        "loftq_config": {},
+        "lora_alpha": 128,
+        "lora_bias": false,
+        "lora_dropout": 0.05,
+        "lora_ga_config": null,
+        "megatron_config": null,
+        "megatron_core": "megatron.core",
+        "modules_to_save": null,
+        "monteclora_config": null,
+        "peft_type": "LORA",
+        "peft_version": "0.21.2",
+        "qalora_group_size": 16,
+        "r": 64,
+        "rank_pattern": {},
+        "revision": null,
+        "target_modules": [
+          "q_proj",
+          "k_proj",
+          "v_proj",
+          "down_proj",
+          "gate_proj",
+          "o_proj",
+          "up_proj"
+        ],
+        "target_parameters": null,
+        "task_type": "CAUSAL_LM",
+        "trainable_token_indices": null,
+        "use_bdlora": null,
+        "use_dora": false,
+        "use_qalora": false,
+        "use_rslora": false,
+        "velora_config": null
+      }
+    }
+  },
+  "loop_examples": [
+    {
+      "run": "armA_high/seed0",
+      "eval_set": "gsm8k_test",
+      "uid": "gsm8k-test-4",
+      "tokens": 6144,
+      "first_box_correct": false,
+      "recorded_correct": false,
+      "start": "<think>\nOkay, let's see. Wendi feeds her chickens three cups of mixed feed every day, divided into three meals. So each chicken gets three cups per day. But the question is asking about the final meal of the day. Let's break it down step by step.\n\nFirst, the question states that Wendi gives her chickens 15 cups in the morning and 25 cups in the aft",
+      "end": ". So, each meal should be 3 cups / 3 meals = 1 cup per meal. But the question gives specific amounts for the first two meals, which are 15 cups and 25 cups, respectively. So, the total for the first two meals is 15 + 25 = 40 cups. But the total daily requirement is 60 cups. So, the final meal should be 60 - 40 = 20 cups. But each chicken gets 3 cups per day, divided into three meals, so each meal should be 1 cup. But the question gives specific amounts for the first two meals, so the final meal should be 20 cups.\n\nBut wait, the question says that each chicken gets three cups per day, divided into three meals. So, each meal should be 3 cups / "
+    },
+    {
+      "run": "armA_high/seed0",
+      "eval_set": "math500",
+      "uid": "math500-test/intermediate_algebra/1994.json",
+      "tokens": 6144,
+      "first_box_correct": false,
+      "recorded_correct": false,
+      "start": "<think>\nOkay, so I need to find a way to express the double sum in terms of p and q. Let me start by looking at the given definitions:\n\np = \u03a3 (1/k^2) from k=1 to infinity\nq = \u03a3 (1/k^3) from k=1 to infinity\n\nThe double sum I need to evaluate is:\n\n\u2211 (1/(j+k)^3) from j=1 to infinity, k=1 to infinity\n\nHmm, this looks like a nested sum. Let me try to br",
+      "end": " as S_k(j):\n\nS_k(j) = 1/(j+k)^3\n\nThen S_k is the sum of S_k(j) over all j from 1 to infinity. But wait, that's still a sum over j. Let me try to evaluate S_k(j). Let me denote the inner sum as S_k(j):\n\nS_k(j) = 1/(j+k)^3\n\nThen S_k is the sum of S_k(j) over all j from 1 to infinity. But wait, that's still a sum over j. Let me try to evaluate S_k(j). Let me denote the inner sum as S_k(j):\n\nS_k(j) = 1/(j+k)^3\n\nThen S_k is the sum of S_k(j) over all j from 1 to infinity. But wait, that's still a sum over j. Let me try to evaluate S_k(j). Let me denote the inner sum as S_k(j):\n\nS_k(j) = 1/(j+k)^3\n\nThen S_k is the sum of S_k(j) over all j from 1 to"
+    },
+    {
+      "run": "armA_high/seed1",
+      "eval_set": "gsm8k_test",
+      "uid": "gsm8k-test-4",
+      "tokens": 6144,
+      "first_box_correct": false,
+      "recorded_correct": false,
+      "start": "<think>\nOkay, let's see. Wendi feeds her chickens three cups of mixed feed every day, divided into three meals. So, each chicken gets three cups per day. But the question is asking about the final meal of the day. Let's break it down step by step.\n\nFirst, the question states that Wendi gives her chickens 15 cups in the morning and 25 cups in the af",
+      "end": " meal should be 60 cups - 40 cups = 20 cups.\n\nAlternatively, if we consider that each chicken gets three cups per day, divided into three meals, then each meal should be 3 cups / 3 meals = 1 cup per meal. So, each chicken gets 1 cup in the morning, 1 cup in the afternoon, and 1 cup in the evening. Therefore, the total daily feed requirement is 20 chickens * 1 cup/chicken = 20 cups. But the question states that the total daily requirement is 60 cups, which is 20 chickens * 3 cups/chicken. So, the total daily requirement is 60 cups, and the first two meals are 15 cups and 25 cups, which is 40 cups. Therefore, the final meal should be 60 cups - "
+    },
+    {
+      "run": "armA_high/seed1",
+      "eval_set": "math500",
+      "uid": "math500-test/intermediate_algebra/1994.json",
+      "tokens": 6144,
+      "first_box_correct": false,
+      "recorded_correct": false,
+      "start": "<think>\nOkay, so I need to find a way to express the double sum in terms of p and q. Let me start by looking at the given definitions:\n\np = \u03a3 (1/k^2) from k=1 to \u221e\nq = \u03a3 (1/k^3) from k=1 to \u221e\n\nThe double sum I need to evaluate is:\n\n\u2211 (1/(j+k)^3) from j=1 to \u221e and k=1 to \u221e\n\nHmm, this looks like a nested sum. Let me try to break it down. The inner su",
+      "end": " of 1/k^3 is q. Let me try to express the double sum in terms of q. Wait, but wait, the original sum is 1/(j+k)^3. So when I expand the denominator, each term in the numerator will be divided by (j+k)^3. But the original sum is just 1/(j+k)^3. So maybe I can't directly relate it to p and q. Let me try to find a different approach.\n\nWait, but maybe I can use the fact that the sum of 1/k^3 is q. Let me try to express the double sum in terms of q. Wait, but wait, the original sum is 1/(j+k)^3. So when I expand the denominator, each term in the numerator will be divided by (j+k)^3. But the original sum is just 1/(j+k)^3. So maybe I can't directly"
+    },
+    {
+      "run": "armA_high/seed2",
+      "eval_set": "gsm8k_test",
+      "uid": "gsm8k-test-2",
+      "tokens": 6144,
+      "first_box_correct": false,
+      "recorded_correct": false,
+      "start": "<think>\nOkay, so Josh is flipping a house. He bought it for $80,000 and spent $50,000 on repairs. The value of the house increased by 150%. Let me break this down step by step.\n\nFirst, the initial cost of the house is $80,000. Then he spent $50,000 on repairs. So, the total cost is the sum of these two amounts. Let me calculate that.\n\nTotal cost = ",
+      "end": "ew value is 2.5 times the original value. Let me calculate that.\n\nNew value = 2.5 * Original value\nNew value = 2.5 * $80,000\nNew value = $200,000\n\nWait, that's the same as before. But that can't be right because the problem says the value increased by 150%. Let me think again. The problem says the value increased by 150%. That means the new value is 100% + 150% = 250% of the original value. But that's not the same as saying the new value is 150% more than the original value. Let me check the problem again.\n\nThe problem says the value increased by 150%. That means the new value is 100% + 150% = 250% of the original value. So, the new value is "
+    },
+    {
+      "run": "armA_high/seed2",
+      "eval_set": "math500",
+      "uid": "math500-test/precalculus/807.json",
+      "tokens": 6144,
+      "first_box_correct": false,
+      "recorded_correct": false,
+      "start": "<think>\nOkay, so I need to convert the point (0,3) from rectangular coordinates to polar coordinates. Let me recall the formulas for converting between these coordinate systems. In polar coordinates, a point is represented as (r, \u03b8), where r is the radial distance from the origin (0,0) and \u03b8 is the angle from the positive x-axis. The formulas are:\n",
+      "end": "ely, if the point was (0,3), then the distance is 3, and the angle is \u03c0/2. So, the polar coordinates are (3, \u03c0/2). So, that seems correct.\n\nAlternatively, if the point was (0,3), then the distance is 3, and the angle is \u03c0/2. So, the polar coordinates are (3, \u03c0/2). So, that seems correct.\n\nAlternatively, if the point was (0,3), then the distance is 3, and the angle is \u03c0/2. So, the polar coordinates are (3, \u03c0/2). So, that seems correct.\n\nAlternatively, if the point was (0,3), then the distance is 3, and the angle is \u03c0/2. So, the polar coordinates are (3, \u03c0/2). So, that seems correct.\n\nAlternatively, if the point was (0,3), then the distance is "
+    },
+    {
+      "run": "armA_low/seed0",
+      "eval_set": "gsm8k_test",
+      "uid": "gsm8k-test-7",
+      "tokens": 6144,
+      "first_box_correct": false,
+      "recorded_correct": false,
+      "start": "<think>\nOkay, so Carla is downloading a 200 GB file. The normal download speed is 2 GB per minute. But then, 40% of the way through, Windows forces a restart to install updates, which takes 20 minutes. Then she has to restart the download from the beginning. I need to figure out how long it takes to download the file in total. Let me break this dow",
+      "end": "ownload the file, not including the restart time. So, the total time is just the time to download 320 GB, which is 160 minutes. But wait, that's not right because the question is asking for the total time, including the 20 minutes of the restart. So, the total time is 160 minutes (download time) + 20 minutes (restart time) = 180 minutes. But the question is asking for the total time to download the file, not including the restart time. So, the total time is just the time to download 320 GB, which is 160 minutes. But wait, that's not right because the question is asking for the total time, including the 20 minutes of the restart. So, the total"
+    },
+    {
+      "run": "armA_low/seed0",
+      "eval_set": "math500",
+      "uid": "math500-test/precalculus/807.json",
+      "tokens": 6144,
+      "first_box_correct": false,
+      "recorded_correct": false,
+      "start": "<think>\nOkay, so I need to convert the point (0,3) from rectangular coordinates to polar coordinates. Let me recall the formulas for converting between rectangular and polar coordinates. In polar coordinates, a point is represented as (r, \u03b8), where r is the radial distance from the origin (0,0) and \u03b8 is the angle from the positive x-axis. The formu",
+      "end": "5\u03c0/2. But 5\u03c0/2 is greater than 2\u03c0, so we need to subtract 2\u03c0 to get an angle between 0 and 2\u03c0. 5\u03c0/2 - 2\u03c0 = 5\u03c0/2 - 4\u03c0/2 = \u03c0/2. So, 5\u03c0/2 is equivalent to \u03c0/2. Therefore, the only valid angle is \u03c0/2.\n\nTherefore, the polar coordinates are (3, \u03c0/2). But let me check if there are any other possible angles. The point (0,3) is on the positive y-axis, so the angle is \u03c0/2. But since the angle is measured modulo 2\u03c0, we can add 2\u03c0 to \u03c0/2 and get another valid angle. So, \u03c0/2 + 2\u03c0 = 5\u03c0/2. But 5\u03c0/2 is greater than 2\u03c0, so we need to subtract 2\u03c0 to get an angle between 0 and 2\u03c0. 5\u03c0/2 - 2\u03c0 = 5\u03c0/2 - 4\u03c0/2 = \u03c0/2. So, 5\u03c0/2 is equivalent to \u03c0/2. Therefore, the only"
+    },
+    {
+      "run": "armA_low/seed1",
+      "eval_set": "gsm8k_test",
+      "uid": "gsm8k-test-9",
+      "tokens": 6144,
+      "first_box_correct": false,
+      "recorded_correct": false,
+      "start": "<think>\nOkay, let me see. Eliza's regular pay is $10 per hour for the first 40 hours. Then, for any hours worked beyond 40, she gets overtime pay, which is 1.2 times her regular rate. So, her overtime rate would be 1.2 * $10 = $12 per hour. This week, she worked 45 hours. So, 40 hours are regular, and 5 hours are overtime. Let me calculate her earn",
+      "end": " for the week are $460. Let me think if there's any other way to verify this. Maybe calculate the total pay as a function of the total hours worked. Let's say she worked H hours. Regular pay is 40 * 10 = 400. Overtime pay is (H - 40) * 12. Total pay: 400 + (H - 40) * 12. For H = 45: 400 + (45 - 40) * 12 = 400 + 5 * 12 = 400 + 60 = 460. Yes, that's correct. So, her total earnings for the week are $460. Let me think if there's any other way to verify this. Maybe calculate the total pay as a function of the total hours worked. Let's say she worked H hours. Regular pay is 40 * 10 = 400. Overtime pay is (H - 40) * 12. Total pay: 400 + (H - 40) * 1"
+    },
+    {
+      "run": "armA_low/seed1",
+      "eval_set": "math500",
+      "uid": "math500-test/intermediate_algebra/1994.json",
+      "tokens": 6144,
+      "first_box_correct": false,
+      "recorded_correct": false,
+      "start": "<think>\nOkay, so I need to find a way to express the double sum in terms of p and q. Let me start by looking at the given definitions:\n\np = \u03a3 (from k=1 to \u221e) 1/k\u00b2\n\nq = \u03a3 (from k=1 to \u221e) 1/k\u00b3\n\nAnd I need to find a way to write this double sum:\n\n\u2211 (from j=1 to \u221e) \u2211 (from k=1 to \u221e) 1/(j+k)\u00b3\n\nHmm, so the inner sum is over k, and the outer sum is over j",
+      "end": "from k=1 to \u221e) 1/(j+k)\u00b3\n\nIf I change the order of summation, then for each fixed m=j+k, k ranges from 1 to \u221e, and j is m-k. So, the inner sum is from k=1 to \u221e, not from 1 to m-1. So, the inner sum is:\n\n\u2211 (from k=1 to \u221e) 1/(m\u00b3)\n\nSince m is fixed, m\u00b3 is a constant, so we can factor it out:\n\n1/m\u00b3 * \u2211 (from k=1 to \u221e) 1/k\u00b3\n\nThe inner sum is the sum of 1/k\u00b3 from k=1 to \u221e, which is q. So, the inner sum is q/m\u00b3. Then, the outer sum is:\n\n\u2211 (from m=2 to \u221e) q/m\u00b3\n\nSince q is a constant, we can factor it out:\n\nq * \u2211 (from m=2 to \u221e) 1/m\u00b3\n\nThe sum is from m=2 to \u221e, so it's q times the sum from m=2 to \u221e of 1/m\u00b3. But the sum from m=1 to \u221e of 1/m\u00b3 is q, so the"
+    },
+    {
+      "run": "armA_low/seed2",
+      "eval_set": "gsm8k_test",
+      "uid": "gsm8k-test-7",
+      "tokens": 6144,
+      "first_box_correct": false,
+      "recorded_correct": false,
+      "start": "<think>\nOkay, so Carla is downloading a 200 GB file. The normal download speed is 2 GB per minute. But then, 40% of the way through, Windows forces a restart to install updates, which takes 20 minutes. Then she has to restart the download from the beginning. So, let me break this down step by step.\n\nFirst, let's figure out how long it would take to",
+      "end": "hich is 120 minutes. But wait, that's not right. The total time is just the sum of the time before the restart, the restart itself, and the time after the restart. So, 40 minutes plus 20 minutes plus 60 minutes is 120 minutes. But the normal time is 100 minutes. So, the extra time is 120 minutes minus 100 minutes, which is 20 minutes. So, the total time is 100 minutes plus 20 minutes, which is 120 minutes. But wait, that's not right. The total time is just the sum of the time before the restart, the restart itself, and the time after the restart. So, 40 minutes plus 20 minutes plus 60 minutes is 120 minutes. But the normal time is 100 minutes"
+    },
+    {
+      "run": "armA_low/seed2",
+      "eval_set": "math500",
+      "uid": "math500-test/intermediate_algebra/1994.json",
+      "tokens": 6144,
+      "first_box_correct": false,
+      "recorded_correct": false,
+      "start": "<think>\nOkay, so I need to find a way to express the double sum\n\n\\[\n\\sum_{j = 1}^\\infty \\sum_{k = 1}^\\infty \\frac{1}{(j + k)^3}\n\\]\n\nin terms of the given series p and q. Let me first recall what p and q are:\n\n\\[\np = \\sum_{k = 1}^\\infty \\frac{1}{k^2} \\quad \\text{and} \\quad q = \\sum_{k = 1}^\\infty \\frac{1}{k^3}.\n\\]\n\nSo, p is the sum of the reciprocal",
+      "end": "double sum can be written as:\n\n\\[\n\\sum_{k = 1}^\\infty \\sum_{s = 1}^\\infty \\frac{1}{(s + k)^3}.\n\\]\n\nNow, let me change the order of summation again. Let me set t = s + k. Then, for a fixed k, s ranges from 1 to infinity, so t ranges from k + 1 to infinity. Therefore, the double sum can be written as:\n\n\\[\n\\sum_{k = 1}^\\infty \\sum_{t = k + 1}^\\infty \\frac{1}{t^3}.\n\\]\n\nNow, let me change the order of summation again. Let me set u = t - k. Then, for a fixed k, t ranges from k + 1 to infinity, so u ranges from 1 to infinity. Therefore, the double sum can be written as:\n\n\\[\n\\sum_{k = 1}^\\infty \\sum_{u = 1}^\\infty \\frac{1}{(u + k)^3}.\n\\]\n\nNow, let me"
+    },
+    {
+      "run": "armA_random/seed0",
+      "eval_set": "gsm8k_test",
+      "uid": "gsm8k-test-2",
+      "tokens": 6144,
+      "first_box_correct": false,
+      "recorded_correct": false,
+      "start": "<think>\nOkay, so Josh is flipping a house. He bought it for $80,000 and spent $50,000 on repairs. The value of the house increased by 150%. I need to find out how much profit he made. Let me break this down step by step.\n\nFirst, let's calculate the total cost. The initial purchase price was $80,000, and he spent $50,000 on repairs. So, the total co",
+      "end": "e V + 1.5V = 2.5V. But the problem doesn't give me the original value, just the increase. Let me think about this again.\n\nWait, let me try another approach. The problem says the value increased by 150%. But wait, 150% increase means the new value is the original value plus 150% of the original value. So, if the original value was V, the new value would be V + 1.5V = 2.5V. But the problem doesn't give me the original value, just the increase. Let me think about this again.\n\nWait, let me try another approach. The problem says the value increased by 150%. But wait, 150% increase means the new value is the original value plus 150% of the original"
+    },
+    {
+      "run": "armA_random/seed0",
+      "eval_set": "math500",
+      "uid": "math500-test/intermediate_algebra/1994.json",
+      "tokens": 6144,
+      "first_box_correct": false,
+      "recorded_correct": false,
+      "start": "<think>\nOkay, so I need to find a way to express the double sum in terms of p and q. Let me start by writing out the double sum:\n\n\u2211 from j=1 to \u221e of \u2211 from k=1 to \u221e of 1/(j+k)^3\n\nHmm, so the inner sum is over k, and the outer sum is over j. Let me try to simplify this. Maybe I can interchange the order of summation? But wait, the inner sum is from ",
+      "end": "t me check. The original sum is:\n\n\u2211 from j=1 to \u221e of \u2211 from k=1 to \u221e of 1/(j+k)^3\n\nIf I interchange the order, the new sum would be:\n\n\u2211 from k=1 to \u221e of \u2211 from j=1 to \u221e of 1/(j+k)^3\n\nBut wait, the original sum is from k=1 to \u221e, and then for each k, j goes from 1 to \u221e. So if I interchange the order, the new sum would be from j=1 to \u221e, and then for each j, k goes from 1 to \u221e. But wait, that's the same as the original sum. So maybe interchanging the order doesn't change the sum. But let me check. The original sum is:\n\n\u2211 from j=1 to \u221e of \u2211 from k=1 to \u221e of 1/(j+k)^3\n\nIf I interchange the order, the new sum would be:\n\n\u2211 from k=1 to \u221e of \u2211 from j=1"
+    },
+    {
+      "run": "armA_random/seed1",
+      "eval_set": "gsm8k_test",
+      "uid": "gsm8k-test-4",
+      "tokens": 6144,
+      "first_box_correct": false,
+      "recorded_correct": false,
+      "start": "<think>\nOkay, let's see. Wendi feeds her chickens three cups of mixed feed every day, divided into three meals. So, each chicken gets three cups per day. But the question is asking about the final meal of the day. Let's break it down step by step.\n\nFirst, the question states that Wendi gives her chickens 15 cups in the morning and 25 cups in the af",
+      "end": "e check if this is consistent with the information given. The question states that the morning meal is 15 cups and the afternoon meal is 25 cups. So, the total for the first two meals is 15 + 25 = 40 cups. Therefore, the final meal would be 60 - 40 = 20 cups. But wait, let me check if this is correct. The question says that each chicken gets three cups per day, divided into three meals. So, each meal is one-third of the daily requirement. Since the total daily requirement is 60 cups, each meal would be 60 / 3 = 20 cups. Therefore, the first two meals are 20 cups each, which is 40 cups. Therefore, the final meal would be 60 - 40 = 20 cups. But"
+    },
+    {
+      "run": "armA_random/seed1",
+      "eval_set": "math500",
+      "uid": "math500-test/intermediate_algebra/1994.json",
+      "tokens": 6144,
+      "first_box_correct": false,
+      "recorded_correct": false,
+      "start": "<think>\nOkay, so I need to find a way to express the double sum\n\n\\[\n\\sum_{j = 1}^\\infty \\sum_{k = 1}^\\infty \\frac{1}{(j + k)^3}\n\\]\n\nin terms of p and q, where\n\n\\[\np = \\sum_{k = 1}^\\infty \\frac{1}{k^2} \\quad \\text{and} \\quad q = \\sum_{k = 1}^\\infty \\frac{1}{k^3}.\n\\]\n\nFirst, let's recall what p and q are. p is the sum of the reciprocals of the square",
+      "end": "o, the double sum is\n\n\\[\n\\sum_{j = 1}^\\infty \\sum_{k = 1}^\\infty \\frac{1}{(j + k)^3}.\n\\]\n\nBut wait, the inner sum is from k = 1 to infinity, so j + k goes from j + 1 to infinity. But the original sum is over all j and k, so we need to consider all possible values of j and k. So, for each fixed j, k goes from 1 to infinity, and then j goes from 1 to infinity. But the sum is over all pairs (j, k), so we need to consider all possible values of j and k.\n\nLet me try to write it out explicitly. For a fixed j, the inner sum is\n\n\\[\n\\sum_{k = 1}^\\infty \\frac{1}{(j + k)^3}.\n\\]\n\nBut the outer sum is over all j, so we need to sum this over all j. So, the"
+    },
+    {
+      "run": "armA_random/seed2",
+      "eval_set": "gsm8k_test",
+      "uid": "gsm8k-test-4",
+      "tokens": 6144,
+      "first_box_correct": false,
+      "recorded_correct": false,
+      "start": "<think>\nOkay, let's see. Wendi feeds her chickens three cups of mixed feed every day, divided into three meals. So, each chicken gets three cups per day. But the question is asking about the final meal of the day. Let's break it down step by step.\n\nFirst, the question states that Wendi gives her chickens 15 cups in the morning and 25 cups in the af",
+      "end": "meal. The total feed is 60 cups, and there are three meals, so each meal is 60 cups / 3 meals = 20 cups. So, the final meal is 20 cups. That's the same as before.\n\nAlternatively, we could calculate the feed per chicken per meal. Each chicken gets 3 cups per day, so each meal is 3 cups / 3 meals = 1 cup per meal. So, for 20 chickens, that's 20 chickens * 1 cup per meal = 20 cups. That's the same as before.\n\nAlternatively, we could calculate the total feed per meal. The total feed is 60 cups, and there are three meals, so each meal is 60 cups / 3 meals = 20 cups. So, the final meal is 20 cups. That's the same as before.\n\nAlternatively, we could"
+    },
+    {
+      "run": "armA_random/seed2",
+      "eval_set": "math500",
+      "uid": "math500-test/intermediate_algebra/1994.json",
+      "tokens": 6144,
+      "first_box_correct": false,
+      "recorded_correct": false,
+      "start": "<think>\nOkay, so I need to find a way to express the double sum in terms of p and q. Let me start by looking at the given definitions:\n\np = \u03a3 (1/k^2) from k=1 to \u221e\n\nq = \u03a3 (1/k^3) from k=1 to \u221e\n\nThe double sum I need to evaluate is:\n\n\u2211 (1/(j+k)^3) from j=1 to \u221e and k=1 to \u221e\n\nHmm, this is a bit tricky because the terms involve the sum of reciprocals ",
+      "end": "he original sum is from j=1 to \u221e and k=1 to \u221e, so it includes all terms. The term for n=1 is 1/1^3 = 1, but that's not included in the sum from n=2 to \u221e. So the sum should be:\n\n\u2211 (1/n^3) from n=1 to \u221e\n\n= 1 + \u2211 (1/n^3) from n=2 to \u221e\n\n= 1 + (q - 1)\n\n= q\n\nBut wait, that's not right either. The original sum is from j=1 to \u221e and k=1 to \u221e, so it includes all terms. The term for n=1 is 1/1^3 = 1, but that's not included in the sum from n=2 to \u221e. So the sum should be:\n\n\u2211 (1/n^3) from n=1 to \u221e\n\n= 1 + \u2211 (1/n^3) from n=2 to \u221e\n\n= 1 + (q - 1)\n\n= q\n\nBut wait, that's not right either. The original sum is from j=1 to \u221e and k=1 to \u221e, so it includes all terms."
+    }
+  ],
+  "code_sha256": {
+    "scripts/train_sft.py": "f394037480730848662f68328945d6d948cb5f0e825c02103154c64619bf62cf",
+    "scripts/evaluate.py": "a2f394a7f408decb9934db7e332e032ebf9b663d30ba112e230ed0d626545aef",
+    "src/ila/textio.py": "529336899e0767564e61d1da2c9aa312809c5d31f1a302dbdc754e81c6368858",
+    "scripts/analyze_stage1c_dose60.py": "3b2290ac37ad28a7f020254ca7ef0d3699259480f2158691c8e9ef0d1e7d2b98"
+  }
+}

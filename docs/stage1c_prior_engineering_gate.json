@@ -1,0 +1,152 @@
+{
+  "mode": "engineering",
+  "candidates": [
+    {
+      "style": "checkpoint_step015",
+      "seed": 0,
+      "sets": {
+        "gsm8k_dev100": {
+          "base_accuracy": 0.89,
+          "candidate_accuracy": 0.91,
+          "accuracy_drop_abs": -0.020000000000000018,
+          "truncation_rate": 0.0,
+          "likely_loop_rate": 0.01,
+          "accuracy_ok": true,
+          "truncation_ok": true,
+          "loops_ok": true,
+          "pass": true
+        },
+        "math500_dev100": {
+          "base_accuracy": 0.72,
+          "candidate_accuracy": 0.7,
+          "accuracy_drop_abs": 0.020000000000000018,
+          "truncation_rate": 0.01,
+          "likely_loop_rate": 0.01,
+          "accuracy_ok": true,
+          "truncation_ok": true,
+          "loops_ok": true,
+          "pass": true
+        }
+      },
+      "pass": true
+    },
+    {
+      "style": "checkpoint_step030",
+      "seed": 0,
+      "sets": {
+        "gsm8k_dev100": {
+          "base_accuracy": 0.89,
+          "candidate_accuracy": 0.94,
+          "accuracy_drop_abs": -0.04999999999999993,
+          "truncation_rate": 0.0,
+          "likely_loop_rate": 0.02,
+          "accuracy_ok": true,
+          "truncation_ok": true,
+          "loops_ok": true,
+          "pass": true
+        },
+        "math500_dev100": {
+          "base_accuracy": 0.72,
+          "candidate_accuracy": 0.65,
+          "accuracy_drop_abs": 0.06999999999999995,
+          "truncation_rate": 0.02,
+          "likely_loop_rate": 0.04,
+          "accuracy_ok": false,
+          "truncation_ok": true,
+          "loops_ok": true,
+          "pass": false
+        }
+      },
+      "pass": false
+    },
+    {
+      "style": "checkpoint_step060",
+      "seed": 0,
+      "sets": {
+        "gsm8k_dev100": {
+          "base_accuracy": 0.89,
+          "candidate_accuracy": 0.54,
+          "accuracy_drop_abs": 0.35,
+          "truncation_rate": 0.4,
+          "likely_loop_rate": 0.41,
+          "accuracy_ok": false,
+          "truncation_ok": false,
+          "loops_ok": false,
+          "pass": false
+        },
+        "math500_dev100": {
+          "base_accuracy": 0.72,
+          "candidate_accuracy": 0.31,
+          "accuracy_drop_abs": 0.41,
+          "truncation_rate": 0.62,
+          "likely_loop_rate": 0.59,
+          "accuracy_ok": false,
+          "truncation_ok": false,
+          "loops_ok": false,
+          "pass": false
+        }
+      },
+      "pass": false
+    },
+    {
+      "style": "checkpoint_step115",
+      "seed": 0,
+      "sets": {
+        "gsm8k_dev100": {
+          "base_accuracy": 0.89,
+          "candidate_accuracy": 0.58,
+          "accuracy_drop_abs": 0.31000000000000005,
+          "truncation_rate": 0.38,
+          "likely_loop_rate": 0.38,
+          "accuracy_ok": false,
+          "truncation_ok": false,
+          "loops_ok": false,
+          "pass": false
+        },
+        "math500_dev100": {
+          "base_accuracy": 0.72,
+          "candidate_accuracy": 0.41,
+          "accuracy_drop_abs": 0.31,
+          "truncation_rate": 0.49,
+          "likely_loop_rate": 0.49,
+          "accuracy_ok": false,
+          "truncation_ok": false,
+          "loops_ok": false,
+          "pass": false
+        }
+      },
+      "pass": false
+    },
+    {
+      "style": "checkpoint_step230",
+      "seed": 0,
+      "sets": {
+        "gsm8k_dev100": {
+          "base_accuracy": 0.89,
+          "candidate_accuracy": 0.59,
+          "accuracy_drop_abs": 0.30000000000000004,
+          "truncation_rate": 0.42,
+          "likely_loop_rate": 0.42,
+          "accuracy_ok": false,
+          "truncation_ok": false,
+          "loops_ok": false,
+          "pass": false
+        },
+        "math500_dev100": {
+          "base_accuracy": 0.72,
+          "candidate_accuracy": 0.44,
+          "accuracy_drop_abs": 0.27999999999999997,
+          "truncation_rate": 0.46,
+          "likely_loop_rate": 0.45,
+          "accuracy_ok": false,
+          "truncation_ok": false,
+          "loops_ok": false,
+          "pass": false
+        }
+      },
+      "pass": false
+    }
+  ],
+  "selected_step": 15,
+  "pass": true
+}

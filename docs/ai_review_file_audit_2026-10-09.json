@@ -1,0 +1,249 @@
+{
+  "date": "2026-10-09",
+  "kind": "USER_PROVIDED_AI_LABEL_FILE_AUDIT_NOT_HUMAN_VALIDATION",
+  "files": {
+    "reviewer_A_labels_AI_DRAFT.jsonl": {
+      "sha256": "a9c533a8f8703018a8bc852954e7f1aa5d436d4108a0fba5cab7934e561ae8c5",
+      "rows": 127,
+      "unique_ids": 127,
+      "missing": [],
+      "extra": [],
+      "declared_reviewer_ids": [
+        "GPT6_AI_DRAFT_A_NOT_HUMAN"
+      ],
+      "counts": {
+        "loop_assessment/yes": 53,
+        "final_choice_interpretation/E": 1,
+        "loop_assessment/no": 41,
+        "final_choice_interpretation/D": 6,
+        "final_choice_interpretation/A": 6,
+        "final_choice_interpretation/B": 5,
+        "final_choice_interpretation/unparseable": 6,
+        "loop_assessment/uncertain": 1,
+        "final_choice_interpretation/ambiguous": 6,
+        "final_choice_interpretation/C": 2
+      }
+    },
+    "reviewer_B_labels_AI_REVIEW.jsonl": {
+      "sha256": "5a318dec5593a37e5da740753dad771f08f027228606e0e7681967c1858284a5",
+      "rows": 127,
+      "unique_ids": 127,
+      "missing": [],
+      "extra": [],
+      "declared_reviewer_ids": [
+        "AI_REVIEW_Claude_Sonnet_5.5 (owner-directed AI review, NOT human; 2026-10-09)"
+      ],
+      "counts": {
+        "loop_assessment/yes": 41,
+        "final_choice_interpretation/E": 1,
+        "loop_assessment/no": 44,
+        "final_choice_interpretation/D": 5,
+        "loop_assessment/uncertain": 10,
+        "final_choice_interpretation/A": 6,
+        "final_choice_interpretation/B": 5,
+        "final_choice_interpretation/unparseable": 13,
+        "final_choice_interpretation/ambiguous": 1,
+        "final_choice_interpretation/C": 1
+      }
+    }
+  },
+  "tasks": {
+    "final_choice_interpretation": {
+      "n": 32,
+      "agreements": 22,
+      "raw_ai_agreement": 0.6875,
+      "disagreements": [
+        {
+          "item_id": "2e16cdae514459fca15c",
+          "a": "ambiguous",
+          "b": "unparseable"
+        },
+        {
+          "item_id": "31b4345811ec977787ff",
+          "a": "ambiguous",
+          "b": "B"
+        },
+        {
+          "item_id": "3a500a81d08ed72a0f7e",
+          "a": "B",
+          "b": "unparseable"
+        },
+        {
+          "item_id": "5bb68d40e1d56f78efa3",
+          "a": "C",
+          "b": "unparseable"
+        },
+        {
+          "item_id": "66e4ce1b29ab0f93c1c4",
+          "a": "D",
+          "b": "unparseable"
+        },
+        {
+          "item_id": "67d6b30dd30108954b13",
+          "a": "ambiguous",
+          "b": "B"
+        },
+        {
+          "item_id": "69d2854dd770f3c0f808",
+          "a": "ambiguous",
+          "b": "unparseable"
+        },
+        {
+          "item_id": "6fb8fc0574d254b2e128",
+          "a": "B",
+          "b": "unparseable"
+        },
+        {
+          "item_id": "8cca3ad87bc6e0412692",
+          "a": "D",
+          "b": "unparseable"
+        },
+        {
+          "item_id": "f80b26879470f63f8601",
+          "a": "ambiguous",
+          "b": "D"
+        }
+      ]
+    },
+    "loop_assessment": {
+      "n": 95,
+      "agreements": 71,
+      "raw_ai_agreement": 0.7473684210526316,
+      "disagreements": [
+        {
+          "item_id": "00c85db952cda19eb8c7",
+          "a": "yes",
+          "b": "uncertain"
+        },
+        {
+          "item_id": "01de3bb289c426519e6d",
+          "a": "no",
+          "b": "uncertain"
+        },
+        {
+          "item_id": "01f34f3872017c8c752e",
+          "a": "no",
+          "b": "yes"
+        },
+        {
+          "item_id": "04910c104ccab958a381",
+          "a": "no",
+          "b": "uncertain"
+        },
+        {
+          "item_id": "07c8499c6bb1867ac0d6",
+          "a": "yes",
+          "b": "uncertain"
+        },
+        {
+          "item_id": "0a7a9db0d248dc086455",
+          "a": "yes",
+          "b": "uncertain"
+        },
+        {
+          "item_id": "0b2221e6692787055738",
+          "a": "yes",
+          "b": "no"
+        },
+        {
+          "item_id": "15d5164096005d39a95d",
+          "a": "yes",
+          "b": "no"
+        },
+        {
+          "item_id": "2109aa7ed48206f9b064",
+          "a": "yes",
+          "b": "no"
+        },
+        {
+          "item_id": "26393fb35ae0c053c417",
+          "a": "yes",
+          "b": "no"
+        },
+        {
+          "item_id": "2bf56f8ced16998ece0d",
+          "a": "yes",
+          "b": "no"
+        },
+        {
+          "item_id": "2e70039a80c467896f04",
+          "a": "no",
+          "b": "uncertain"
+        },
+        {
+          "item_id": "341f24e75ec1a6a8c5cb",
+          "a": "yes",
+          "b": "no"
+        },
+        {
+          "item_id": "39a4869b10df05afbb16",
+          "a": "yes",
+          "b": "no"
+        },
+        {
+          "item_id": "3e5adbe45cb6449992a1",
+          "a": "no",
+          "b": "uncertain"
+        },
+        {
+          "item_id": "3e8df7d54539928272db",
+          "a": "no",
+          "b": "yes"
+        },
+        {
+          "item_id": "46d2fdb09d1a85d3f848",
+          "a": "yes",
+          "b": "uncertain"
+        },
+        {
+          "item_id": "4daaf94ac67c9778bf13",
+          "a": "yes",
+          "b": "no"
+        },
+        {
+          "item_id": "56303cb0014c456ab836",
+          "a": "no",
+          "b": "yes"
+        },
+        {
+          "item_id": "82b3eaaca4809bb1491a",
+          "a": "yes",
+          "b": "uncertain"
+        },
+        {
+          "item_id": "860b1a58d7e2dd972d8f",
+          "a": "yes",
+          "b": "no"
+        },
+        {
+          "item_id": "8eab717c922e8a94292c",
+          "a": "yes",
+          "b": "no"
+        },
+        {
+          "item_id": "9d78cc9863d6c29ffca2",
+          "a": "yes",
+          "b": "no"
+        },
+        {
+          "item_id": "bff66aeb63c11bcc5fca",
+          "a": "no",
+          "b": "yes"
+        }
+      ]
+    }
+  },
+  "b_missing_options_claims_with_options_in_bundle": [
+    "3a500a81d08ed72a0f7e",
+    "5bb68d40e1d56f78efa3",
+    "66e4ce1b29ab0f93c1c4",
+    "6fb8fc0574d254b2e128",
+    "8cca3ad87bc6e0412692"
+  ],
+  "actual_human_labels": 0,
+  "limitations": [
+    "model identities/prompt/input completeness and independence not verified",
+    "raw agreement is not accuracy, population rate or human interrater reliability",
+    "semantic review limited to representative disagreement spot checks; submitted labels preserved"
+  ]
+}

@@ -1,0 +1,9 @@
+# On the GPU machine install vllm first (it pins a compatible torch), then the rest.
+vllm>=0.10
+transformers>=4.56
+peft>=0.13
+datasets>=3.0
+accelerate>=1.0
+numpy>=1.26
+pyyaml>=6.0
+pytest>=8.0

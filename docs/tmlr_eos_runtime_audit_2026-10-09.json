@@ -1,0 +1,105 @@
+{
+  "audit": "READ_ONLY_CURRENT_EOS_RUNTIME",
+  "paired_config_groups": 18,
+  "issues": [],
+  "runtime_records": [
+    {
+      "id": "qwen_weight1_armA_high_seed0",
+      "status": "running",
+      "weight": 1,
+      "steps": null,
+      "loss_calls": null,
+      "dataset_eligible_terminal_examples": null,
+      "nominal_examples_at60": 960,
+      "model_accepts_loss_kwargs": null,
+      "accumulated_denominator": null
+    },
+    {
+      "id": "qwen_weight10_armA_high_seed0",
+      "status": "running",
+      "weight": 10,
+      "steps": null,
+      "loss_calls": null,
+      "dataset_eligible_terminal_examples": null,
+      "nominal_examples_at60": 960,
+      "model_accepts_loss_kwargs": null,
+      "accumulated_denominator": null
+    },
+    {
+      "id": "qwen_weight1_armA_high_seed1",
+      "status": "running",
+      "weight": 1,
+      "steps": null,
+      "loss_calls": null,
+      "dataset_eligible_terminal_examples": null,
+      "nominal_examples_at60": 960,
+      "model_accepts_loss_kwargs": null,
+      "accumulated_denominator": null
+    },
+    {
+      "id": "qwen_weight10_armA_high_seed1",
+      "status": "running",
+      "weight": 10,
+      "steps": null,
+      "loss_calls": null,
+      "dataset_eligible_terminal_examples": null,
+      "nominal_examples_at60": 960,
+      "model_accepts_loss_kwargs": null,
+      "accumulated_denominator": null
+    },
+    {
+      "id": "qwen_weight1_armA_high_seed2",
+      "status": "running",
+      "weight": 1,
+      "steps": null,
+      "loss_calls": null,
+      "dataset_eligible_terminal_examples": null,
+      "nominal_examples_at60": 960,
+      "model_accepts_loss_kwargs": null,
+      "accumulated_denominator": null
+    },
+    {
+      "id": "qwen_weight10_armA_high_seed2",
+      "status": "running",
+      "weight": 10,
+      "steps": null,
+      "loss_calls": null,
+      "dataset_eligible_terminal_examples": null,
+      "nominal_examples_at60": 960,
+      "model_accepts_loss_kwargs": null,
+      "accumulated_denominator": null
+    }
+  ],
+  "evaluations_checked": [],
+  "done_jobs": 0,
+  "failed_jobs": 0,
+  "current_status": "SMOKES_PASSED_RUNNING_36_TRAIN_AND_72_EVAL_QUEUE 2026-10-09T02:11:53",
+  "source_hash_checks": {
+    "scripts/tmlr_eos_control.py": {
+      "expected": "850bdda27fffc05fe8980f937892bf9035df810fd79a995b22d1da1e7b51fc13",
+      "actual": "7766b8dd44e3f139fddd8f0c39431d0b6f68c81d6c948501a6b3587d57f19d30"
+    },
+    "scripts/train_terminal_eos.py": {
+      "expected": "2fb9e5baa1365aeeaeccbee0b87113ed11184c6aa2f9bca6885178adfd3a4c31",
+      "actual": "2fb9e5baa1365aeeaeccbee0b87113ed11184c6aa2f9bca6885178adfd3a4c31"
+    },
+    "src/ila/terminal_eos_loss.py": {
+      "expected": "104fed2dedbe2a75f5b0e482563cc6d2737e3e91c51a9d6a2f5d77528bd4135d",
+      "actual": "104fed2dedbe2a75f5b0e482563cc6d2737e3e91c51a9d6a2f5d77528bd4135d"
+    },
+    "scripts/train_sft.py": {
+      "expected": "8b55eab375fe2d5db4e914988af9ddcbd455be57a0560d1effaef0cad3225eea",
+      "actual": "8b55eab375fe2d5db4e914988af9ddcbd455be57a0560d1effaef0cad3225eea"
+    },
+    "scripts/evaluate.py": {
+      "expected": "7381e1f1207cd81214c6d0447e523f189dee414c826d7d3241591550385ebbad",
+      "actual": "7381e1f1207cd81214c6d0447e523f189dee414c826d7d3241591550385ebbad"
+    },
+    "scripts/analyze_tmlr_eos.py": {
+      "expected": "5835a117a3235acd012ec80fe20d26aa1920aaa06aaa18975ac7761cf558a465",
+      "actual": "5835a117a3235acd012ec80fe20d26aa1920aaa06aaa18975ac7761cf558a465"
+    }
+  },
+  "scope": "current available artifacts only; incomplete runs not certified completed",
+  "audit_date": "2026-10-09"
+}

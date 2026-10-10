@@ -1,0 +1,162 @@
+{
+  "status": "COMPLETED_TARGETED_THIRD_AI_ASSESSMENT_NOT_HUMAN_VALIDATION",
+  "date": "2026-10-09",
+  "n": 14,
+  "actual_human_labels": 0,
+  "labels": [
+    {
+      "item_id": "0061badab0c19862a9f8",
+      "reviewer_id": "CODEX_AI_ADJUDICATION_NOT_HUMAN",
+      "task": "loop_assessment",
+      "decision": "yes",
+      "confidence": "high",
+      "reason": "Re-derives the same 5*0.85P+300=300 / P=0 contradiction repeatedly before and after the option checks, without correcting the model or adding deductions.",
+      "review_scope": "targeted_third_AI_assessment_prior_A_B_visible_not_blinded_or_independent"
+    },
+    {
+      "item_id": "07a7bc2fa7e2a0596ffa",
+      "reviewer_id": "CODEX_AI_ADJUDICATION_NOT_HUMAN",
+      "task": "loop_assessment",
+      "decision": "yes",
+      "confidence": "high",
+      "reason": "After exhausting B=0..18, the scan continues through B=19..80 with negative white-sharpener counts despite W+B=18. The repeated candidate template no longer explores admissible solutions.",
+      "review_scope": "targeted_third_AI_assessment_prior_A_B_visible_not_blinded_or_independent"
+    },
+    {
+      "item_id": "07c8499c6bb1867ac0d6",
+      "reviewer_id": "CODEX_AI_ADJUDICATION_NOT_HUMAN",
+      "task": "loop_assessment",
+      "decision": "yes",
+      "confidence": "moderate",
+      "reason": "Some alternative interpretations appear, but the output repeatedly returns to the same 85%-tea/30%-milk and 90%-tea/40%-milk claims and C=39.86% conclusion without resolving their contradictions. Several near-identical checks add no meaningful progress.",
+      "review_scope": "targeted_third_AI_assessment_prior_A_B_visible_not_blinded_or_independent"
+    },
+    {
+      "item_id": "1e801705279ada8a647e",
+      "reviewer_id": "CODEX_AI_ADJUDICATION_NOT_HUMAN",
+      "task": "loop_assessment",
+      "decision": "yes",
+      "confidence": "moderate",
+      "reason": "After obtaining 17-5=12, the output repeatedly rebuilds the same irrelevant David-push-up/total-exercise scaffold and returns to 12, rather than providing distinct checks. A correct final answer does not erase this repeated plateau.",
+      "review_scope": "targeted_third_AI_assessment_prior_A_B_visible_not_blinded_or_independent"
+    },
+    {
+      "item_id": "2109aa7ed48206f9b064",
+      "reviewer_id": "CODEX_AI_ADJUDICATION_NOT_HUMAN",
+      "task": "loop_assessment",
+      "decision": "yes",
+      "confidence": "moderate",
+      "reason": "Before eventually correcting the flew/stayed assignment, it repeats the same 29-60=-31 / positive-answer objection and near-verbatim problem rephrasing at least three times. The later genuine correction does not erase the preceding unproductive cycle.",
+      "review_scope": "targeted_third_AI_assessment_prior_A_B_visible_not_blinded_or_independent"
+    },
+    {
+      "item_id": "2e70039a80c467896f04",
+      "reviewer_id": "CODEX_AI_ADJUDICATION_NOT_HUMAN",
+      "task": "loop_assessment",
+      "decision": "no",
+      "confidence": "moderate",
+      "reason": "The output makes one finite scan of distinct shirt counts from 0 through 27, bounded by the budget, then concludes. The scan is unnecessarily long and contains arithmetic errors, but it does not restart identical candidates; those errors alone do not establish a loop.",
+      "review_scope": "targeted_third_AI_assessment_prior_A_B_visible_not_blinded_or_independent"
+    },
+    {
+      "item_id": "3e5adbe45cb6449992a1",
+      "reviewer_id": "CODEX_AI_ADJUDICATION_NOT_HUMAN",
+      "task": "loop_assessment",
+      "decision": "yes",
+      "confidence": "high",
+      "reason": "The same 2875 -> 456+288+230=974 -> 9704 -> 704 calculation and negative-option checks are restarted multiple times with no revised hypothesis or substantive correction.",
+      "review_scope": "targeted_third_AI_assessment_prior_A_B_visible_not_blinded_or_independent"
+    },
+    {
+      "item_id": "56303cb0014c456ab836",
+      "reviewer_id": "CODEX_AI_ADJUDICATION_NOT_HUMAN",
+      "task": "loop_assessment",
+      "decision": "yes",
+      "confidence": "high",
+      "reason": "It scans even n from 2 to 100 while repeatedly saying the expression is already too large, then explicitly restarts the same scan and revisits the small candidates again. Repeated passes add no new deductions.",
+      "review_scope": "targeted_third_AI_assessment_prior_A_B_visible_not_blinded_or_independent"
+    },
+    {
+      "item_id": "bff66aeb63c11bcc5fca",
+      "reviewer_id": "CODEX_AI_ADJUDICATION_NOT_HUMAN",
+      "task": "loop_assessment",
+      "decision": "yes",
+      "confidence": "high",
+      "reason": "It derives the same parity contradiction, scans odd n=1..99, re-derives that contradiction, and restarts the identical odd-number scan more than once. This is repeated casework without a changed hypothesis, not merely one bounded enumeration.",
+      "review_scope": "targeted_third_AI_assessment_prior_A_B_visible_not_blinded_or_independent"
+    },
+    {
+      "item_id": "16c9cfe008ec7838e22d",
+      "reviewer_id": "CODEX_AI_ADJUDICATION_NOT_HUMAN",
+      "task": "final_choice_interpretation",
+      "decision": "ambiguous",
+      "confidence": "moderate",
+      "reason": "The completed answer assertion says the units digit is 0 and boxes A, whose supplied value is 1; subsequent unfinished multiplication does not settle the conflict. This applies the semantic label/value-consistency rubric; the strict letter extractor can still return A.",
+      "review_scope": "targeted_third_AI_assessment_prior_A_B_visible_not_blinded_or_independent"
+    },
+    {
+      "item_id": "17bdcdc7c08f92470689",
+      "reviewer_id": "CODEX_AI_ADJUDICATION_NOT_HUMAN",
+      "task": "final_choice_interpretation",
+      "decision": "ambiguous",
+      "confidence": "moderate",
+      "reason": "The explicit answer summary states the requested sum is 2184, then gives boxed B, whose option value is 38. The final stated value and selected option are incompatible; this is not a claim about which mathematical answer is correct.",
+      "review_scope": "targeted_third_AI_assessment_prior_A_B_visible_not_blinded_or_independent"
+    },
+    {
+      "item_id": "2e16cdae514459fca15c",
+      "reviewer_id": "CODEX_AI_ADJUDICATION_NOT_HUMAN",
+      "task": "final_choice_interpretation",
+      "decision": "ambiguous",
+      "confidence": "moderate",
+      "reason": "Repeated answer assertions alternate between 91 minutes (option A) and 243 minutes/4 hours 3 minutes (no supplied option), and the output ends mid-calculation without a settled final choice. Under a rubric requiring a completed final-answer span, unparseable is also defensible; do not recover A merely because it is a convenient earlier value.",
+      "review_scope": "targeted_third_AI_assessment_prior_A_B_visible_not_blinded_or_independent"
+    },
+    {
+      "item_id": "85faaf18fef4e48c85de",
+      "reviewer_id": "CODEX_AI_ADJUDICATION_NOT_HUMAN",
+      "task": "final_choice_interpretation",
+      "decision": "ambiguous",
+      "confidence": "high",
+      "reason": "Repeatedly states a zero-yellow-ball result, boxes A)80, immediately calls that answer incorrect, and restarts the same derivation. There is no reconciled or stable final intended answer.",
+      "review_scope": "targeted_third_AI_assessment_prior_A_B_visible_not_blinded_or_independent"
+    },
+    {
+      "item_id": "aa51d7f0e0488a89d7b7",
+      "reviewer_id": "CODEX_AI_ADJUDICATION_NOT_HUMAN",
+      "task": "final_choice_interpretation",
+      "decision": "ambiguous",
+      "confidence": "moderate",
+      "reason": "The final explanation explicitly says 0.5 minutes but boxes A, whose supplied value is 1 minute. The stated final numeric answer and option label conflict under the semantic consistency rubric; no primary score is being replaced.",
+      "review_scope": "targeted_third_AI_assessment_prior_A_B_visible_not_blinded_or_independent"
+    }
+  ],
+  "counts": {
+    "loop_assessment/yes": 8,
+    "loop_assessment/no": 1,
+    "final_choice_interpretation/ambiguous": 5
+  },
+  "input_item_sha256": {
+    "0061badab0c19862a9f8": "56a25c901f3e96045f6b436fec9939c9c2359a4ee23427891f2925b13a08695d",
+    "07a7bc2fa7e2a0596ffa": "e36ae75b5dab2a945701eb61c7ca8e75396548036701246c390b280831155ed5",
+    "07c8499c6bb1867ac0d6": "dad498d2c5bf14ced4c7ab1c81ad5303541e87056f79f4fa30ea4683418d4372",
+    "1e801705279ada8a647e": "6b54c34091a3c7b859c4553d7d98805651cbee5f4e8ad433a43cba09eb2d2272",
+    "2109aa7ed48206f9b064": "58be1d359d7681d857e4291e25e4f8b0f889bf05534954e47aa7e6fc64848ae4",
+    "2e70039a80c467896f04": "7bf3840aae50efabc611da5302bf8f97f73e893bb017221b9399c1aa2d7870b5",
+    "3e5adbe45cb6449992a1": "0d4a050e83d5cfa756c5305492906b34cfe899a5b9af0f8c93516d76870b5547",
+    "56303cb0014c456ab836": "7e737256e396b6543a2509971642679a79408411007da5d5339d02bdbc6748a5",
+    "bff66aeb63c11bcc5fca": "d77ed6818f393e4bfdd83e757a067336b1cf561cf9b9a7069d7f77c81b1997b0",
+    "16c9cfe008ec7838e22d": "754ded21e3a80116441d938dec5804f682a43ed0ebcb84cf72ad2d94dfb33cf1",
+    "17bdcdc7c08f92470689": "8e58faebe2685fce4a1f38e79b10e285abcb3ba377f1fb1b33bd60679dde58d2",
+    "2e16cdae514459fca15c": "1235f022c8639d380ebd93a3b16a03768b4c140821b4fdebbfd152318971759b",
+    "85faaf18fef4e48c85de": "020f26ef7820be42628f10865ff9b3865f4b63fa82d03a4cdb54647e2de0685d",
+    "aa51d7f0e0488a89d7b7": "8244d69eb380e5c062ab1344c4a1ba3f3628d8e04c37900c16a5f343b7eaf790"
+  },
+  "limitations": [
+    "A/B judgments previously visible; not blinded or independent",
+    "no gold/private-key inspection",
+    "targeted disputed cases only; no full-population accuracy claim",
+    "semantic rubric sensitivity on letter/value conflicts; rotating-ball ambiguous/unparseable boundary retained",
+    "author fields and primary scores unchanged"
+  ]
+}

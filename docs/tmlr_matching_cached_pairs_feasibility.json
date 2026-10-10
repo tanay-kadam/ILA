@@ -1,0 +1,324 @@
+{
+  "protocol": "docs/tmlr_matching_feasibility_protocol.md",
+  "source_counts": {
+    "source_rows": 93733,
+    "rows_on_original_pool_questions": 11495,
+    "question_groups_two_verified_traces": 2436
+  },
+  "rejections": {
+    "missing_stop_provenance": 8844
+  },
+  "eligible_distinct_questions": 9,
+  "required_distinct_questions": 960,
+  "feasible": false,
+  "margins": {
+    "reflection_density_difference_min": 2,
+    "canonical_length_relative_difference_max": 0.01,
+    "qwen_bare_length_range": [
+      1000,
+      2500
+    ]
+  },
+  "selection": "source validity/archived question membership/length/reflection only; no model evaluation outcomes; fixed margins not relaxed",
+  "source_sha256": {
+    "/home/tkadam/.cache/huggingface/datasets/open-r1___open_r1-math-220k/default/0.0.0/e4e141ec9dea9f8326f4d347be56105859b2bd68/open_r1-math-220k-train-00000-of-00010.arrow": "b670ea8c8e79c35114d0fbee110a951b505fc8aac6f155fd39252de2dec87a0e",
+    "/home/tkadam/.cache/huggingface/datasets/open-r1___open_r1-math-220k/default/0.0.0/e4e141ec9dea9f8326f4d347be56105859b2bd68/open_r1-math-220k-train-00001-of-00010.arrow": "8707ec958757c5b356800efdf1726cf7f3037e7106acd5f1e44e8e652c28112d",
+    "/home/tkadam/.cache/huggingface/datasets/open-r1___open_r1-math-220k/default/0.0.0/e4e141ec9dea9f8326f4d347be56105859b2bd68/open_r1-math-220k-train-00002-of-00010.arrow": "8056836d91fe478ffddae014239e294c6096af8a487179a163e9bdb34db689a7",
+    "/home/tkadam/.cache/huggingface/datasets/open-r1___open_r1-math-220k/default/0.0.0/e4e141ec9dea9f8326f4d347be56105859b2bd68/open_r1-math-220k-train-00003-of-00010.arrow": "cf3f12dc8ff52bcaf64323e4ae55b2d3d77c5aa728c26ad912e701ba07aa9c4b",
+    "/home/tkadam/.cache/huggingface/datasets/open-r1___open_r1-math-220k/default/0.0.0/e4e141ec9dea9f8326f4d347be56105859b2bd68/open_r1-math-220k-train-00004-of-00010.arrow": "b5429c16dde31eac1beeab43c74acaa12c615dbaa04f0caeee6a2266c177f617",
+    "/home/tkadam/.cache/huggingface/datasets/open-r1___open_r1-math-220k/default/0.0.0/e4e141ec9dea9f8326f4d347be56105859b2bd68/open_r1-math-220k-train-00005-of-00010.arrow": "1111c31cef671116b9ca466197702658b9e3350343b31dd6e5b98fb0ee411898",
+    "/home/tkadam/.cache/huggingface/datasets/open-r1___open_r1-math-220k/default/0.0.0/e4e141ec9dea9f8326f4d347be56105859b2bd68/open_r1-math-220k-train-00006-of-00010.arrow": "20843bf9ef757b27691c6f0c00af2514d3367278612577cf94f6d5d6502da7f6",
+    "/home/tkadam/.cache/huggingface/datasets/open-r1___open_r1-math-220k/default/0.0.0/e4e141ec9dea9f8326f4d347be56105859b2bd68/open_r1-math-220k-train-00007-of-00010.arrow": "202ef5e3cae0843cd5cf1248895ee847199c28da0cc4719a06a435c70b5dc404",
+    "/home/tkadam/.cache/huggingface/datasets/open-r1___open_r1-math-220k/default/0.0.0/e4e141ec9dea9f8326f4d347be56105859b2bd68/open_r1-math-220k-train-00008-of-00010.arrow": "0848fd6578b2c8588a2114e0e2b2a83690097ce2e42e50e42663ce7d40461490",
+    "/home/tkadam/.cache/huggingface/datasets/open-r1___open_r1-math-220k/default/0.0.0/e4e141ec9dea9f8326f4d347be56105859b2bd68/open_r1-math-220k-train-00009-of-00010.arrow": "de6e73598ab86b03e15f67d23e315cd168aa9beb8ac8d665b107949ff880df44"
+  },
+  "pool_sha256": "cdac68f17fbf0e1809029341d482f7ca611284ad874ddc511e1c224cb75b450a",
+  "candidates": [
+    {
+      "question_sha256": "17361fc6c68099cc08e2accf177e8f2f1d3c89868386b1a80d781dc70215276b",
+      "high": {
+        "sha256": "feb5318a887d417593de92aa895e978ca7293add3c895b250a6e13fcbfa192c5",
+        "source_shard": "/home/tkadam/.cache/huggingface/datasets/open-r1___open_r1-math-220k/default/0.0.0/e4e141ec9dea9f8326f4d347be56105859b2bd68/open_r1-math-220k-train-00000-of-00010.arrow",
+        "source_row": 2698,
+        "generation": 1,
+        "bare_tokens": 2476,
+        "density": 6.058158319870759,
+        "lengths": {
+          "qwen": 2478,
+          "mistral": 2597
+        }
+      },
+      "low": {
+        "sha256": "278f413b293f5760e972b1f1d323ac59dc5e2407a09494d73699f71ba79c9ea5",
+        "source_shard": "/home/tkadam/.cache/huggingface/datasets/open-r1___open_r1-math-220k/default/0.0.0/e4e141ec9dea9f8326f4d347be56105859b2bd68/open_r1-math-220k-train-00000-of-00010.arrow",
+        "source_row": 2698,
+        "generation": 0,
+        "bare_tokens": 2499,
+        "density": 4.001600640256102,
+        "lengths": {
+          "qwen": 2501,
+          "mistral": 2620
+        }
+      },
+      "relative_length_gaps": {
+        "qwen": 0.009238802972484434,
+        "mistral": 0.008817327966264136
+      }
+    },
+    {
+      "question_sha256": "fc16500f8e7aacba90ab52c4d28ced06cb0c81d1223f4d1162feae6a4cacb363",
+      "high": {
+        "sha256": "c9511c6eb49b4e82ffa758dbd9696c1d5611872086f8c7f7e7cc942744a0de64",
+        "source_shard": "/home/tkadam/.cache/huggingface/datasets/open-r1___open_r1-math-220k/default/0.0.0/e4e141ec9dea9f8326f4d347be56105859b2bd68/open_r1-math-220k-train-00001-of-00010.arrow",
+        "source_row": 6100,
+        "generation": 1,
+        "bare_tokens": 1323,
+        "density": 7.558578987150415,
+        "lengths": {
+          "qwen": 1325,
+          "mistral": 1446
+        }
+      },
+      "low": {
+        "sha256": "9d3cdb7ce9aa3ac6e7dd99b0753868dc62ccb692875d685aa4bd36b18ac18593",
+        "source_shard": "/home/tkadam/.cache/huggingface/datasets/open-r1___open_r1-math-220k/default/0.0.0/e4e141ec9dea9f8326f4d347be56105859b2bd68/open_r1-math-220k-train-00001-of-00010.arrow",
+        "source_row": 6100,
+        "generation": 0,
+        "bare_tokens": 1334,
+        "density": 5.247376311844078,
+        "lengths": {
+          "qwen": 1336,
+          "mistral": 1432
+        }
+      },
+      "relative_length_gaps": {
+        "qwen": 0.008267568583239383,
+        "mistral": 0.009728978457261988
+      }
+    },
+    {
+      "question_sha256": "6d345e330afdf0572c020000131db8ac7be4cf55bf31d088c49a1922c90661a1",
+      "high": {
+        "sha256": "7c57866eabc90229dcdf322d99b186f24b01c03e149a6f0ab3a41eb50b92be38",
+        "source_shard": "/home/tkadam/.cache/huggingface/datasets/open-r1___open_r1-math-220k/default/0.0.0/e4e141ec9dea9f8326f4d347be56105859b2bd68/open_r1-math-220k-train-00001-of-00010.arrow",
+        "source_row": 6443,
+        "generation": 1,
+        "bare_tokens": 2408,
+        "density": 6.644518272425249,
+        "lengths": {
+          "qwen": 2410,
+          "mistral": 2652
+        }
+      },
+      "low": {
+        "sha256": "dfe40f1f8f49e0a2e1acda2777532bbfc60bebdfa5f118e088181eaceb1fa33d",
+        "source_shard": "/home/tkadam/.cache/huggingface/datasets/open-r1___open_r1-math-220k/default/0.0.0/e4e141ec9dea9f8326f4d347be56105859b2bd68/open_r1-math-220k-train-00001-of-00010.arrow",
+        "source_row": 6443,
+        "generation": 0,
+        "bare_tokens": 2395,
+        "density": 4.175365344467641,
+        "lengths": {
+          "qwen": 2397,
+          "mistral": 2656
+        }
+      },
+      "relative_length_gaps": {
+        "qwen": 0.005408778864156439,
+        "mistral": 0.0015071590052750565
+      }
+    },
+    {
+      "question_sha256": "f1d9f9de1f3b65faa50bc07ffb5f5e5470e3f6fe23514740f619b8f217ad0162",
+      "high": {
+        "sha256": "95cc42e2b38df7474a4db7556fb195b2f28d902cfd80c2e89b661af4c59ad25c",
+        "source_shard": "/home/tkadam/.cache/huggingface/datasets/open-r1___open_r1-math-220k/default/0.0.0/e4e141ec9dea9f8326f4d347be56105859b2bd68/open_r1-math-220k-train-00002-of-00010.arrow",
+        "source_row": 7214,
+        "generation": 0,
+        "bare_tokens": 2342,
+        "density": 13.663535439795046,
+        "lengths": {
+          "qwen": 2344,
+          "mistral": 2520
+        }
+      },
+      "low": {
+        "sha256": "002362e2e0e2fb84d118bec55d3819d0e69611591f18b9fd030cc36c09a1bd28",
+        "source_shard": "/home/tkadam/.cache/huggingface/datasets/open-r1___open_r1-math-220k/default/0.0.0/e4e141ec9dea9f8326f4d347be56105859b2bd68/open_r1-math-220k-train-00002-of-00010.arrow",
+        "source_row": 7214,
+        "generation": 1,
+        "bare_tokens": 2361,
+        "density": 6.776789495976281,
+        "lengths": {
+          "qwen": 2363,
+          "mistral": 2496
+        }
+      },
+      "relative_length_gaps": {
+        "qwen": 0.008073082642872318,
+        "mistral": 0.009569377990430622
+      }
+    },
+    {
+      "question_sha256": "fe2ea1c5a6353019f032276b79120f5271ebea77c6704126efa0f3fbe919a6f3",
+      "high": {
+        "sha256": "ecdc7a6bd39e217274ea8f4a4161cca38faa3777db0744c56fd4ae9e85bb1c38",
+        "source_shard": "/home/tkadam/.cache/huggingface/datasets/open-r1___open_r1-math-220k/default/0.0.0/e4e141ec9dea9f8326f4d347be56105859b2bd68/open_r1-math-220k-train-00003-of-00010.arrow",
+        "source_row": 6928,
+        "generation": 1,
+        "bare_tokens": 1476,
+        "density": 8.130081300813009,
+        "lengths": {
+          "qwen": 1478,
+          "mistral": 1674
+        }
+      },
+      "low": {
+        "sha256": "f0d046ea9f35ac742430a7cc6e61bad26be1e29b63b436dd2c9a2c58eb2bfa4b",
+        "source_shard": "/home/tkadam/.cache/huggingface/datasets/open-r1___open_r1-math-220k/default/0.0.0/e4e141ec9dea9f8326f4d347be56105859b2bd68/open_r1-math-220k-train-00003-of-00010.arrow",
+        "source_row": 6928,
+        "generation": 0,
+        "bare_tokens": 1465,
+        "density": 5.460750853242321,
+        "lengths": {
+          "qwen": 1467,
+          "mistral": 1685
+        }
+      },
+      "relative_length_gaps": {
+        "qwen": 0.007470288624787776,
+        "mistral": 0.006549568323905924
+      }
+    },
+    {
+      "question_sha256": "f0040818b3bdfb7a4434679c85a2defda25e8c3a7726db9eae1d0c5f33d5c4be",
+      "high": {
+        "sha256": "33b6680c2f62d4b6571ed7cd6c2daead3bf7daa8461a8901ba7aa2e6ed21817a",
+        "source_shard": "/home/tkadam/.cache/huggingface/datasets/open-r1___open_r1-math-220k/default/0.0.0/e4e141ec9dea9f8326f4d347be56105859b2bd68/open_r1-math-220k-train-00006-of-00010.arrow",
+        "source_row": 9215,
+        "generation": 1,
+        "bare_tokens": 1509,
+        "density": 7.289595758780649,
+        "lengths": {
+          "qwen": 1511,
+          "mistral": 1609
+        }
+      },
+      "low": {
+        "sha256": "a164945111e9b97c7854b0e673059124e8d3f6121b5c7b72bc8cacd4829c2c0f",
+        "source_shard": "/home/tkadam/.cache/huggingface/datasets/open-r1___open_r1-math-220k/default/0.0.0/e4e141ec9dea9f8326f4d347be56105859b2bd68/open_r1-math-220k-train-00006-of-00010.arrow",
+        "source_row": 9215,
+        "generation": 0,
+        "bare_tokens": 1513,
+        "density": 5.287508261731659,
+        "lengths": {
+          "qwen": 1515,
+          "mistral": 1597
+        }
+      },
+      "relative_length_gaps": {
+        "qwen": 0.0026437541308658294,
+        "mistral": 0.007485963817841547
+      }
+    },
+    {
+      "question_sha256": "7068404059aa4b33d933e09e13dd4b1b4fb70abbbcc3ef68c65b86712e90c94f",
+      "high": {
+        "sha256": "e870c351bc7bb64ee39b4d5a50fe7ac1067b586d656f74c6b85f9f81c295a83b",
+        "source_shard": "/home/tkadam/.cache/huggingface/datasets/open-r1___open_r1-math-220k/default/0.0.0/e4e141ec9dea9f8326f4d347be56105859b2bd68/open_r1-math-220k-train-00007-of-00010.arrow",
+        "source_row": 5856,
+        "generation": 1,
+        "bare_tokens": 1392,
+        "density": 7.183908045977011,
+        "lengths": {
+          "qwen": 1394,
+          "mistral": 1514
+        }
+      },
+      "low": {
+        "sha256": "05e4b5d9e8111b9b9ccbd6763bcdf05e4b4d258f100b310ffb517eb318bdf112",
+        "source_shard": "/home/tkadam/.cache/huggingface/datasets/open-r1___open_r1-math-220k/default/0.0.0/e4e141ec9dea9f8326f4d347be56105859b2bd68/open_r1-math-220k-train-00007-of-00010.arrow",
+        "source_row": 5856,
+        "generation": 0,
+        "bare_tokens": 1382,
+        "density": 3.61794500723589,
+        "lengths": {
+          "qwen": 1384,
+          "mistral": 1523
+        }
+      },
+      "relative_length_gaps": {
+        "qwen": 0.007199424046076314,
+        "mistral": 0.005926901547579849
+      }
+    },
+    {
+      "question_sha256": "a210f9252e584b9a0c40615b34c7f31c4e42a712bfb6e89a65ac189294d62959",
+      "high": {
+        "sha256": "51ae7c1eb9a61ccd50d6edce1d5e870e9438c14a119c05ed99d4a6f8e5892552",
+        "source_shard": "/home/tkadam/.cache/huggingface/datasets/open-r1___open_r1-math-220k/default/0.0.0/e4e141ec9dea9f8326f4d347be56105859b2bd68/open_r1-math-220k-train-00007-of-00010.arrow",
+        "source_row": 9418,
+        "generation": 1,
+        "bare_tokens": 1544,
+        "density": 6.476683937823834,
+        "lengths": {
+          "qwen": 1546,
+          "mistral": 1673
+        }
+      },
+      "low": {
+        "sha256": "9928639b3c7588e3de174d788cf1b07f023c164e26a527f50437119fe102a560",
+        "source_shard": "/home/tkadam/.cache/huggingface/datasets/open-r1___open_r1-math-220k/default/0.0.0/e4e141ec9dea9f8326f4d347be56105859b2bd68/open_r1-math-220k-train-00007-of-00010.arrow",
+        "source_row": 9418,
+        "generation": 0,
+        "bare_tokens": 1544,
+        "density": 3.8860103626943006,
+        "lengths": {
+          "qwen": 1546,
+          "mistral": 1659
+        }
+      },
+      "relative_length_gaps": {
+        "qwen": 0.0,
+        "mistral": 0.008403361344537815
+      }
+    },
+    {
+      "question_sha256": "40baac6011cf224e4a806ca4ab3696077267d3f3bbabc267eddb1de88e620194",
+      "high": {
+        "sha256": "c3964f90066f8eefa21a01791dc0f9ff5f234a32601a8c05a8f72e3628c2a093",
+        "source_shard": "/home/tkadam/.cache/huggingface/datasets/open-r1___open_r1-math-220k/default/0.0.0/e4e141ec9dea9f8326f4d347be56105859b2bd68/open_r1-math-220k-train-00009-of-00010.arrow",
+        "source_row": 1084,
+        "generation": 1,
+        "bare_tokens": 2461,
+        "density": 6.907761072734661,
+        "lengths": {
+          "qwen": 2463,
+          "mistral": 2747
+        }
+      },
+      "low": {
+        "sha256": "351bdbb24839f6719ac5db9d1550e17e7d2eb513da88b5e62c5b55aa56bac18d",
+        "source_shard": "/home/tkadam/.cache/huggingface/datasets/open-r1___open_r1-math-220k/default/0.0.0/e4e141ec9dea9f8326f4d347be56105859b2bd68/open_r1-math-220k-train-00009-of-00010.arrow",
+        "source_row": 1084,
+        "generation": 0,
+        "bare_tokens": 2438,
+        "density": 4.5118949958982775,
+        "lengths": {
+          "qwen": 2440,
+          "mistral": 2726
+        }
+      },
+      "relative_length_gaps": {
+        "qwen": 0.009382011013665103,
+        "mistral": 0.007674036177599123
+      }
+    }
+  ],
+  "question_identity": "exact text after whitespace folding; operators, variable case and LaTeX preserved",
+  "code_sha256": "a23276bfda3a24389cd7391352836c2621b0d796b545798ad57865afa90ff85c",
+  "caveats": [
+    "whitespace normalization can merge formatting variants",
+    "verified-correct filtered source subset",
+    "reflection/content not isolated causal interventions"
+  ]
+}

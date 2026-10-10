@@ -1,0 +1,15 @@
+base: stage1c_dose60.yaml
+experiment: stage1c_final_stability_lr3e6_dose60
+results_dir: results/stage1c_final_stability
+compare_dose15: false
+allow_step230: false
+train:
+  learning_rate: 3.0e-6
+  max_steps: 230
+  stop_after_steps: 60
+  snapshot_steps: []
+  save_merged_model: false
+stabilization:
+  max_accuracy_drop_abs: 0.05
+  max_truncation_rate: 0.02
+  max_likely_loop_rate: 0.02

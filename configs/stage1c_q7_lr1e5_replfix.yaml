@@ -1,0 +1,5 @@
+base: stage1c_q7_lr1e5.yaml
+
+experiment: stage1c_corrected_seed1_replication
+results_dir: results/stage1c_q7_lr1e5_replfix
+

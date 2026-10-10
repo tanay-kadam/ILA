@@ -1,0 +1,8 @@
+base: stage1c_q7.yaml
+
+experiment: stage1c_exposure_stabilization_lr1e5
+results_dir: results/stage1c_q7_lr1e5
+
+train:
+  learning_rate: 1.0e-5
+

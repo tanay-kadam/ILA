@@ -1,0 +1,28 @@
+base: stage1b_q7.yaml
+
+experiment: stage1c_exposure_stabilization
+results_dir: results/stage1c_q7
+
+train:
+  # One continuous run isolates exposure while keeping the Stage 1b optimizer and
+  # adapter fixed. These are optimizer steps, not examples.
+  max_steps: 230
+  snapshot_steps: [15, 30, 60, 115, 230]
+
+eval:
+  sets:
+    gsm8k_dev100: {file: eval_gsm8k_stage1c_dev100.jsonl, max_new_tokens: 6144}
+    math500_dev100: {file: eval_math500_stage1c_dev100.jsonl, max_new_tokens: 6144}
+    gsm8k_confirm400: {file: eval_gsm8k_stage1c_confirm400.jsonl, max_new_tokens: 6144}
+    math500_confirm400: {file: eval_math500_stage1c_confirm400.jsonl, max_new_tokens: 6144}
+
+stabilization:
+  split_seed: 20261005
+  dev_n: 100
+  snapshot_steps: [15, 30, 60, 115, 230]
+  max_accuracy_drop_abs: 0.05
+  max_truncation_rate: 0.10
+  max_likely_loop_rate: 0.05
+  engineering_sets: [gsm8k_dev100, math500_dev100]
+  confirmation_sets: [gsm8k_confirm400, math500_confirm400]
+

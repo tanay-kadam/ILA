@@ -1,0 +1,209 @@
+{
+  "families": {
+    "qwen": {
+      "banks": {
+        "armA_high": {
+          "n": 3676,
+          "mean": 1866.4581066376495,
+          "std": 397.5046945570477,
+          "total": 6861100
+        },
+        "armA_low": {
+          "n": 3676,
+          "mean": 1871.0579434167573,
+          "std": 396.5382894219767,
+          "total": 6878009
+        },
+        "armA_random": {
+          "n": 3676,
+          "mean": 1869.0130576713818,
+          "std": 395.4140209011985,
+          "total": 6870492
+        }
+      },
+      "bank_comparisons": {
+        "armA_high_vs_random": {
+          "relative_mean_difference": -0.0013670054488091887,
+          "standardized_mean_difference": -0.006444398657388222
+        },
+        "armA_low_vs_random": {
+          "relative_mean_difference": 0.0010940992289927287,
+          "standardized_mean_difference": 0.005164158644865724
+        }
+      },
+      "seed_dose": {
+        "0": {
+          "sampler_type": "SeedableRandomSampler",
+          "initial_seed": 0,
+          "recorded_data_seed": 0,
+          "replay_supported": true,
+          "n": 960,
+          "index_sha256": "a397ad6dcdceac742a46c08c79336970e07673d14f5dcb138fefc21c06d09868",
+          "arms": {
+            "armA_high": {
+              "supervised_tokens": 1791017,
+              "mean": 1865.6427083333333
+            },
+            "armA_low": {
+              "supervised_tokens": 1795304,
+              "mean": 1870.1083333333333
+            },
+            "armA_random": {
+              "supervised_tokens": 1791914,
+              "mean": 1866.5770833333333
+            }
+          }
+        },
+        "1": {
+          "sampler_type": "SeedableRandomSampler",
+          "initial_seed": 1,
+          "recorded_data_seed": 1,
+          "replay_supported": true,
+          "n": 960,
+          "index_sha256": "3613747cfa1554c7582b65deed011d45ccc92076f601f58e1999eb9c8256ed35",
+          "arms": {
+            "armA_high": {
+              "supervised_tokens": 1796652,
+              "mean": 1871.5125
+            },
+            "armA_low": {
+              "supervised_tokens": 1799852,
+              "mean": 1874.8458333333333
+            },
+            "armA_random": {
+              "supervised_tokens": 1797919,
+              "mean": 1872.8322916666666
+            }
+          }
+        },
+        "2": {
+          "sampler_type": "SeedableRandomSampler",
+          "initial_seed": 2,
+          "recorded_data_seed": 2,
+          "replay_supported": true,
+          "n": 960,
+          "index_sha256": "68c59e9457ac5c8c55a1284f3c9ea38096ae0bcd27561ffd342816a51856e19c",
+          "arms": {
+            "armA_high": {
+              "supervised_tokens": 1804013,
+              "mean": 1879.1802083333334
+            },
+            "armA_low": {
+              "supervised_tokens": 1808422,
+              "mean": 1883.7729166666666
+            },
+            "armA_random": {
+              "supervised_tokens": 1806585,
+              "mean": 1881.859375
+            }
+          }
+        }
+      },
+      "residual_bank_imbalance_screen": false
+    },
+    "mistral": {
+      "banks": {
+        "armA_high": {
+          "n": 3676,
+          "mean": 2025.0688248095755,
+          "std": 433.723587150801,
+          "total": 7444153
+        },
+        "armA_low": {
+          "n": 3676,
+          "mean": 2047.034548422198,
+          "std": 440.01050308105204,
+          "total": 7524899
+        },
+        "armA_random": {
+          "n": 3676,
+          "mean": 2035.3835690968444,
+          "std": 434.322599012464,
+          "total": 7482070
+        }
+      },
+      "bank_comparisons": {
+        "armA_high_vs_random": {
+          "relative_mean_difference": -0.005067715217847546,
+          "standardized_mean_difference": -0.023765421692465052
+        },
+        "armA_low_vs_random": {
+          "relative_mean_difference": 0.0057242180305716595,
+          "standardized_mean_difference": 0.026650558620522773
+        }
+      },
+      "seed_dose": {
+        "0": {
+          "sampler_type": "SeedableRandomSampler",
+          "initial_seed": 0,
+          "recorded_data_seed": 0,
+          "replay_supported": true,
+          "n": 960,
+          "index_sha256": "a397ad6dcdceac742a46c08c79336970e07673d14f5dcb138fefc21c06d09868",
+          "arms": {
+            "armA_high": {
+              "supervised_tokens": 1942874,
+              "mean": 2023.8270833333333
+            },
+            "armA_low": {
+              "supervised_tokens": 1967648,
+              "mean": 2049.633333333333
+            },
+            "armA_random": {
+              "supervised_tokens": 1953539,
+              "mean": 2034.9364583333333
+            }
+          }
+        },
+        "1": {
+          "sampler_type": "SeedableRandomSampler",
+          "initial_seed": 1,
+          "recorded_data_seed": 1,
+          "replay_supported": true,
+          "n": 960,
+          "index_sha256": "3613747cfa1554c7582b65deed011d45ccc92076f601f58e1999eb9c8256ed35",
+          "arms": {
+            "armA_high": {
+              "supervised_tokens": 1947861,
+              "mean": 2029.021875
+            },
+            "armA_low": {
+              "supervised_tokens": 1966606,
+              "mean": 2048.547916666667
+            },
+            "armA_random": {
+              "supervised_tokens": 1959060,
+              "mean": 2040.6875
+            }
+          }
+        },
+        "2": {
+          "sampler_type": "SeedableRandomSampler",
+          "initial_seed": 2,
+          "recorded_data_seed": 2,
+          "replay_supported": true,
+          "n": 960,
+          "index_sha256": "68c59e9457ac5c8c55a1284f3c9ea38096ae0bcd27561ffd342816a51856e19c",
+          "arms": {
+            "armA_high": {
+              "supervised_tokens": 1956822,
+              "mean": 2038.35625
+            },
+            "armA_low": {
+              "supervised_tokens": 1978137,
+              "mean": 2060.559375
+            },
+            "armA_random": {
+              "supervised_tokens": 1968130,
+              "mean": 2050.1354166666665
+            }
+          }
+        }
+      },
+      "residual_bank_imbalance_screen": false
+    }
+  },
+  "sampler_scope": "replay only when prepared Trainer sampler exposes deterministic initial_seed matching recorded data_seed; no guessed permutations",
+  "protocol": "docs/tmlr_matching_feasibility_protocol.md",
+  "code_sha256": "82beba4b07f7f8c6a3a14b62eaebe1a19c6135c00d4d65cbea6db3ceb38f8f89"
+}

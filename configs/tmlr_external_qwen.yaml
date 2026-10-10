@@ -1,0 +1,8 @@
+base: stage1c_final_stability.yaml
+experiment: tmlr_external_qwen_locked_recipes
+data_dir: data/tmlr_external
+results_dir: results/tmlr_external_qwen
+eval:
+  sets:
+    svamp: {file: eval_svamp.jsonl, max_new_tokens: 6144, answer_format: boxed}
+    aqua: {file: eval_aqua.jsonl, max_new_tokens: 6144, answer_format: boxed_choice}

@@ -1,0 +1,12 @@
+base: stage1c_matrix.yaml
+
+experiment: stage1c_natural_composition_dose60
+results_dir: results/stage1c_dose60
+
+train:
+  # Preserve the validated 230-step cosine schedule while stopping at dose 60.
+  max_steps: 230
+  stop_after_steps: 60
+  snapshot_steps: []
+  save_merged_model: false
+

@@ -1,0 +1,10 @@
+# Paraphrased styles (data/gate0_para) on Qwen2.5-1.5B. Same data, seeds, and
+# hyperparameters as gate0_para.yaml (0.5B); only the base model changes. Compare with
+# gate0_1p5b (fixed wording) to see whether rigid wording drives amplification at scale.
+base: gate0_para.yaml
+experiment: gate0_para_1p5b
+model: Qwen/Qwen2.5-1.5B
+results_dir: results/gate0_para_1p5b
+
+eval:
+  hf_batch_size: 32

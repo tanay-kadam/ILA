@@ -1,0 +1,141 @@
+{
+  "protocol": "docs/tmlr_matching_feasibility_protocol.md",
+  "pool_rows": 11491,
+  "unique_normalized_questions": 11440,
+  "question_multiplicity": {
+    "1": 11389,
+    "2": 51
+  },
+  "questions_with_distinct_archived_traces": 51,
+  "same_question_pilot_minimum": 960,
+  "archived_question_pilot_feasible": false,
+  "original_bin_counts_identical": false,
+  "arms": {
+    "high": {
+      "n": 3676,
+      "trace_tokens_mean": 1864.4581066376495,
+      "trace_tokens_std": 397.5046945570477,
+      "quantiles": [
+        1003.0,
+        1295.0,
+        1900.5,
+        2385.0,
+        2500.0
+      ],
+      "reflection_density_mean": 6.7942557529292635,
+      "source_type_counts": {
+        "amc_aime|Algebra": 33,
+        "aops_forum|Algebra": 70,
+        "aops_forum|Combinatorics": 27,
+        "aops_forum|Geometry": 34,
+        "cn_contest|Algebra": 292,
+        "cn_contest|Combinatorics": 36,
+        "cn_contest|Geometry": 47,
+        "cn_contest|Number Theory": 45,
+        "olympiads|Algebra": 1579,
+        "olympiads|Calculus": 200,
+        "olympiads|Combinatorics": 325,
+        "olympiads|Geometry": 294,
+        "olympiads|Inequalities": 26,
+        "olympiads|Logic and Puzzles": 188,
+        "olympiads|Number Theory": 417,
+        "olympiads|Other": 24,
+        "aops_forum|Number Theory": 25,
+        "amc_aime|Number Theory": 2,
+        "aops_forum|Logic and Puzzles": 6,
+        "aops_forum|Calculus": 4,
+        "cn_contest|Inequalities": 2
+      }
+    },
+    "low": {
+      "n": 3676,
+      "trace_tokens_mean": 1869.0579434167573,
+      "trace_tokens_std": 396.5382894219767,
+      "quantiles": [
+        1001.0,
+        1295.0,
+        1900.0,
+        2385.0,
+        2500.0
+      ],
+      "reflection_density_mean": 2.5887208953864627,
+      "source_type_counts": {
+        "amc_aime|Algebra": 33,
+        "aops_forum|Algebra": 70,
+        "aops_forum|Combinatorics": 27,
+        "aops_forum|Geometry": 34,
+        "cn_contest|Algebra": 292,
+        "cn_contest|Combinatorics": 36,
+        "cn_contest|Geometry": 47,
+        "cn_contest|Number Theory": 45,
+        "olympiads|Algebra": 1579,
+        "olympiads|Calculus": 200,
+        "olympiads|Combinatorics": 325,
+        "olympiads|Geometry": 294,
+        "olympiads|Inequalities": 26,
+        "olympiads|Logic and Puzzles": 188,
+        "olympiads|Number Theory": 417,
+        "olympiads|Other": 24,
+        "aops_forum|Number Theory": 25,
+        "amc_aime|Number Theory": 2,
+        "aops_forum|Logic and Puzzles": 6,
+        "aops_forum|Calculus": 4,
+        "cn_contest|Inequalities": 2
+      }
+    },
+    "random": {
+      "n": 3676,
+      "trace_tokens_mean": 1867.0130576713818,
+      "trace_tokens_std": 395.4140209011985,
+      "quantiles": [
+        1002.0,
+        1295.0,
+        1900.5,
+        2385.0,
+        2500.0
+      ],
+      "reflection_density_mean": 4.588261553574171,
+      "source_type_counts": {
+        "amc_aime|Algebra": 33,
+        "aops_forum|Algebra": 70,
+        "aops_forum|Combinatorics": 27,
+        "aops_forum|Geometry": 34,
+        "cn_contest|Algebra": 292,
+        "cn_contest|Combinatorics": 36,
+        "cn_contest|Geometry": 47,
+        "cn_contest|Number Theory": 45,
+        "olympiads|Algebra": 1579,
+        "olympiads|Calculus": 200,
+        "olympiads|Combinatorics": 325,
+        "olympiads|Geometry": 294,
+        "olympiads|Inequalities": 26,
+        "olympiads|Logic and Puzzles": 188,
+        "olympiads|Number Theory": 417,
+        "olympiads|Other": 24,
+        "aops_forum|Number Theory": 25,
+        "amc_aime|Number Theory": 2,
+        "aops_forum|Logic and Puzzles": 6,
+        "aops_forum|Calculus": 4,
+        "cn_contest|Inequalities": 2
+      }
+    }
+  },
+  "length_contrasts": {
+    "high_vs_random": {
+      "relative_mean_length_difference": -0.0013684698257648842,
+      "standardized_mean_difference": -0.006444398657388222
+    },
+    "low_vs_random": {
+      "relative_mean_length_difference": 0.0010952712606766557,
+      "standardized_mean_difference": 0.005164158644865724
+    }
+  },
+  "length_only_new_bank_priority": "REVIEW_RESIDUAL_IMBALANCE",
+  "scope": "Qwen bare trace lengths, not canonical supervised lengths or actual sampled exposure; alternate cached source generations not inspected",
+  "sha256": {
+    "data\\stage1\\pool.jsonl": "cdac68f17fbf0e1809029341d482f7ca611284ad874ddc511e1c224cb75b450a",
+    "data\\stage1\\train_armA_high.jsonl": "4e00d21174622dba90f3f84a3b1b101ccc82c7b275ce287c448352ba3140a1f5",
+    "data\\stage1\\train_armA_low.jsonl": "239aa6bdb9d0cc9582411e20155ee393ac967395fb7e5b544631d516daa11475",
+    "data\\stage1\\train_armA_random.jsonl": "d4a76693cbb15932690f6d8288da00e01d0081be668cfc024f431883052959fa"
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "kind": "PROVISIONAL_AI_REVIEW_NOT_HUMAN_VALIDATION",
+  "files": {
+    "reviewer_A_labels_AI_DRAFT.jsonl": {
+      "sha256": "a9c533a8f8703018a8bc852954e7f1aa5d436d4108a0fba5cab7934e561ae8c5",
+      "n": 127,
+      "declared_reviewer_ids": [
+        "GPT6_AI_DRAFT_A_NOT_HUMAN"
+      ],
+      "counts": {
+        "loop_assessment/yes": 53,
+        "final_choice_interpretation/E": 1,
+        "loop_assessment/no": 41,
+        "final_choice_interpretation/D": 6,
+        "final_choice_interpretation/A": 6,
+        "final_choice_interpretation/B": 5,
+        "final_choice_interpretation/unparseable": 6,
+        "loop_assessment/uncertain": 1,
+        "final_choice_interpretation/ambiguous": 6,
+        "final_choice_interpretation/C": 2
+      }
+    },
+    "reviewer_B_AI_provisional.jsonl": {
+      "sha256": "1a4bdc275a2fec74c788bd64b659c021be5f62dc509a4f4b517821833dbe86ce",
+      "n": 127,
+      "declared_reviewer_ids": [
+        "AI_PROVISIONAL_NOT_HUMAN"
+      ],
+      "counts": {
+        "loop_assessment/yes": 53,
+        "final_choice_interpretation/E": 1,
+        "loop_assessment/no": 39,
+        "final_choice_interpretation/D": 6,
+        "loop_assessment/uncertain": 3,
+        "final_choice_interpretation/A": 3,
+        "final_choice_interpretation/B": 4,
+        "final_choice_interpretation/ambiguous": 9,
+        "final_choice_interpretation/unparseable": 7,
+        "final_choice_interpretation/C": 2
+      }
+    }
+  },
+  "tasks": {
+    "loop_assessment": {
+      "n": 95,
+      "agreements": 86,
+      "raw_ai_concordance": 0.9052631578947369,
+      "disagreement_ids": [
+        "0061badab0c19862a9f8",
+        "07a7bc2fa7e2a0596ffa",
+        "07c8499c6bb1867ac0d6",
+        "1e801705279ada8a647e",
+        "2109aa7ed48206f9b064",
+        "2e70039a80c467896f04",
+        "3e5adbe45cb6449992a1",
+        "56303cb0014c456ab836",
+        "bff66aeb63c11bcc5fca"
+      ]
+    },
+    "final_choice_interpretation": {
+      "n": 32,
+      "agreements": 27,
+      "raw_ai_concordance": 0.84375,
+      "disagreement_ids": [
+        "16c9cfe008ec7838e22d",
+        "17bdcdc7c08f92470689",
+        "2e16cdae514459fca15c",
+        "85faaf18fef4e48c85de",
+        "aa51d7f0e0488a89d7b7"
+      ]
+    }
+  },
+  "total_disagreements": 14,
+  "actual_human_labels": 0,
+  "missing_options_claims": [],
+  "limitations": [
+    "self-reported AI provenance, not provider-verified model/version/input logs",
+    "raw concordance is not accuracy or human agreement",
+    "targeted adjudication is unblinded and does not validate the whole sample/population",
+    "provisional rerun follows input/rubric feedback; not pristine confirmatory evidence"
+  ]
+}

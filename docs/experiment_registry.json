@@ -1,0 +1,334 @@
+{
+  "schema_version": 1,
+  "last_verified_date": "2026-10-09",
+  "purpose": "Experiment ledger for human-led manuscript updates, not a manuscript or submission-readiness certificate.",
+  "maintenance": "After each launch/result review, update verified statuses and sources, append an update_history entry, collect analysis artifacts, then run scripts/build_experiment_update_packet.py. Never promote planned/partial work to completed. Preserve prior results and failures. Do not edit manuscripts.",
+  "update_history": [
+    {
+      "date": "2026-10-08",
+      "event": "Created current self-contained handoff. Collected completed prompt-control analyses and audits. Verified 56 completed jobs, zero failed, final analysis-ready status. Prior external replications included. Termination/matching/human-validation controls remain not started."
+    },
+    {
+      "date": "2026-10-09",
+      "event": "Implemented terminal-EOS control. Expanded prospective matrix to fresh weight1/10 pairs (36 trainings) because historical Qwen snapshots lack modern fingerprints. V1 precheck failed before training on the assumption EOS was the last label. V2 preserves serialized whitespace after EOS and weights the EOS position. Failed v1 code/protocol retained. Native-loss, gradient accumulation and suffix tests passed; no full results yet."
+    },
+    {
+      "date": "2026-10-09",
+      "event": "Stopped v2 during smokes, before full runs: inherited Qwen merged-weight saving could cause base fallback when adapter_dir was unset. Its weight1 eval smoke is not valid adapter verification. Preserve v2 sources/outputs. V3 disables merged saving for both weights, requires an existing trained adapter, fingerprints/pins base snapshots, and checks >=90 GiB free. All 91 server tests passed. V3 detached precheck launched."
+    },
+    {
+      "date": "2026-10-09",
+      "event": "V3 frozen model/data/terminal-position precheck passed. GPU train+adapter-eval smokes running. Scheduler-only completion fix recorded with old/new source hashes: waiting workers exit once all jobs are claimed. Reclaimed only proven dead lease of the stopped own v2 process. All 94 server tests passed, including scheduler exit and GPUs5/6 rejection. No scientific loss/config change from this scheduler patch."
+    },
+    {
+      "date": "2026-10-09",
+      "event": "All four v3 GPU train+actual-adapter-eval smokes passed. Verified full queue started at 02:11:53 server local time; six full train processes observed, zero immediate failed jobs. Thirty-six matched trainings and 72 evaluations queued with automatic final integrity/paired analysis. Full-matrix results not available."
+    },
+    {
+      "date": "2026-10-09",
+      "event": "Read-only EOS audit checked18 paired configs and six current training records: no unexplained drift, zero failed jobs at snapshot,94 tests passed. Found reporting-count label issue and provenance/interpretation guard weaknesses; no confirmed result-corrupting loss bug. Left running jobs and scientific code unchanged; no rerun recommended absent substantive mismatch. Added audit report and raw check evidence to handoff."
+    },
+    {
+      "date": "2026-10-09",
+      "event": "EOS control completed at07:53:46 server local time:36 jobs,0 failures,72 full evaluations. Pulled four family/weight analyses and paired comparison. Prespecified operational hypothesis not supported in either family; no broad equivalence/sole-mechanism conclusion."
+    },
+    {
+      "date": "2026-10-09",
+      "event": "Final EOS verification PASS(all36/72,21 model files). Existing length/source/type matching confirmed; measured canonical and replayed sampled token means balanced within frozen margins. Operator-preserving cached-source pair feasibility9/960, so no new matched GPU training. Blinded127-item real-human bundle prepared(empty labels). Nonweight raw evidence archived/backedup:43,280,523 bytes,SHA verified,all72 local raw hashes match. Frozen-checkpoint EOS scalar-loss probe launched read-only to qualify negative intervention, not retuning/training."
+    },
+    {
+      "date": "2026-10-09",
+      "event": "Completed all42 frozen-checkpoint diagnostic conditions/1344 teacher-forced forwards. Added scalar EOS term shares below0.17%; inference-only, no optimizer/weight writes, no new training. Final nonweight raw archive and72 local prediction hashes verified.104 local tests passed;127 blinded items prepared with zero human labels. Automated consolidation complete; human labels/author-led manuscript revision pending."
+    },
+    {
+      "date": "2026-10-09",
+      "event": "Frozen installed training/evaluation package name-version snapshots(226/157 packages), no package URLs/credentials or installs. Raw archive SHA and72 local raw hashes verified. Human item validation passed127 unique IDs, empty labels, no explicit gold/condition/automatic flags in reviewer items. Diagnostic rederivation passed42 objective-share sums and1344 probability rows."
+    },
+    {
+      "date": "2026-10-09",
+      "event": "Inspected user-provided A AI_DRAFT and B AI_REVIEW labels:127 valid items each. Raw AI agreement71/95 loops,22/32 choices,34 disagreements. Spotted input/rubric issues; original labels/scores/manuscripts unchanged. Recorded as automated exploratory review only,0 human labels."
+    },
+    {
+      "date": "2026-10-09",
+      "event": "Inspected new B_AI_provisional:127 valid labels, no missing-options explanations. Current A/B raw concordance86/95 loops and27/32 choices,14 disputes. Prepared unfilled single-author AI-assisted targeted adjudication cases. Older B raw filename absent, previous audit retained; current packet source list reflects availability.0 human labels; no score/paper/AI label edits."
+    },
+    {
+      "date": "2026-10-09",
+      "event": "At user request, reviewed all14 disputed full outputs with original options/rubric, no gold/private-key use. Saved thirdAI assessment separately(8 loopyes,1 loopno,5 semanticambiguity), with confidence/reasons and input hashes. PriorA/B visible, so not blinded/independent or human validation. Author fields and originalAI/primary scores unchanged; borderline ambiguity/unparseable sensitivity retained."
+    }
+  ],
+  "experiments": [
+    {
+      "id": "historical_stage1_studies",
+      "status": "ARCHIVED_EVIDENCE",
+      "sources": [
+        "docs/paper_evidence_packet.json"
+      ],
+      "note": "Preserved historical numerical results. Old queued-extension narrative is superseded by this ledger."
+    },
+    {
+      "id": "external_qwen_replication",
+      "status": "COMPLETED_ANALYSIS_INTEGRITY_PASS",
+      "sources": [
+        "docs/tmlr_external_qwen_analysis.json",
+        "docs/tmlr_strengthening_protocol.md"
+      ],
+      "checkpoint_evaluations": 28,
+      "datasets": {
+        "svamp": 400,
+        "aqua": 254
+      }
+    },
+    {
+      "id": "external_mistral_replication",
+      "status": "COMPLETED_ANALYSIS_INTEGRITY_PASS",
+      "sources": [
+        "docs/tmlr_external_mistral_analysis.json",
+        "docs/tmlr_strengthening_protocol.md"
+      ],
+      "new_training_runs": 18,
+      "checkpoint_evaluations": 28,
+      "datasets": {
+        "svamp": 400,
+        "aqua": 254
+      }
+    },
+    {
+      "id": "original_aqua_gold_blind_content_audit",
+      "status": "COMPLETED_AUTOMATED_DIAGNOSTIC_NOT_HUMAN_VALIDATED",
+      "sources": [
+        "docs/tmlr_format_audit_qwen.json",
+        "docs/tmlr_format_audit_mistral.json"
+      ],
+      "checkpoint_audits": 56,
+      "note": "Secondary mapping does not replace primary explicit-letter scores."
+    },
+    {
+      "id": "aqua_fixed_format_prompt_control",
+      "status": "COMPLETED_VERIFIED_FORMAT_CONTROL_ANALYSIS_READY",
+      "completed_at_server_local": "2026-10-08T14:05:19",
+      "completed_jobs": 56,
+      "failed_jobs": 0,
+      "new_training_runs": 0,
+      "sources": [
+        "docs/tmlr_format_control_comparison.json",
+        "docs/tmlr_format_control_qwen_analysis.json",
+        "docs/tmlr_format_control_mistral_analysis.json",
+        "docs/tmlr_format_control_qwen_content_audit.json",
+        "docs/tmlr_format_control_mistral_content_audit.json",
+        "docs/tmlr_format_control_precheck.json",
+        "docs/tmlr_format_control_protocol.md"
+      ],
+      "server_status_path": "results/tmlr_format_control_controller/STATUS",
+      "note": "254 AQuA questions; both bases plus 27 frozen adapters per family. Fixed prompt package, no prompt search."
+    },
+    {
+      "id": "termination_supervision_control",
+      "status": "COMPLETED_VERIFIED_EOS_CONTROL_ANALYSIS_READY",
+      "priority": 1,
+      "planned_training_runs": 36,
+      "planned_full_evaluations": 72,
+      "weights": [
+        1,
+        10
+      ],
+      "lr": 0.00001,
+      "optimizer_steps": 60,
+      "planned_scheduler_horizon": 230,
+      "sources": [
+        "docs/tmlr_eos_control_protocol.md",
+        "docs/tmlr_eos_control_precheck.json",
+        "docs/tmlr_eos_control_scheduler_fix.json",
+        "docs/tmlr_eos_control_v1_failure.json",
+        "docs/tmlr_eos_control_v2_interruption.json",
+        "docs/tmlr_eos_control_handoff.md",
+        "scripts/train_terminal_eos.py",
+        "src/ila/terminal_eos_loss.py",
+        "tests/test_terminal_eos_loss.py",
+        "tests/test_eos_controller.py",
+        "scripts/tmlr_eos_control.py",
+        "scripts/analyze_tmlr_eos.py",
+        "docs/tmlr_eos_qwen_weight1_smoke.json",
+        "docs/tmlr_eos_qwen_weight10_smoke.json",
+        "docs/tmlr_eos_mistral_weight1_smoke.json",
+        "docs/tmlr_eos_mistral_weight10_smoke.json",
+        "docs/tmlr_eos_pipeline_audit_2026-10-09.md",
+        "docs/tmlr_eos_runtime_audit_2026-10-09.json",
+        "docs/tmlr_eos_control_comparison.json",
+        "docs/tmlr_eos_qwen_weight1_analysis.json",
+        "docs/tmlr_eos_qwen_weight10_analysis.json",
+        "docs/tmlr_eos_mistral_weight1_analysis.json",
+        "docs/tmlr_eos_mistral_weight10_analysis.json",
+        "docs/tmlr_eos_final_verification.json",
+        "docs/tmlr_reproducibility_manifest_2026-10-09.json",
+        "docs/paper_evidence_claim_map_2026-10-09.md",
+        "docs/tmlr_train_environment_versions.json",
+        "docs/tmlr_eval_environment_versions.json"
+      ],
+      "server_root": "results/tmlr_eos_control_v3",
+      "retained_failed_precheck": "results/tmlr_eos_control/controller/failure.json",
+      "retained_interrupted_smokes": "results/tmlr_eos_control_v2",
+      "note": "Completed36 matched trainings/72 evaluations, zero failures. Final all-matrix verification PASS:72 fingerprints/raw metric and seed summaries,21 pinned model/tokenizer files, no discrepancies. Both operational EOS gates negative; isolated historical training-gradient strength remains unlogged. Raw nonweight outputs/logs/code frozen and locally hash-verified.",
+      "full_queue_started_at_server_local": "2026-10-09T02:11:53",
+      "last_audit": {
+        "date": "2026-10-09",
+        "scope": "read-only current implementation/config/runtime check; full matrix incomplete",
+        "unexplained_runtime_or_pair_drift": 0,
+        "tests_passed": 94,
+        "confirmed_reporting_issue": "weighted_terminal_examples counts eligible dataset, not processed examples",
+        "remaining_risks": [
+          "imported-helper fingerprint coverage",
+          "missing separate terminal-CE effectiveness diagnostic",
+          "pooled mechanism gate not per-seed usable quality",
+          "zero-mean relative-cost edge case"
+        ]
+      },
+      "completed_at_server_local": "2026-10-09T07:53:46",
+      "completed_training_and_eval_jobs": 36,
+      "failed_jobs": 0,
+      "completed_full_evaluations": 72,
+      "final_verification": {
+        "status": "PASS",
+        "trainings": 36,
+        "evaluations": 72,
+        "model_files": 21,
+        "issues": 0,
+        "scope": "main-agent rederivation/fingerprint check, not human or independent publication-final review"
+      }
+    },
+    {
+      "id": "matched_trace_length_and_training_dose_control",
+      "status": "FEASIBILITY_COMPLETED_NO_MATCHED_GPU_RUN_JUSTIFIED",
+      "priority": 2,
+      "note": "Original banks already match length/source/type bin counts; canonical bank and verified seedable-sampler960-example exposure means within1% margins versus random. Strict same-question/reflection/length pairing yields9 distinct questions of960 required from original cached source. No margins relaxed, traces rewritten or GPU training launched.",
+      "sources": [
+        "docs/tmlr_matching_feasibility_protocol.md",
+        "docs/tmlr_matching_pool_feasibility_v2.json",
+        "docs/tmlr_matching_cached_pairs_feasibility.json",
+        "docs/tmlr_supervised_token_exposure.json",
+        "docs/tmlr_consolidation_decision_2026-10-09.md"
+      ],
+      "feasibility": {
+        "cached_source_rows": 93733,
+        "qualifying_questions": 9,
+        "required_questions": 960,
+        "maximum_sampled_token_exposure_gap_percent": 0.7222277108365871,
+        "source_question_identity": "operator-preserving whitespace folding"
+      }
+    },
+    {
+      "id": "blinded_human_validation",
+      "status": "BLINDED_BUNDLE_PREPARED_AWAITING_REAL_HUMAN_LABELS",
+      "priority": 3,
+      "sources": [
+        "docs/HUMAN_REVIEW_INSTRUCTIONS.md",
+        "data/human_review_v1/manifest.json",
+        "docs/tmlr_consolidation_decision_2026-10-09.md",
+        "docs/ai_review_file_audit_2026-10-09.json",
+        "docs/AI_REVIEW_FILE_AUDIT.md",
+        "data/human_review_v1/reviewer_A_labels_AI_DRAFT.jsonl",
+        "data/human_review_v1/reviewer_B_AI_provisional.jsonl",
+        "docs/ai_review_provisional_audit.json",
+        "docs/AI_PROVISIONAL_REVIEW_NEXT_STEP.md",
+        "docs/ai_third_assessment_14.json",
+        "docs/AI_THIRD_ASSESSMENT_14.md",
+        "data/human_review_v1/reviewer_C_AI_ADJUDICATION_14.jsonl"
+      ],
+      "note": "Reviewer items/empty A,B templates prepared; condition/automatic labels/gold hidden, textual style may reveal clues. No actual human review or inter-rater agreement. Stratified loop and purposeful choice samples require distinct interpretations. AI labels cannot count as human validation.",
+      "prepared_items": 127,
+      "loop_items": 95,
+      "choice_interpretation_items": 32,
+      "actual_completed_human_labels": 0,
+      "ai_review": {
+        "status": "CURRENT_B_PROVISIONAL_STRUCTURALLY_VALID_TARGETED_AUTHOR_ADJUDICATION_PENDING",
+        "a_file": "data/human_review_v1/reviewer_A_labels_AI_DRAFT.jsonl",
+        "b_file": "data/human_review_v1/reviewer_B_AI_provisional.jsonl",
+        "items_per_file": 127,
+        "loop_agreements": 86,
+        "loop_n": 95,
+        "choice_agreements": 27,
+        "choice_n": 32,
+        "total_disagreements": 14,
+        "actual_human_labels": 0,
+        "provenance": "AI identities self-reported; owner confirms original B input bundle omitted A labels; complete rerun prompt/input handling not independently verified",
+        "review_findings": "missing-options explanations absent; previously checked numeric-option and label/value cases corrected; remaining semantic/rubric disagreements unresolved",
+        "adjudication_template": "data/human_review_v1/author_adjudication_AI_DISAGREEMENTS_PENDING.jsonl"
+      },
+      "previous_ai_review": {
+        "status": "TWO_USER_PROVIDED_AI_LABEL_SETS_STRUCTURALLY_VALID_SEMANTIC_REVIEW_UNRESOLVED",
+        "items_per_file": 127,
+        "loop_agreements": 71,
+        "loop_n": 95,
+        "choice_agreements": 22,
+        "choice_n": 32,
+        "total_disagreements": 34,
+        "actual_human_labels": 0,
+        "provenance": "model IDs self-reported; prompt/input completeness and independence not verified",
+        "known_input_or_rubric_warnings": "five B missing-options reasons contradict stored bundle; explicit final label/value conflict overlooked; loop definition differences"
+      },
+      "unavailable_previous_raw_file": {
+        "path": "data/human_review_v1/reviewer_B_labels_AI_REVIEW.jsonl",
+        "status": "ABSENT_CURRENT_WORKTREE",
+        "prior_audit": "docs/ai_review_file_audit_2026-10-09.json",
+        "note": "Historical audit retained; raw file not reconstructed or overwritten"
+      },
+      "third_ai_assessment": {
+        "status": "COMPLETED_SUPPLEMENTAL_AI_ASSESSMENT_NOT_GROUND_TRUTH",
+        "n": 14,
+        "loop_yes": 8,
+        "loop_no": 1,
+        "choice_ambiguous": 5,
+        "actual_human_labels": 0,
+        "not_blinded": true,
+        "prior_a_b_visible": true,
+        "author_fields_untouched": true,
+        "primary_scores_unchanged": true
+      }
+    },
+    {
+      "id": "actual_decoding_cap_intervention",
+      "status": "CANDIDATE_NOT_STARTED",
+      "note": "Clipped-length sensitivity is descriptive, not actual longer-cap generation."
+    },
+    {
+      "id": "terminal_eos_effectiveness_probe",
+      "status": "COMPLETED_VERIFIED_FROZEN_CHECKPOINT_DIAGNOSTIC",
+      "sources": [
+        "docs/tmlr_eos_effectiveness_probe_protocol.md",
+        "scripts/probe_terminal_eos.py",
+        "docs/tmlr_eos_effectiveness_probe_qwen.json",
+        "docs/tmlr_eos_effectiveness_probe_mistral.json",
+        "docs/tmlr_eos_effectiveness_probe_summary.md"
+      ],
+      "note": "Both model-family base/final probes completed. Added scalar EOS CE share <0.17% in all42 conditions. Posthoc fixed32-case/arm teacher-forced eval-mode probe; not historical gradient strength, optimizer influence, generalization, or free-running termination. No coefficients retuned.",
+      "conditions": 42,
+      "examples_per_condition": 32,
+      "teacher_forced_forwards": 1344,
+      "new_training_runs": 0
+    }
+  ],
+  "constraints": {
+    "allowed_physical_gpus": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      7
+    ],
+    "forbidden_physical_gpus": [
+      5,
+      6
+    ],
+    "weights_remain_remote": true,
+    "manuscripts_managed_by_user": true
+  },
+  "consolidation": {
+    "status": "AUTOMATED_CHECKS_COMPLETED_HUMAN_REVIEW_PENDING",
+    "decision_source": "docs/tmlr_consolidation_decision_2026-10-09.md",
+    "local_tests_passed": 104,
+    "additional_matched_training_launched": false,
+    "actual_human_labels": 0,
+    "manuscripts_untouched": true
+  }
+}

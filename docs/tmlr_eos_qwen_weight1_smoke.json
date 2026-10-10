@@ -1,0 +1,73 @@
+{
+  "status": "completed",
+  "job": {
+    "id": "qwen_weight1_armA_random_seed0",
+    "family": "qwen",
+    "weight": 1,
+    "arm": "armA_random",
+    "seed": 0,
+    "train_config": "/home/tkadam/ILA/results/tmlr_eos_control_v3/controller/qwen_weight1_armA_random_seed0_train.yaml",
+    "eval_config": "/home/tkadam/ILA/results/tmlr_eos_control_v3/controller/qwen_weight1_armA_random_seed0_eval.yaml",
+    "train_sha256": "d4a76693cbb15932690f6d8288da00e01d0081be668cfc024f431883052959fa"
+  },
+  "physical_gpu": 1,
+  "commands": [
+    {
+      "command": [
+        "/home/tkadam/ILA/.venv/bin/python",
+        "scripts/train_terminal_eos.py",
+        "--config",
+        "/home/tkadam/ILA/results/tmlr_eos_control_v3/controller/qwen_weight1_armA_random_seed0_train.yaml",
+        "--style",
+        "armA_random",
+        "--seed",
+        "999",
+        "--set",
+        "results_dir=results/tmlr_eos_control_v3/smoke_qwen_w1/train",
+        "train.stop_after_steps=1",
+        "train.snapshot_steps=[]"
+      ],
+      "log": "/home/tkadam/ILA/results/tmlr_eos_control_v3/controller/logs/qwen_weight1_armA_random_seed0_smoke_train.log"
+    },
+    {
+      "command": [
+        "/home/tkadam/ILA/.venv-vllm/bin/python",
+        "scripts/evaluate.py",
+        "--config",
+        "/home/tkadam/ILA/results/tmlr_eos_control_v3/controller/qwen_weight1_armA_random_seed0_eval.yaml",
+        "--style",
+        "lr1e5_step60__armA_random",
+        "--seed",
+        "999",
+        "--eval-set",
+        "svamp",
+        "--limit",
+        "2",
+        "--set",
+        "results_dir=results/tmlr_eos_control_v3/smoke_qwen_w1/eval"
+      ],
+      "log": "/home/tkadam/ILA/results/tmlr_eos_control_v3/controller/logs/qwen_weight1_armA_random_seed0_smoke_svamp.log"
+    },
+    {
+      "command": [
+        "/home/tkadam/ILA/.venv-vllm/bin/python",
+        "scripts/evaluate.py",
+        "--config",
+        "/home/tkadam/ILA/results/tmlr_eos_control_v3/controller/qwen_weight1_armA_random_seed0_eval.yaml",
+        "--style",
+        "lr1e5_step60__armA_random",
+        "--seed",
+        "999",
+        "--eval-set",
+        "aqua",
+        "--limit",
+        "2",
+        "--set",
+        "results_dir=results/tmlr_eos_control_v3/smoke_qwen_w1/eval"
+      ],
+      "log": "/home/tkadam/ILA/results/tmlr_eos_control_v3/controller/logs/qwen_weight1_armA_random_seed0_smoke_aqua.log"
+    }
+  ],
+  "train_record": "/home/tkadam/ILA/results/tmlr_eos_control_v3/smoke_qwen_w1/train/armA_random/seed999/run_record.json",
+  "smoke": true
+}

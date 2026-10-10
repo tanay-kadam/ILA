@@ -1,0 +1,13 @@
+base: stage1.yaml
+
+experiment: stage1b
+model: Qwen/Qwen2.5-7B-Instruct
+results_dir: results/stage1_q7_chat
+prompt_mode: canonical_chat
+
+pilot:
+  max_truncation_rate: 0.20
+  max_accuracy_drop_abs: 0.05
+  base_accuracy:
+    gsm8k_test: 0.910
+    math500: 0.722
