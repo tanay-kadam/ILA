@@ -1,0 +1,25 @@
+{
+  "style": "armA_random",
+  "seed": 0,
+  "eval_set": "math500",
+  "model_dir": "results/stage1/armA_random/seed0/model",
+  "backend": "vllm",
+  "decoding": "greedy",
+  "max_new_tokens": 6144,
+  "n": 500,
+  "accuracy": 0.15,
+  "mean_tokens": 4490.96,
+  "median_tokens": 6144.0,
+  "p90_tokens": 6144,
+  "truncation_rate": 0.686,
+  "tokens_per_correct": 29939.733333333334,
+  "marker_rate": {
+    "reflection": 0.852,
+    "restart": 0.004
+  },
+  "wall_seconds": 483.0872890949249,
+  "gpu_mem_cap_gb": null,
+  "hf_batch_size": 32,
+  "limit": null,
+  "finished": "2026-10-03T11:25:53"
+}

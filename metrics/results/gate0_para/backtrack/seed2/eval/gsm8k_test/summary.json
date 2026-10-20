@@ -1,0 +1,25 @@
+{
+  "style": "backtrack",
+  "seed": 2,
+  "eval_set": "gsm8k_test",
+  "model_dir": "results/gate0_para/backtrack/seed2/model",
+  "backend": "hf",
+  "decoding": "greedy",
+  "max_new_tokens": 1024,
+  "n": 1319,
+  "accuracy": 0.288855193328279,
+  "mean_tokens": 194.11902956785443,
+  "median_tokens": 171,
+  "p90_tokens": 293,
+  "truncation_rate": 0.009855951478392721,
+  "tokens_per_correct": 672.0288713910761,
+  "marker_rate": {
+    "detailed": 0.0,
+    "verify": 0.0,
+    "backtrack": 1.0,
+    "resolve": 0.000758150113722517
+  },
+  "wall_seconds": 357.2080035209656,
+  "limit": null,
+  "finished": "2026-10-01T22:46:05"
+}

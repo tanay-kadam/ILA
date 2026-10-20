@@ -1,0 +1,27 @@
+{
+  "style": "concise",
+  "seed": 2,
+  "eval_set": "math500",
+  "model_dir": "results/gate0_para_1p5b/concise/seed2/model",
+  "backend": "hf",
+  "decoding": "greedy",
+  "max_new_tokens": 2048,
+  "n": 500,
+  "accuracy": 0.24,
+  "mean_tokens": 336.412,
+  "median_tokens": 146.0,
+  "p90_tokens": 601,
+  "truncation_rate": 0.088,
+  "tokens_per_correct": 1401.7166666666667,
+  "marker_rate": {
+    "detailed": 0.0,
+    "verify": 0.0,
+    "backtrack": 0.0,
+    "resolve": 0.004
+  },
+  "wall_seconds": 1187.2375648021698,
+  "gpu_mem_cap_gb": null,
+  "hf_batch_size": 32,
+  "limit": null,
+  "finished": "2026-10-02T16:04:54"
+}

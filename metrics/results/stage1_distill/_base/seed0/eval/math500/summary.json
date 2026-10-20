@@ -1,0 +1,25 @@
+{
+  "style": "_base",
+  "seed": 0,
+  "eval_set": "math500",
+  "model_dir": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+  "backend": "vllm",
+  "decoding": "greedy",
+  "max_new_tokens": 6144,
+  "n": 500,
+  "accuracy": 0.372,
+  "mean_tokens": 3526.246,
+  "median_tokens": 4127.5,
+  "p90_tokens": 6144,
+  "truncation_rate": 0.492,
+  "tokens_per_correct": 9479.155913978495,
+  "marker_rate": {
+    "reflection": 0.644,
+    "restart": 0.126
+  },
+  "wall_seconds": 373.8872184753418,
+  "gpu_mem_cap_gb": null,
+  "hf_batch_size": 32,
+  "limit": null,
+  "finished": "2026-10-03T12:04:21"
+}

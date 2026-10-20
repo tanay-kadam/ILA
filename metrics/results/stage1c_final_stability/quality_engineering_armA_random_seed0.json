@@ -1,0 +1,26 @@
+{
+  "style": "armA_random",
+  "seed": 0,
+  "phase": "engineering",
+  "sets": {
+    "gsm8k_dev100": {
+      "n": 100,
+      "accuracy": 0.91,
+      "base_accuracy": 0.89,
+      "accuracy_drop": -0.020000000000000018,
+      "truncation_rate": 0,
+      "likely_loop_rate": 0.01,
+      "pass": true
+    },
+    "math500_dev100": {
+      "n": 100,
+      "accuracy": 0.69,
+      "base_accuracy": 0.72,
+      "accuracy_drop": 0.030000000000000027,
+      "truncation_rate": 0,
+      "likely_loop_rate": 0.02,
+      "pass": true
+    }
+  },
+  "pass": true
+}

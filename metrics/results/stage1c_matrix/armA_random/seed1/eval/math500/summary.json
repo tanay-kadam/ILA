@@ -1,0 +1,27 @@
+{
+  "style": "armA_random",
+  "seed": 1,
+  "eval_set": "math500",
+  "model_dir": "Qwen/Qwen2.5-7B-Instruct",
+  "adapter_dir": "results/stage1c_q7_lr1e5_replfix/armA_random/seed1/trajectory_adapters/step015",
+  "backend": "vllm",
+  "decoding": "greedy",
+  "prompt_mode": "canonical_chat",
+  "max_new_tokens": 6144,
+  "n": 500,
+  "accuracy": 0.714,
+  "mean_tokens": 698.02,
+  "median_tokens": 544.0,
+  "p90_tokens": 1123,
+  "truncation_rate": 0.01,
+  "tokens_per_correct": 977.6190476190476,
+  "marker_rate": {
+    "reflection": 0.0,
+    "restart": 0.0
+  },
+  "wall_seconds": 319.0004770755768,
+  "gpu_mem_cap_gb": null,
+  "hf_batch_size": 32,
+  "limit": null,
+  "finished": "2026-10-06T12:02:08"
+}

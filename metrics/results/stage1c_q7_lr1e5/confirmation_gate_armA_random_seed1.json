@@ -1,0 +1,33 @@
+{
+  "mode": "confirmation",
+  "candidate": {
+    "style": "armA_random",
+    "seed": 1,
+    "sets": {
+      "gsm8k_confirm400": {
+        "base_accuracy": 0.915,
+        "candidate_accuracy": 0.7625,
+        "accuracy_drop_abs": 0.15250000000000008,
+        "truncation_rate": 0.015,
+        "likely_loop_rate": 0.02,
+        "accuracy_ok": false,
+        "truncation_ok": true,
+        "loops_ok": true,
+        "pass": false
+      },
+      "math500_confirm400": {
+        "base_accuracy": 0.7225,
+        "candidate_accuracy": 0.48,
+        "accuracy_drop_abs": 0.24250000000000005,
+        "truncation_rate": 0.0675,
+        "likely_loop_rate": 0.0725,
+        "accuracy_ok": false,
+        "truncation_ok": true,
+        "loops_ok": false,
+        "pass": false
+      }
+    },
+    "pass": false
+  },
+  "pass": false
+}

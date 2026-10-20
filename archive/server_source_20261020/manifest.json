@@ -1,0 +1,931 @@
+{
+  "snapshot_date": "2026-10-20",
+  "source": "SSH project snapshot before intentional weight deletion",
+  "checksum": "SHA-256 of exact file bytes",
+  "files": [
+    {
+      "path": "configs/tmlr_mistral_lr3e6_resolved.yaml",
+      "bytes": 2772,
+      "sha256": "876816962a0f62c8ce6f267f159253aac61009828ca4dbbe2a931adb2ded2332",
+      "repository_path": "configs/tmlr_mistral_lr3e6_resolved.yaml",
+      "already_present": true
+    },
+    {
+      "path": "configs/gate0.yaml",
+      "bytes": 1783,
+      "sha256": "51bd458838362278ab76f2656cd9bc6107e138c473daf9fb0dfb7c563b03e796",
+      "repository_path": "configs/gate0.yaml",
+      "already_present": true
+    },
+    {
+      "path": "configs/stage1c_q7_lr1e5_replfix.yaml",
+      "bytes": 124,
+      "sha256": "2568505df24d54ea6bd9a99ee1b91b7482edeed02b25db5df610374c2d9b6efb",
+      "repository_path": "configs/stage1c_q7_lr1e5_replfix.yaml",
+      "already_present": true
+    },
+    {
+      "path": "configs/stage1c_dose230.yaml",
+      "bytes": 207,
+      "sha256": "e7283559acd8184653bf82232aec4b2ac1cf0524987b23b88cbcd68c1fc1abad",
+      "repository_path": "configs/stage1c_dose230.yaml",
+      "already_present": true
+    },
+    {
+      "path": "configs/tmlr_mistral_lr1e5_resolved.yaml",
+      "bytes": 2776,
+      "sha256": "a77cb231772be2bb21497c1bd8ce50f79deede70e7f4ce16f695e7a9e2eb0256",
+      "repository_path": "configs/tmlr_mistral_lr1e5_resolved.yaml",
+      "already_present": true
+    },
+    {
+      "path": "configs/stage1.yaml",
+      "bytes": 2144,
+      "sha256": "40184f519e6ccc092f8143685d3856f28c62533c34db7e2f884f79d9dc641660",
+      "repository_path": "configs/stage1.yaml",
+      "already_present": true
+    },
+    {
+      "path": "configs/gate0_1p5b.yaml",
+      "bytes": 355,
+      "sha256": "2bfbe9e215fff6e94dc25a1713ffa8941172e0965b4b2cf859e8c601de0890e7",
+      "repository_path": "configs/gate0_1p5b.yaml",
+      "already_present": true
+    },
+    {
+      "path": "configs/tmlr_mistral_lr1e5.yaml",
+      "bytes": 320,
+      "sha256": "fdfd4ce2367695d13810a7d89abb87b2d04df4a169ecb18de8ddf863340ea71f",
+      "repository_path": "configs/tmlr_mistral_lr1e5.yaml",
+      "already_present": true
+    },
+    {
+      "path": "configs/stage1c_final_stability.yaml",
+      "bytes": 384,
+      "sha256": "b534d47aa76990341cce902199f60dca1d145fa7b30f63cb786ede5a67794327",
+      "repository_path": "configs/stage1c_final_stability.yaml",
+      "already_present": true
+    },
+    {
+      "path": "configs/stage1_distill.yaml",
+      "bytes": 2169,
+      "sha256": "323291c19fe2831e94ee7568ee921ff5326231df2ae876f7f90b006a079d8219",
+      "repository_path": "archive/server_source_20261020/configs/stage1_distill.yaml",
+      "already_present": false
+    },
+    {
+      "path": "configs/stage1c_dose60.yaml",
+      "bytes": 286,
+      "sha256": "ef79aefab35b8fbfe730b2e01c1915f69056794de89a874606882792ecb60b02",
+      "repository_path": "configs/stage1c_dose60.yaml",
+      "already_present": true
+    },
+    {
+      "path": "configs/tmlr_mistral_lr3e6.yaml",
+      "bytes": 153,
+      "sha256": "f58e7735ed50c65dc8749a5ba72ceaf48b8d581a7e7826c3ea4a4af7f62a1752",
+      "repository_path": "configs/tmlr_mistral_lr3e6.yaml",
+      "already_present": true
+    },
+    {
+      "path": "configs/tmlr_format_control_mistral_resolved.yaml",
+      "bytes": 3540,
+      "sha256": "b9a53e59a6ef0d41d156c96b280d5c4750e17084e8d509401cd70dbe7d18a2e9",
+      "repository_path": "configs/tmlr_format_control_mistral_resolved.yaml",
+      "already_present": true
+    },
+    {
+      "path": "configs/tmlr_format_control_qwen_resolved.yaml",
+      "bytes": 3312,
+      "sha256": "8a60fb38cc73ec56bd749884530f9273762e67d4ade45d6ec2cc3a6ba03a818e",
+      "repository_path": "configs/tmlr_format_control_qwen_resolved.yaml",
+      "already_present": true
+    },
+    {
+      "path": "configs/stage1c_q7_lr1e5.yaml",
+      "bytes": 143,
+      "sha256": "ac23f1503f953fac6e497edbc3faa966ef3ba04470b6193817296bb822067297",
+      "repository_path": "configs/stage1c_q7_lr1e5.yaml",
+      "already_present": true
+    },
+    {
+      "path": "configs/stage1c_matrix.yaml",
+      "bytes": 365,
+      "sha256": "ee778a8ca4a57ee1c3a57064d5fd9e4aed4731f0f4fdd0112324f4121b348533",
+      "repository_path": "configs/stage1c_matrix.yaml",
+      "already_present": true
+    },
+    {
+      "path": "configs/stage1_q7.yaml",
+      "bytes": 2145,
+      "sha256": "cf5eae5a65b6dfca9047fc466fde6e076315eec8b5648776c4ebae3fea9898dd",
+      "repository_path": "configs/stage1_q7.yaml",
+      "already_present": true
+    },
+    {
+      "path": "configs/gate0_para.yaml",
+      "bytes": 437,
+      "sha256": "8f956b039b3e01aff7f9e51119eb39daf84e3270a9d60e6664da40e7f4060667",
+      "repository_path": "configs/gate0_para.yaml",
+      "already_present": true
+    },
+    {
+      "path": "configs/tmlr_external_mistral_resolved.yaml",
+      "bytes": 3036,
+      "sha256": "c313899f26fe95787a1f6884129ee5e2905cd80bfe6a2523c3cf326cb7b4bb6e",
+      "repository_path": "configs/tmlr_external_mistral_resolved.yaml",
+      "already_present": true
+    },
+    {
+      "path": "configs/tmlr_external_mistral.yaml",
+      "bytes": 164,
+      "sha256": "d8e73443f4f0ffbe4d68771efe16a423de3aab3cb1fa1b31b2711618ed7f9586",
+      "repository_path": "configs/tmlr_external_mistral.yaml",
+      "already_present": true
+    },
+    {
+      "path": "configs/stage1b_q7.yaml",
+      "bytes": 259,
+      "sha256": "93f7c2adc3c774f86e8d0adf8b6590ca9eab38046117283d7a5d8cfb0cd00ea2",
+      "repository_path": "configs/stage1b_q7.yaml",
+      "already_present": true
+    },
+    {
+      "path": "configs/stage1_d7.yaml",
+      "bytes": 2160,
+      "sha256": "ebdd09e6676e0918cb2eee2c9c41a226197e4b2a19b16eb229decece22db58cd",
+      "repository_path": "configs/stage1_d7.yaml",
+      "already_present": true
+    },
+    {
+      "path": "configs/smoke.yaml",
+      "bytes": 540,
+      "sha256": "972eefb7a2f3a34cfb9dc6476e85ff8e16bce0cb4cd57e7ae6a37d253a64064f",
+      "repository_path": "configs/smoke.yaml",
+      "already_present": true
+    },
+    {
+      "path": "configs/stage1c_q7.yaml",
+      "bytes": 957,
+      "sha256": "633dae8c915ebbe3db36410e7796657070e11a554f350a1604b9a9039b5ae083",
+      "repository_path": "configs/stage1c_q7.yaml",
+      "already_present": true
+    },
+    {
+      "path": "configs/gate0_para_1p5b.yaml",
+      "bytes": 393,
+      "sha256": "bc54cdb2e086d8d0d0ff4a501eafb6d1b434c683494f395a2f8abbe96e54e6d1",
+      "repository_path": "configs/gate0_para_1p5b.yaml",
+      "already_present": true
+    },
+    {
+      "path": "configs/tmlr_external_qwen.yaml",
+      "bytes": 329,
+      "sha256": "01ba03a3c7b8248262d8fe6259a9da203ef55bec33d406d485d590272a345875",
+      "repository_path": "configs/tmlr_external_qwen.yaml",
+      "already_present": true
+    },
+    {
+      "path": "scripts/launch_tmlr_eos.py",
+      "bytes": 921,
+      "sha256": "c2e21e3c2f1d7d55dbb519df9ce244683a97c6a7419c88cfc7f88527a7a8d477",
+      "repository_path": "scripts/launch_tmlr_eos.py",
+      "already_present": true
+    },
+    {
+      "path": "scripts/evaluate.py",
+      "bytes": 12665,
+      "sha256": "7381e1f1207cd81214c6d0447e523f189dee414c826d7d3241591550385ebbad",
+      "repository_path": "scripts/evaluate.py",
+      "already_present": true
+    },
+    {
+      "path": "scripts/transfer_repo_artifacts.py",
+      "bytes": 6437,
+      "sha256": "4d7fd9e78e7bccaf2dbfffb630e677ed9c0efa54ef044a885864c7e51a5834aa",
+      "repository_path": "archive/server_source_20261020/scripts/transfer_repo_artifacts.py",
+      "already_present": false
+    },
+    {
+      "path": "scripts/queue_status.sh",
+      "bytes": 525,
+      "sha256": "e475d986da3b6927db05fd04eebc836c294bbbf58c548470916e2b27135cf85b",
+      "repository_path": "scripts/queue_status.sh",
+      "already_present": true
+    },
+    {
+      "path": "scripts/tmlr_format_control.py",
+      "bytes": 14893,
+      "sha256": "e2e491efd75fbf2aba5ed2e684dc4b09c7723f24bf1deb6dbc772da68ba8afb7",
+      "repository_path": "scripts/tmlr_format_control.py",
+      "already_present": true
+    },
+    {
+      "path": "scripts/launch_stage1c_final_stability.sh",
+      "bytes": 4535,
+      "sha256": "6aa29adea5d5c12c3ebe100c4dd9d4b9e2b65613600eea5d9d8cf1ee67d5e139",
+      "repository_path": "scripts/launch_stage1c_final_stability.sh",
+      "already_present": true
+    },
+    {
+      "path": "scripts/analyze_stage1.py",
+      "bytes": 14194,
+      "sha256": "c7b7153862c02a488b14cbd1991500833208b0f1befb4596600ecf7079d235e0",
+      "repository_path": "scripts/analyze_stage1.py",
+      "already_present": true
+    },
+    {
+      "path": "scripts/audit_stage1c_backend.py",
+      "bytes": 5109,
+      "sha256": "082ed42b815cd4801e0b3642b4120bf95605b23cee9996fc128c5e2e2da156f0",
+      "repository_path": "scripts/audit_stage1c_backend.py",
+      "already_present": true
+    },
+    {
+      "path": "scripts/await_tmlr_evidence.py",
+      "bytes": 905,
+      "sha256": "245b4e46c398b69e3f4ba6df0396288b92c36b9078f4744914e4459cb0eb901b",
+      "repository_path": "scripts/await_tmlr_evidence.py",
+      "already_present": true
+    },
+    {
+      "path": "scripts/gated_distill.sh",
+      "bytes": 1977,
+      "sha256": "93174148df3cdcb3834ede79ce65592c5db66e0bf8b279a7cc039d7a93c9997d",
+      "repository_path": "archive/server_source_20261020/scripts/gated_distill.sh",
+      "already_present": false
+    },
+    {
+      "path": "scripts/base_check_7b.sh",
+      "bytes": 912,
+      "sha256": "b3702ebed77f161c1ae0e3cb544b1bf308cc62c13e0a68008ec97b68e23ba4aa",
+      "repository_path": "archive/server_source_20261020/scripts/base_check_7b.sh",
+      "already_present": false
+    },
+    {
+      "path": "scripts/assess_cached_trace_pairs.py",
+      "bytes": 6594,
+      "sha256": "a23276bfda3a24389cd7391352836c2621b0d796b545798ad57865afa90ff85c",
+      "repository_path": "scripts/assess_cached_trace_pairs.py",
+      "already_present": true
+    },
+    {
+      "path": "scripts/analyze_stage1c_dose60.py",
+      "bytes": 8368,
+      "sha256": "ae3efdce77a4c9a07dee02c7185c4ee9ad3f6ea097ed3f5f721059ddd5e81ee0",
+      "repository_path": "scripts/analyze_stage1c_dose60.py",
+      "already_present": true
+    },
+    {
+      "path": "scripts/probe_terminal_eos.py",
+      "bytes": 6848,
+      "sha256": "7e398a29a3fb5b599c1eb1d5d87c7eae924d2cde4367e6bb304b5ac9bee4a4e3",
+      "repository_path": "scripts/probe_terminal_eos.py",
+      "already_present": true
+    },
+    {
+      "path": "scripts/tmlr_smoke.py",
+      "bytes": 2655,
+      "sha256": "945f5484f72b3153c764819383ed77ae81107504b35617311cc9996fb0c84032",
+      "repository_path": "scripts/tmlr_smoke.py",
+      "already_present": true
+    },
+    {
+      "path": "scripts/inspect_outputs.py",
+      "bytes": 2732,
+      "sha256": "544ea0ec6354b6510130685feb0334d7d99fed27cc79fa2904b6fc2d9002af33",
+      "repository_path": "scripts/inspect_outputs.py",
+      "already_present": true
+    },
+    {
+      "path": "scripts/gpu_smoke.sh",
+      "bytes": 1089,
+      "sha256": "1a9fbacab6fe3c6e56a45ca5401f36b298d6a6cdcc897a92360ad6fad553b8e8",
+      "repository_path": "scripts/gpu_smoke.sh",
+      "already_present": true
+    },
+    {
+      "path": "scripts/audit_stage1_targets.py",
+      "bytes": 4071,
+      "sha256": "6cbaeb8b719da4bcf70487a2ffa9bceef3f8e093839c481d433223190a9eb617",
+      "repository_path": "scripts/audit_stage1_targets.py",
+      "already_present": true
+    },
+    {
+      "path": "scripts/launch_stage1.sh",
+      "bytes": 1941,
+      "sha256": "82c3f1d2945f555c9ee5702d54714959292874a98d45d3750ae2ce069d167601",
+      "repository_path": "scripts/launch_stage1.sh",
+      "already_present": true
+    },
+    {
+      "path": "scripts/drop_many.sh",
+      "bytes": 501,
+      "sha256": "974126902e68eadbd03d3d4751b698490c5c1355c551f2fb84a73fe61638bd93",
+      "repository_path": "scripts/drop_many.sh",
+      "already_present": true
+    },
+    {
+      "path": "scripts/tmlr_gpu_worker.py",
+      "bytes": 6154,
+      "sha256": "63fb8119c988a599322c8558e27db54ba2a57690e08dab10689d60a6a0a76e5a",
+      "repository_path": "scripts/tmlr_gpu_worker.py",
+      "already_present": true
+    },
+    {
+      "path": "scripts/setup_vllm_env.sh",
+      "bytes": 392,
+      "sha256": "19b17e742d4a0f6c2db39df649960fc7713b6616ccb91e8a08f5ab67b055a39a",
+      "repository_path": "archive/server_source_20261020/scripts/setup_vllm_env.sh",
+      "already_present": false
+    },
+    {
+      "path": "scripts/export_environment_versions.py",
+      "bytes": 993,
+      "sha256": "f405fb33eb85ee49a9cb4e1a2361c2c241ef309c83d5a20fe2151421cfe95b0d",
+      "repository_path": "scripts/export_environment_versions.py",
+      "already_present": true
+    },
+    {
+      "path": "scripts/write_tmlr_jobs.py",
+      "bytes": 2007,
+      "sha256": "1fc07c22dc5fade4952e6ffc04bd58bf5f56cc9e187214d135123bfc8a0a9d60",
+      "repository_path": "scripts/write_tmlr_jobs.py",
+      "already_present": true
+    },
+    {
+      "path": "scripts/base_eval_distill.sh",
+      "bytes": 309,
+      "sha256": "3e408089bef325268d5f1fdfa059b793b23c3bf0759d82916b507cf84469141d",
+      "repository_path": "scripts/base_eval_distill.sh",
+      "already_present": true
+    },
+    {
+      "path": "scripts/record_eos_scheduler_fix.py",
+      "bytes": 1888,
+      "sha256": "8e5d833c277c29328111495e1e515f5ebe4a85e7b4b9896b4e7adaf293cffb0a",
+      "repository_path": "scripts/record_eos_scheduler_fix.py",
+      "already_present": true
+    },
+    {
+      "path": "scripts/tmlr_eos_control.py",
+      "bytes": 14861,
+      "sha256": "7766b8dd44e3f139fddd8f0c39431d0b6f68c81d6c948501a6b3587d57f19d30",
+      "repository_path": "scripts/tmlr_eos_control.py",
+      "already_present": true
+    },
+    {
+      "path": "scripts/register_adapter_run.py",
+      "bytes": 1399,
+      "sha256": "f4047e2ddb0468f980b9f2a2254a84fe564f7320267cce4d79730d375874a0cc",
+      "repository_path": "scripts/register_adapter_run.py",
+      "already_present": true
+    },
+    {
+      "path": "scripts/materialize_stage1c_splits.py",
+      "bytes": 3951,
+      "sha256": "9d46c5f5d0938d76ec1b1e42a2b791c5943d66131628c15ac6f13eb722d13ca6",
+      "repository_path": "scripts/materialize_stage1c_splits.py",
+      "already_present": true
+    },
+    {
+      "path": "scripts/launch_stage1c.sh",
+      "bytes": 7057,
+      "sha256": "24c478cfa627c0607387c8b94eca97c1ae95f5384e4da1ef7b6911bafbafa621",
+      "repository_path": "scripts/launch_stage1c.sh",
+      "already_present": true
+    },
+    {
+      "path": "scripts/launch_stage1b_baseline.sh",
+      "bytes": 862,
+      "sha256": "12a01eb2e8bbf539db004f1337f9630a352d1b9f7cbdb60a34d330cdb624c763",
+      "repository_path": "scripts/launch_stage1b_baseline.sh",
+      "already_present": true
+    },
+    {
+      "path": "scripts/export_tmlr_strengthening.py",
+      "bytes": 2203,
+      "sha256": "7cd94b4b7e2d3efdc821a2b30ef01443f8cc59c4c9f4a4c38f929e40f1f6e6f5",
+      "repository_path": "scripts/export_tmlr_strengthening.py",
+      "already_present": true
+    },
+    {
+      "path": "scripts/analyze_gate0.py",
+      "bytes": 11021,
+      "sha256": "368c5d5950876113f5ff4b62cbe6022b96d255049fc5e84a67233b184806167e",
+      "repository_path": "scripts/analyze_gate0.py",
+      "already_present": true
+    },
+    {
+      "path": "scripts/launch_small.sh",
+      "bytes": 1000,
+      "sha256": "74da517315073a13397dd106b5b16e64b2578adddd1f75236d52b7f171429107",
+      "repository_path": "scripts/launch_small.sh",
+      "already_present": true
+    },
+    {
+      "path": "scripts/queue_worker.sh",
+      "bytes": 1604,
+      "sha256": "204622ad0f08a4af3910d45362cdff834aa5b4bde4306f6ca8daf41d170536d2",
+      "repository_path": "scripts/queue_worker.sh",
+      "already_present": true
+    },
+    {
+      "path": "scripts/add_worker.sh",
+      "bytes": 384,
+      "sha256": "650a9c4b1eb56dff7afa06c6683f368eb4a2e6bca3a84c0af84191302d0c1bf5",
+      "repository_path": "scripts/add_worker.sh",
+      "already_present": true
+    },
+    {
+      "path": "scripts/verify_eos_final.py",
+      "bytes": 4405,
+      "sha256": "d9caf910e7aa0b8d5e4772867e60f8403a4e7e18136daaf528f13f47b6ccb256",
+      "repository_path": "scripts/verify_eos_final.py",
+      "already_present": true
+    },
+    {
+      "path": "scripts/drop_gpu.sh",
+      "bytes": 1818,
+      "sha256": "30affd327116898e20c370583c023d75c7c33c67f1bb08f812c4b9638873c897",
+      "repository_path": "scripts/drop_gpu.sh",
+      "already_present": true
+    },
+    {
+      "path": "scripts/audit_stage1c_dose60.py",
+      "bytes": 8781,
+      "sha256": "ab2c09aa9973bf4ad936281cb277d3433cabafc3b31140969c05d69ced05a6ee",
+      "repository_path": "scripts/audit_stage1c_dose60.py",
+      "already_present": true
+    },
+    {
+      "path": "scripts/analyze_tmlr_external.py",
+      "bytes": 6221,
+      "sha256": "797830e58c4a82e70221d8ba5b2f56e66a5aea6af96020d72dcc303f47836485",
+      "repository_path": "scripts/analyze_tmlr_external.py",
+      "already_present": true
+    },
+    {
+      "path": "scripts/assess_supervised_exposure.py",
+      "bytes": 4455,
+      "sha256": "82beba4b07f7f8c6a3a14b62eaebe1a19c6135c00d4d65cbea6db3ceb38f8f89",
+      "repository_path": "scripts/assess_supervised_exposure.py",
+      "already_present": true
+    },
+    {
+      "path": "scripts/launch_tmlr_strengthening.sh",
+      "bytes": 2420,
+      "sha256": "9967bbb7c35df9b4f1c095cf395636dd4b78ca448300846691b0b07cc524e11d",
+      "repository_path": "archive/server_source_20261020/scripts/launch_tmlr_strengthening.sh",
+      "already_present": false
+    },
+    {
+      "path": "scripts/prepare_tmlr_mistral.py",
+      "bytes": 2689,
+      "sha256": "323998aad83ce8c71456440e3fd2c8ca7821d67bbe1b2976a84628963a13d1af",
+      "repository_path": "scripts/prepare_tmlr_mistral.py",
+      "already_present": true
+    },
+    {
+      "path": "scripts/assess_matching_pool.py",
+      "bytes": 3561,
+      "sha256": "6668c096a470d84b3057c64adb38cd708594496b1b59545a914b9f65eb841515",
+      "repository_path": "archive/server_source_20261020/scripts/assess_matching_pool.py",
+      "already_present": false
+    },
+    {
+      "path": "scripts/train_terminal_eos.py",
+      "bytes": 4321,
+      "sha256": "2fb9e5baa1365aeeaeccbee0b87113ed11184c6aa2f9bca6885178adfd3a4c31",
+      "repository_path": "scripts/train_terminal_eos.py",
+      "already_present": true
+    },
+    {
+      "path": "scripts/build_data.py",
+      "bytes": 6559,
+      "sha256": "88513aa556a510ff4f4b6871e746b954963f1715a5de56a583ae229a19938948",
+      "repository_path": "scripts/build_data.py",
+      "already_present": true
+    },
+    {
+      "path": "scripts/prepare_tmlr_external.py",
+      "bytes": 3908,
+      "sha256": "170a61e5f5f97457e545bf26d5a2ad607d04e7e0b9aa4eeebfaee522d4259121",
+      "repository_path": "scripts/prepare_tmlr_external.py",
+      "already_present": true
+    },
+    {
+      "path": "scripts/analyze_tmlr_eos.py",
+      "bytes": 5197,
+      "sha256": "5835a117a3235acd012ec80fe20d26aa1920aaa06aaa18975ac7761cf558a465",
+      "repository_path": "scripts/analyze_tmlr_eos.py",
+      "already_present": true
+    },
+    {
+      "path": "scripts/eval_run.sh",
+      "bytes": 499,
+      "sha256": "99d7accee583c068086984ee6e572a04fde039a03ff2037a5bba75d67be59b9e",
+      "repository_path": "archive/server_source_20261020/scripts/eval_run.sh",
+      "already_present": false
+    },
+    {
+      "path": "scripts/status_gate0.py",
+      "bytes": 693,
+      "sha256": "782284951eb186ce8727f1f7e3c9213a6086a0917d648b8689f65912c27e1481",
+      "repository_path": "scripts/status_gate0.py",
+      "already_present": true
+    },
+    {
+      "path": "scripts/register_stage1c_checkpoints.py",
+      "bytes": 2007,
+      "sha256": "e32873697652d796a0f70aa770136a9f0b65e22f19e24b8b37921ad198355b7f",
+      "repository_path": "scripts/register_stage1c_checkpoints.py",
+      "already_present": true
+    },
+    {
+      "path": "scripts/select_stage1c_checkpoint.py",
+      "bytes": 3465,
+      "sha256": "19eefc23af8a0df42b3445c68145f8ebb70c515838c47546f1bc1ac32969c274",
+      "repository_path": "scripts/select_stage1c_checkpoint.py",
+      "already_present": true
+    },
+    {
+      "path": "scripts/marker_check.py",
+      "bytes": 2507,
+      "sha256": "c5bae602ca1563e7ac5a3843a9267edf04fb8e242fe172c53f24dd748e971989",
+      "repository_path": "scripts/marker_check.py",
+      "already_present": true
+    },
+    {
+      "path": "scripts/setup_server.sh",
+      "bytes": 839,
+      "sha256": "03002b46e769f13af0cb8b013deb9d38af376c07eb96b7537ef99e8ccd747da2",
+      "repository_path": "scripts/setup_server.sh",
+      "already_present": true
+    },
+    {
+      "path": "scripts/launch_stage1c_corrected_replication.sh",
+      "bytes": 3390,
+      "sha256": "b81a28d085e72b40e0befbed4982f33e9fcdc5f648a61e1d35a4537a68f8e6d2",
+      "repository_path": "scripts/launch_stage1c_corrected_replication.sh",
+      "already_present": true
+    },
+    {
+      "path": "scripts/gate_final_stability.py",
+      "bytes": 4147,
+      "sha256": "ff0a56b0142e852fd2222b9769bdf7203766a42bfae8b859051d869bf73e5e93",
+      "repository_path": "scripts/gate_final_stability.py",
+      "already_present": true
+    },
+    {
+      "path": "scripts/launch_queue.sh",
+      "bytes": 794,
+      "sha256": "352d513f784fb21293e41d076f7daa21b142b68c17cd482038a768420a928600",
+      "repository_path": "scripts/launch_queue.sh",
+      "already_present": true
+    },
+    {
+      "path": "scripts/sweep_after.sh",
+      "bytes": 881,
+      "sha256": "81b8016805831dcbdb586ac3c2148c6dd692087f7d420237396cbb0dcbc0c373",
+      "repository_path": "scripts/sweep_after.sh",
+      "already_present": true
+    },
+    {
+      "path": "scripts/queue_worker_small.sh",
+      "bytes": 1954,
+      "sha256": "5bfda51a96321fca040ce6e910e9b2adb936634f720989bd3912a606630c5517",
+      "repository_path": "scripts/queue_worker_small.sh",
+      "already_present": true
+    },
+    {
+      "path": "scripts/launch_jobs.sh",
+      "bytes": 1196,
+      "sha256": "8c39e2518ff049ce1e89443940c938d2d0ab760265c5de297798425187ff373c",
+      "repository_path": "scripts/launch_jobs.sh",
+      "already_present": true
+    },
+    {
+      "path": "scripts/audit_stage1c_matrix.py",
+      "bytes": 11336,
+      "sha256": "446893aa68538dbb65edda7558064b7cffabbd4ba3966a3987e86b3a7dd73f0d",
+      "repository_path": "scripts/audit_stage1c_matrix.py",
+      "already_present": true
+    },
+    {
+      "path": "scripts/launch_stage1c_matrix.sh",
+      "bytes": 4715,
+      "sha256": "c9e326bd40dc340b26189dc0e7850c7265dfa15bbc226cd8267b563ee05e15be",
+      "repository_path": "scripts/launch_stage1c_matrix.sh",
+      "already_present": true
+    },
+    {
+      "path": "scripts/audit_tmlr_aqua_format.py",
+      "bytes": 4795,
+      "sha256": "b02cf05f4f832be1ee6a22c500baefb1ed170cbb4202ba3e61672714f40a853b",
+      "repository_path": "scripts/audit_tmlr_aqua_format.py",
+      "already_present": true
+    },
+    {
+      "path": "scripts/prepare_human_review.py",
+      "bytes": 4537,
+      "sha256": "e86f124951987a073d33d1ad983e716171339beffcb0c727bbbecfbe45fc3b09",
+      "repository_path": "scripts/prepare_human_review.py",
+      "already_present": true
+    },
+    {
+      "path": "scripts/launch_eos_effectiveness_probe.py",
+      "bytes": 860,
+      "sha256": "2de6d217b5ecfbbb692ed530d9e05e1de8644f8acb302ceef022ddcab5e184fb",
+      "repository_path": "scripts/launch_eos_effectiveness_probe.py",
+      "already_present": true
+    },
+    {
+      "path": "scripts/build_natural.py",
+      "bytes": 7453,
+      "sha256": "2a8ad46be25cc9f3caa271925d09c1943e717e1b7b6080981d2e67fc7f4d6d32",
+      "repository_path": "scripts/build_natural.py",
+      "already_present": true
+    },
+    {
+      "path": "scripts/add_small_worker.sh",
+      "bytes": 570,
+      "sha256": "767073f677af8bece2493a419c231a86edb3131977daba3456119aaefff7dfe7",
+      "repository_path": "scripts/add_small_worker.sh",
+      "already_present": true
+    },
+    {
+      "path": "scripts/launch_tmlr_evidence_watcher.sh",
+      "bytes": 448,
+      "sha256": "330f3c4428fb8d42749da75c0db76eaba7eb44862f08807d41cc0be86f701cda",
+      "repository_path": "scripts/launch_tmlr_evidence_watcher.sh",
+      "already_present": true
+    },
+    {
+      "path": "scripts/launch_stage1c_dose_chain.sh",
+      "bytes": 3865,
+      "sha256": "ee6f6a06c3178f2077716fcc24380af05eec69204a7dc69d49d7110989c00f80",
+      "repository_path": "scripts/launch_stage1c_dose_chain.sh",
+      "already_present": true
+    },
+    {
+      "path": "scripts/audit_eos_runtime_readonly.py",
+      "bytes": 4830,
+      "sha256": "8782d63fa6e7b07f5e8d740246a35d2b28820fb8ac0c4f9bbeb0a80c1256dea0",
+      "repository_path": "scripts/audit_eos_runtime_readonly.py",
+      "already_present": true
+    },
+    {
+      "path": "scripts/run_matching_feasibility.py",
+      "bytes": 869,
+      "sha256": "6fc3cd2160d59615d53c2eb91c297cc5d062c77953971d88b9131cfb62160f0e",
+      "repository_path": "scripts/run_matching_feasibility.py",
+      "already_present": true
+    },
+    {
+      "path": "scripts/check_logs.sh",
+      "bytes": 551,
+      "sha256": "9842937a3c993ab3079f4672162ddbc3bec0f0163b8c51433e074f37a59c7aad",
+      "repository_path": "scripts/check_logs.sh",
+      "already_present": true
+    },
+    {
+      "path": "scripts/diagnose_stage1_outputs.py",
+      "bytes": 16043,
+      "sha256": "1df36de009337248609a147f8f3720878f92b1617ea0aa033ce6084d29a54c74",
+      "repository_path": "scripts/diagnose_stage1_outputs.py",
+      "already_present": true
+    },
+    {
+      "path": "scripts/train_sft.py",
+      "bytes": 16000,
+      "sha256": "8b55eab375fe2d5db4e914988af9ddcbd455be57a0560d1effaef0cad3225eea",
+      "repository_path": "scripts/train_sft.py",
+      "already_present": true
+    },
+    {
+      "path": "scripts/launch_gate0_parallel.sh",
+      "bytes": 699,
+      "sha256": "34a597bfdb3b359e2071f2d272178816c404b1f1cba691e04567bc3382c2a874",
+      "repository_path": "scripts/launch_gate0_parallel.sh",
+      "already_present": true
+    },
+    {
+      "path": "scripts/launch_stage1b_pilot.sh",
+      "bytes": 2227,
+      "sha256": "40883b2b4261b6c02d0c7c8ad43d9f7eb10a9c7ddf73b632b184e7a0c1b03565",
+      "repository_path": "scripts/launch_stage1b_pilot.sh",
+      "already_present": true
+    },
+    {
+      "path": "scripts/run_gate0.sh",
+      "bytes": 1950,
+      "sha256": "2c6577cf0f0a280e289b15c82b86e4a1f31ec70b8e53c733047368514c675539",
+      "repository_path": "scripts/run_gate0.sh",
+      "already_present": true
+    },
+    {
+      "path": "scripts/launch_stage1c_dose60.sh",
+      "bytes": 4408,
+      "sha256": "c31d4b2fff6f1a23aa3bd2b21dbb0c76249e7282638bf81a8ee26395957b0259",
+      "repository_path": "scripts/launch_stage1c_dose60.sh",
+      "already_present": true
+    },
+    {
+      "path": "tests/test_terminal_eos_loss.py",
+      "bytes": 4233,
+      "sha256": "83e1e5667f93b29a9b1679396f487d4d891907fe0ef60db849fbf459fef752e0",
+      "repository_path": "tests/test_terminal_eos_loss.py",
+      "already_present": true
+    },
+    {
+      "path": "tests/test_choice_audit.py",
+      "bytes": 1410,
+      "sha256": "f4b5f27b0cbf0c2660ee0cc866ac772a0e1db0fa7e926428040a53f81455f6c6",
+      "repository_path": "tests/test_choice_audit.py",
+      "already_present": true
+    },
+    {
+      "path": "tests/test_stage1_analysis.py",
+      "bytes": 5372,
+      "sha256": "f98eaf1737734e07ea414a23064973505454a288bc4e893c79c3601f802b2425",
+      "repository_path": "tests/test_stage1_analysis.py",
+      "already_present": true
+    },
+    {
+      "path": "tests/test_eos_controller.py",
+      "bytes": 857,
+      "sha256": "75f87430b7ee87a177dbf0cad51e870c5ba3c1f3967646c89d946df423fdcece",
+      "repository_path": "tests/test_eos_controller.py",
+      "already_present": true
+    },
+    {
+      "path": "tests/test_stage1_diagnostic.py",
+      "bytes": 2500,
+      "sha256": "a36a6ddef80f761f260aee3e826ec12946523e6046aa3712a08363223f3ce920",
+      "repository_path": "tests/test_stage1_diagnostic.py",
+      "already_present": true
+    },
+    {
+      "path": "tests/test_cost_boundary.py",
+      "bytes": 1165,
+      "sha256": "2651bd1164ae81cb8ba706cddfc08acf06c9aa56fc2cb3e0b6570a9630cf8d97",
+      "repository_path": "tests/test_cost_boundary.py",
+      "already_present": true
+    },
+    {
+      "path": "tests/test_format_control.py",
+      "bytes": 822,
+      "sha256": "b774cbf4c7c51578711470b92e630977cfee6d0bee19ae4735db3bc8b21428ed",
+      "repository_path": "tests/test_format_control.py",
+      "already_present": true
+    },
+    {
+      "path": "tests/test_audit_fixes.py",
+      "bytes": 3573,
+      "sha256": "073a9bd9a49287d9a07f22239f8a2cfca4fdd03d7c3af26b2db8b4e8a90dfd39",
+      "repository_path": "tests/test_audit_fixes.py",
+      "already_present": true
+    },
+    {
+      "path": "tests/test_gpu_lease.py",
+      "bytes": 498,
+      "sha256": "62742f6338c6ce9216d2233e72fb899292e9e4df7165611c7b1bce974647f046",
+      "repository_path": "tests/test_gpu_lease.py",
+      "already_present": true
+    },
+    {
+      "path": "tests/test_styles.py",
+      "bytes": 3840,
+      "sha256": "14e153e1de26118907651d7a874af11c514e442b1a960e75f5659ff82121be66",
+      "repository_path": "archive/server_source_20261020/tests/test_styles.py",
+      "already_present": false
+    },
+    {
+      "path": "tests/test_evaluate_prompts.py",
+      "bytes": 1196,
+      "sha256": "102f8d9ccbd70861a9f811d1f5af9aed4eb56b0f2f1451ed7b185217b5fb5386",
+      "repository_path": "tests/test_evaluate_prompts.py",
+      "already_present": true
+    },
+    {
+      "path": "tests/test_external_scoring.py",
+      "bytes": 507,
+      "sha256": "1f891ae236a3388af000e96a97d6d5ded56ced8dc1deac0234988a32a1ce0c65",
+      "repository_path": "tests/test_external_scoring.py",
+      "already_present": true
+    },
+    {
+      "path": "tests/test_paraphrase.py",
+      "bytes": 4464,
+      "sha256": "872586384cc0660a3b43cbe479a551eb524f9cbc185e9ec337a5ddc65bdc6e06",
+      "repository_path": "archive/server_source_20261020/tests/test_paraphrase.py",
+      "already_present": false
+    },
+    {
+      "path": "tests/test_train_chat_dataset.py",
+      "bytes": 2457,
+      "sha256": "72444fc810d84c4cd3d5159ec7b45922942e66e9f1786c544faad41729cde8f7",
+      "repository_path": "tests/test_train_chat_dataset.py",
+      "already_present": true
+    },
+    {
+      "path": "tests/test_stage1c.py",
+      "bytes": 1912,
+      "sha256": "56234bf05053720812c6a54d3d0b205f33992ab01a2b507c09f5fe62b5892112",
+      "repository_path": "tests/test_stage1c.py",
+      "already_present": true
+    },
+    {
+      "path": "src/ila/dose_gate.py",
+      "bytes": 1117,
+      "sha256": "0c8570f257209e932ee0094ed3499219fef4fd78f645a243d6fc88b935546a8e",
+      "repository_path": "src/ila/dose_gate.py",
+      "already_present": true
+    },
+    {
+      "path": "src/ila/textio.py",
+      "bytes": 3437,
+      "sha256": "c8809c1549ef066d23b5a3f30756c904fa154e3ec49eec217e63f12ee913ab1d",
+      "repository_path": "src/ila/textio.py",
+      "already_present": true
+    },
+    {
+      "path": "src/ila/natural.py",
+      "bytes": 5920,
+      "sha256": "272ae69f1e67abea1c224139f7ec0465ddc21ff584246d45835bcbb23d02502f",
+      "repository_path": "src/ila/natural.py",
+      "already_present": true
+    },
+    {
+      "path": "src/ila/arith.py",
+      "bytes": 5752,
+      "sha256": "0073d340ea6d64356cb33156d04cab69d09f6822646444ff52447c8893706c67",
+      "repository_path": "src/ila/arith.py",
+      "already_present": true
+    },
+    {
+      "path": "src/ila/cost_boundary.py",
+      "bytes": 3459,
+      "sha256": "2f271620ab68723bcc4d2e22fba92fd42a8c6466ec8dd631af7a6636e8ba150d",
+      "repository_path": "src/ila/cost_boundary.py",
+      "already_present": true
+    },
+    {
+      "path": "src/ila/__init__.py",
+      "bytes": 45,
+      "sha256": "46ee72f0db3d0c82d3bd655fc99d657ea91ff9629af8789b92763656384bed7e",
+      "repository_path": "src/ila/__init__.py",
+      "already_present": true
+    },
+    {
+      "path": "src/ila/config.py",
+      "bytes": 1037,
+      "sha256": "918500349316f9ed04b3fb1df3c423136f0483c66d29ed1e98fbe68db9acff21",
+      "repository_path": "src/ila/config.py",
+      "already_present": true
+    },
+    {
+      "path": "src/ila/terminal_eos_loss.py",
+      "bytes": 2492,
+      "sha256": "104fed2dedbe2a75f5b0e482563cc6d2737e3e91c51a9d6a2f5d77528bd4135d",
+      "repository_path": "src/ila/terminal_eos_loss.py",
+      "already_present": true
+    },
+    {
+      "path": "src/ila/gsm8k.py",
+      "bytes": 2182,
+      "sha256": "65fab2ad2f7a36a551c6969cb76ba19d9f2f13cead8bccffdc2ca1af2bec749b",
+      "repository_path": "src/ila/gsm8k.py",
+      "already_present": true
+    },
+    {
+      "path": "src/ila/choice_audit.py",
+      "bytes": 2734,
+      "sha256": "60edb86065e5ea0bae5faaa0d09de2d0bc8d78b9e9271f8742e16dd7810c2d9e",
+      "repository_path": "src/ila/choice_audit.py",
+      "already_present": true
+    },
+    {
+      "path": "src/ila/styles.py",
+      "bytes": 11311,
+      "sha256": "5eee85179cd6fd51d1d9e98b9a7486dbbee0e9c0a0f56f78420b862a5ad1b909",
+      "repository_path": "src/ila/styles.py",
+      "already_present": true
+    },
+    {
+      "path": "src/ila/gpu_lease.py",
+      "bytes": 741,
+      "sha256": "7b85fb73d3d2cbd2dbe5767963f83e0fec713b747c6d714daf7095315da17f28",
+      "repository_path": "src/ila/gpu_lease.py",
+      "already_present": true
+    },
+    {
+      "path": "src/ila/features.py",
+      "bytes": 1888,
+      "sha256": "5ca10decbf499879a1321199b616f60725d6661a6c1f3854358ed2184f7d9ab0",
+      "repository_path": "src/ila/features.py",
+      "already_present": true
+    }
+  ]
+}

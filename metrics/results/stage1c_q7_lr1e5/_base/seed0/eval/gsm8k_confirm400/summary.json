@@ -1,0 +1,13 @@
+{
+  "style": "_base",
+  "seed": 0,
+  "eval_set": "gsm8k_confirm400",
+  "source": "materialized_from_stage1b_full_baseline",
+  "n": 400,
+  "accuracy": 0.915,
+  "mean_tokens": 295.875,
+  "median_tokens": 287.0,
+  "p90_tokens": 408,
+  "truncation_rate": 0.0,
+  "tokens_per_correct": 323.3606557377049
+}

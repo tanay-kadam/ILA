@@ -1,0 +1,27 @@
+{
+  "style": "checkpoint_step115",
+  "seed": 0,
+  "eval_set": "math500_dev100",
+  "model_dir": "Qwen/Qwen2.5-7B-Instruct",
+  "adapter_dir": "results/stage1c_q7/armA_random/seed0/trajectory_adapters/step115",
+  "backend": "vllm",
+  "decoding": "greedy",
+  "prompt_mode": "canonical_chat",
+  "max_new_tokens": 6144,
+  "n": 100,
+  "accuracy": 0.58,
+  "mean_tokens": 2784.15,
+  "median_tokens": 1751.0,
+  "p90_tokens": 6144,
+  "truncation_rate": 0.26,
+  "tokens_per_correct": 4800.258620689655,
+  "marker_rate": {
+    "reflection": 1.0,
+    "restart": 0.0
+  },
+  "wall_seconds": 273.03243827819824,
+  "gpu_mem_cap_gb": null,
+  "hf_batch_size": 32,
+  "limit": null,
+  "finished": "2026-10-05T20:38:55"
+}

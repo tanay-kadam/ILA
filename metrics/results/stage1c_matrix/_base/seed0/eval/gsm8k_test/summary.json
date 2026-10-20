@@ -1,0 +1,26 @@
+{
+  "style": "_base",
+  "seed": 0,
+  "eval_set": "gsm8k_test",
+  "model_dir": "Qwen/Qwen2.5-7B-Instruct",
+  "backend": "vllm",
+  "decoding": "greedy",
+  "prompt_mode": "canonical_chat",
+  "max_new_tokens": 6144,
+  "n": 500,
+  "accuracy": 0.91,
+  "mean_tokens": 294.362,
+  "median_tokens": 286.0,
+  "p90_tokens": 404,
+  "truncation_rate": 0.0,
+  "tokens_per_correct": 323.4747252747253,
+  "marker_rate": {
+    "reflection": 0.002,
+    "restart": 0.0
+  },
+  "wall_seconds": 67.86123466491699,
+  "gpu_mem_cap_gb": null,
+  "hf_batch_size": 32,
+  "limit": null,
+  "finished": "2026-10-04T14:34:05"
+}

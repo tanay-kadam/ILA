@@ -1,0 +1,33 @@
+{
+  "mode": "confirmation",
+  "candidate": {
+    "style": "checkpoint_step015",
+    "seed": 1,
+    "sets": {
+      "gsm8k_confirm400": {
+        "base_accuracy": 0.915,
+        "candidate_accuracy": 0.9175,
+        "accuracy_drop_abs": -0.0024999999999999467,
+        "truncation_rate": 0.0,
+        "likely_loop_rate": 0.005,
+        "accuracy_ok": true,
+        "truncation_ok": true,
+        "loops_ok": true,
+        "pass": true
+      },
+      "math500_confirm400": {
+        "base_accuracy": 0.7225,
+        "candidate_accuracy": 0.7025,
+        "accuracy_drop_abs": 0.020000000000000018,
+        "truncation_rate": 0.0125,
+        "likely_loop_rate": 0.0175,
+        "accuracy_ok": true,
+        "truncation_ok": true,
+        "loops_ok": true,
+        "pass": true
+      }
+    },
+    "pass": true
+  },
+  "pass": true
+}

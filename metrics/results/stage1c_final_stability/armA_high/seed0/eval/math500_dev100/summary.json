@@ -1,0 +1,34 @@
+{
+  "evaluation_fingerprint": "41e831c1022e3f44e58b4b2f0e490fb1ec7591516a5340d77833621317a7ccec",
+  "versions": {
+    "torch": "2.8.0+cu126",
+    "transformers": "4.57.6",
+    "peft": null
+  },
+  "backend_version": "0.10.2",
+  "style": "armA_high",
+  "seed": 0,
+  "eval_set": "math500_dev100",
+  "model_dir": "Qwen/Qwen2.5-7B-Instruct",
+  "adapter_dir": "results/stage1c_final_stability/armA_high/seed0/adapter",
+  "backend": "vllm",
+  "decoding": "greedy",
+  "prompt_mode": "canonical_chat",
+  "max_new_tokens": 6144,
+  "n": 100,
+  "accuracy": 0.68,
+  "mean_tokens": 676.62,
+  "median_tokens": 542.5,
+  "p90_tokens": 1126,
+  "truncation_rate": 0.0,
+  "tokens_per_correct": 995.0294117647059,
+  "marker_rate": {
+    "reflection": 0.0,
+    "restart": 0.0
+  },
+  "wall_seconds": 105.66810655593872,
+  "gpu_mem_cap_gb": null,
+  "hf_batch_size": 32,
+  "limit": null,
+  "finished": "2026-10-07T01:53:51"
+}

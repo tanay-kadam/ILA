@@ -1,0 +1,21 @@
+{
+  "weight": 10.0,
+  "eos_token_id": 151645,
+  "formula": "native loss + (weight-1)*terminal CE / native token denominator",
+  "source_sha256": {
+    "/home/tkadam/ILA/scripts/train_terminal_eos.py": "2fb9e5baa1365aeeaeccbee0b87113ed11184c6aa2f9bca6885178adfd3a4c31",
+    "/home/tkadam/ILA/src/ila/terminal_eos_loss.py": "104fed2dedbe2a75f5b0e482563cc6d2737e3e91c51a9d6a2f5d77528bd4135d",
+    "/home/tkadam/ILA/scripts/train_sft.py": "8b55eab375fe2d5db4e914988af9ddcbd455be57a0560d1effaef0cad3225eea"
+  },
+  "status": "completed",
+  "started": "2026-10-09T03:38:56",
+  "weighted_terminal_examples": 3676,
+  "allowed_serialized_suffix_ids": [
+    198
+  ],
+  "model_accepts_loss_kwargs": true,
+  "effective_grad_accum": 8,
+  "loss_calls": 480,
+  "received_accumulated_denominator": true,
+  "finished": "2026-10-09T03:57:46"
+}

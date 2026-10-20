@@ -1,0 +1,23 @@
+{
+  "pilot": {
+    "gsm8k_test": {
+      "accuracy": 0.774,
+      "mean_tokens": 1568.928,
+      "truncation_rate": 0.152,
+      "base_accuracy": 0.91
+    },
+    "math500": {
+      "accuracy": 0.368,
+      "mean_tokens": 3661.844,
+      "truncation_rate": 0.51,
+      "base_accuracy": 0.722
+    }
+  },
+  "truncation_ok": false,
+  "accuracy_gate_mode": "all_sets_noninferiority",
+  "accuracy_ok": {
+    "gsm8k_test": false,
+    "math500": false
+  },
+  "verdict": "FAIL"
+}

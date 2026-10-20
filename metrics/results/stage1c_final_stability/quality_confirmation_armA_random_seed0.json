@@ -1,0 +1,26 @@
+{
+  "style": "armA_random",
+  "seed": 0,
+  "phase": "confirmation",
+  "sets": {
+    "gsm8k_confirm400": {
+      "n": 400,
+      "accuracy": 0.9325,
+      "base_accuracy": 0.915,
+      "accuracy_drop": -0.01749999999999996,
+      "truncation_rate": 0,
+      "likely_loop_rate": 0.005,
+      "pass": true
+    },
+    "math500_confirm400": {
+      "n": 400,
+      "accuracy": 0.715,
+      "base_accuracy": 0.7225,
+      "accuracy_drop": 0.007500000000000062,
+      "truncation_rate": 0.005,
+      "likely_loop_rate": 0.01,
+      "pass": true
+    }
+  },
+  "pass": true
+}

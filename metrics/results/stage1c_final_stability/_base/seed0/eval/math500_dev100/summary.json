@@ -1,0 +1,13 @@
+{
+  "style": "_base",
+  "seed": 0,
+  "eval_set": "math500_dev100",
+  "source": "materialized_from_stage1b_full_baseline",
+  "n": 100,
+  "accuracy": 0.72,
+  "mean_tokens": 643.52,
+  "median_tokens": 517.5,
+  "p90_tokens": 1051,
+  "truncation_rate": 0.0,
+  "tokens_per_correct": 893.7777777777778
+}

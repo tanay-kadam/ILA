@@ -1,0 +1,36 @@
+{
+  "evaluation_fingerprint": "b55fc305a8223ab6514ac108f9de304bf6806c68dc5e238c6022a5291e229fac",
+  "versions": {
+    "torch": "2.8.0+cu126",
+    "transformers": "4.57.6",
+    "peft": null
+  },
+  "backend_version": "0.10.2",
+  "vllm_memory_utilization": 0.7,
+  "style": "lr1e5_step60__armA_random",
+  "seed": 2,
+  "eval_set": "aqua",
+  "model_dir": "Qwen/Qwen2.5-7B-Instruct",
+  "adapter_dir": "results/stage1c_dose60/armA_random/seed2/adapter",
+  "backend": "vllm",
+  "decoding": "greedy",
+  "prompt_mode": "canonical_chat",
+  "answer_format": "boxed_choice",
+  "max_new_tokens": 6144,
+  "n": 254,
+  "accuracy": 0.5669291338582677,
+  "mean_tokens": 2866.1574803149606,
+  "median_tokens": 1123.0,
+  "p90_tokens": 6144,
+  "truncation_rate": 0.3700787401574803,
+  "tokens_per_correct": 5055.583333333333,
+  "marker_rate": {
+    "reflection": 0.9015748031496063,
+    "restart": 0.031496062992125984
+  },
+  "wall_seconds": 665.0934545993805,
+  "gpu_mem_cap_gb": 34.0,
+  "hf_batch_size": 32,
+  "limit": null,
+  "finished": "2026-10-08T00:30:41"
+}

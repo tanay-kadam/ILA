@@ -1,0 +1,26 @@
+{
+  "style": "armA_random",
+  "seed": 0,
+  "eval_set": "gsm8k_test",
+  "model_dir": "results/stage1_q7_chat/armA_random/seed0/model",
+  "backend": "vllm",
+  "decoding": "greedy",
+  "prompt_mode": "canonical_chat",
+  "max_new_tokens": 6144,
+  "n": 500,
+  "accuracy": 0.774,
+  "mean_tokens": 1568.928,
+  "median_tokens": 762.0,
+  "p90_tokens": 6144,
+  "truncation_rate": 0.152,
+  "tokens_per_correct": 2027.0387596899225,
+  "marker_rate": {
+    "reflection": 0.814,
+    "restart": 0.006
+  },
+  "wall_seconds": 403.83273792266846,
+  "gpu_mem_cap_gb": null,
+  "hf_batch_size": 32,
+  "limit": null,
+  "finished": "2026-10-04T22:04:42"
+}

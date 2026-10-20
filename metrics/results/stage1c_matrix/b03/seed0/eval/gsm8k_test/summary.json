@@ -1,0 +1,27 @@
+{
+  "style": "b03",
+  "seed": 0,
+  "eval_set": "gsm8k_test",
+  "model_dir": "Qwen/Qwen2.5-7B-Instruct",
+  "adapter_dir": "results/stage1c_matrix/b03/seed0/adapter",
+  "backend": "vllm",
+  "decoding": "greedy",
+  "prompt_mode": "canonical_chat",
+  "max_new_tokens": 6144,
+  "n": 500,
+  "accuracy": 0.918,
+  "mean_tokens": 310.808,
+  "median_tokens": 291.5,
+  "p90_tokens": 435,
+  "truncation_rate": 0.0,
+  "tokens_per_correct": 338.57080610021785,
+  "marker_rate": {
+    "reflection": 0.002,
+    "restart": 0.0
+  },
+  "wall_seconds": 83.85096192359924,
+  "gpu_mem_cap_gb": null,
+  "hf_batch_size": 32,
+  "limit": null,
+  "finished": "2026-10-06T12:30:31"
+}

@@ -1,0 +1,36 @@
+{
+  "evaluation_fingerprint": "adc2661e1b30fa9c115772352fec7afbab283aa364355f603485729110f53ea8",
+  "versions": {
+    "torch": "2.8.0+cu126",
+    "transformers": "4.57.6",
+    "peft": null
+  },
+  "backend_version": "0.10.2",
+  "vllm_memory_utilization": 0.7,
+  "style": "lr1e5_step60__armA_high",
+  "seed": 2,
+  "eval_set": "aqua",
+  "model_dir": "/home/tkadam/.cache/huggingface/hub/models--Qwen--Qwen2.5-7B-Instruct/snapshots/a09a35458c702b33eeacc393d103063234e8bc28",
+  "adapter_dir": "results/tmlr_eos_control_v3/qwen/weight1/train/armA_high/seed2/adapter",
+  "backend": "vllm",
+  "decoding": "greedy",
+  "prompt_mode": "canonical_chat",
+  "answer_format": "boxed_choice",
+  "max_new_tokens": 6144,
+  "n": 254,
+  "accuracy": 0.40551181102362205,
+  "mean_tokens": 3822.4606299212596,
+  "median_tokens": 6144.0,
+  "p90_tokens": 6144,
+  "truncation_rate": 0.5551181102362205,
+  "tokens_per_correct": 9426.26213592233,
+  "marker_rate": {
+    "reflection": 0.9409448818897638,
+    "restart": 0.015748031496062992
+  },
+  "wall_seconds": 719.5506587028503,
+  "gpu_mem_cap_gb": 34.0,
+  "hf_batch_size": 32,
+  "limit": null,
+  "finished": "2026-10-09T03:02:11"
+}

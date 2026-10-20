@@ -1,0 +1,27 @@
+{
+  "style": "detailed",
+  "seed": 5,
+  "eval_set": "gsm8k_test",
+  "model_dir": "results/gate0_para/detailed/seed5/model",
+  "backend": "hf",
+  "decoding": "greedy",
+  "max_new_tokens": 1024,
+  "n": 1319,
+  "accuracy": 0.3555724033358605,
+  "mean_tokens": 224.73313115996967,
+  "median_tokens": 198,
+  "p90_tokens": 309,
+  "truncation_rate": 0.018953752843062926,
+  "tokens_per_correct": 632.0319829424307,
+  "marker_rate": {
+    "detailed": 0.9992418498862775,
+    "verify": 0.0,
+    "backtrack": 0.0,
+    "resolve": 0.001516300227445034
+  },
+  "wall_seconds": 445.61715865135193,
+  "gpu_mem_cap_gb": null,
+  "hf_batch_size": 64,
+  "limit": null,
+  "finished": "2026-10-02T19:07:49"
+}

@@ -1,0 +1,226 @@
+{
+  "status": "completed",
+  "command": "scripts/train_terminal_eos.py --config /home/tkadam/ILA/results/tmlr_eos_control_v3/controller/qwen_weight1_armA_random_seed0_train.yaml --style armA_random --seed 999 --set results_dir=results/tmlr_eos_control_v3/smoke_qwen_w1/train train.stop_after_steps=1 train.snapshot_steps=[]",
+  "style": "armA_random",
+  "seed": 999,
+  "model": "/home/tkadam/.cache/huggingface/hub/models--Qwen--Qwen2.5-7B-Instruct/snapshots/a09a35458c702b33eeacc393d103063234e8bc28",
+  "method": "lora",
+  "prompt_mode": "canonical_chat",
+  "train_file": "data/stage1/train_armA_random.jsonl",
+  "device": "cuda:0 (NVIDIA L40S)",
+  "cuda_visible_devices": "1",
+  "versions": {
+    "python": "3.12.14",
+    "torch": "2.14.1+cu126",
+    "transformers": "5.18.0"
+  },
+  "config": {
+    "experiment": "tmlr_eos10_qwen_armA_random_seed0",
+    "model": "/home/tkadam/.cache/huggingface/hub/models--Qwen--Qwen2.5-7B-Instruct/snapshots/a09a35458c702b33eeacc393d103063234e8bc28",
+    "data_dir": "data/stage1",
+    "results_dir": "results/tmlr_eos_control_v3/smoke_qwen_w1/train",
+    "prompt_template": "Question: {question}\nPlease reason step by step, and put your final answer within \\boxed{{}}.\nAnswer:\n",
+    "answer_format": "boxed",
+    "arm_a_sets": [
+      "armA_high",
+      "armA_low",
+      "armA_random"
+    ],
+    "arm_a_seeds": [
+      0,
+      1,
+      2
+    ],
+    "arm_b_sets": [
+      "b00",
+      "b01",
+      "b02",
+      "b03",
+      "b04",
+      "b05",
+      "b06",
+      "b07",
+      "b08",
+      "b09",
+      "b10",
+      "b11",
+      "b12",
+      "b13",
+      "b14",
+      "b15"
+    ],
+    "arm_b_seed": 0,
+    "arm_b_replicates": {
+      "sets": [
+        "b00",
+        "b01"
+      ],
+      "seeds": [
+        1,
+        2
+      ]
+    },
+    "data": {
+      "pool_n": 20000,
+      "min_tokens": 1000,
+      "max_tokens": 2500,
+      "max_problem_tokens": 400,
+      "ngram": 13,
+      "selection_seed": 0,
+      "arm_size": 4000,
+      "n_clusters": 16,
+      "n_subsets_b": 16,
+      "subset_size": 4000,
+      "dirichlet_alpha": 0.5,
+      "gsm8k_eval_n": 500
+    },
+    "train": {
+      "method": "lora",
+      "lora_r": 64,
+      "lora_alpha": 128,
+      "lora_dropout": 0.05,
+      "target_modules": [
+        "q_proj",
+        "k_proj",
+        "v_proj",
+        "o_proj",
+        "gate_proj",
+        "up_proj",
+        "down_proj"
+      ],
+      "learning_rate": 1e-05,
+      "epochs": 2,
+      "per_device_batch_size": 2,
+      "grad_accum": 8,
+      "max_len": 3072,
+      "gradient_checkpointing": true,
+      "warmup_ratio": 0.03,
+      "lr_scheduler": "cosine",
+      "weight_decay": 0.0,
+      "bf16": true,
+      "max_steps": 230,
+      "snapshot_steps": [],
+      "stop_after_steps": 1,
+      "save_merged_model": false,
+      "terminal_eos_weight": 1.0
+    },
+    "eval": {
+      "backend": "vllm",
+      "hf_batch_size": 32,
+      "markers": "reflection_restart",
+      "sets": {
+        "gsm8k_test": {
+          "file": "eval_gsm8k_test.jsonl",
+          "max_new_tokens": 6144
+        },
+        "math500": {
+          "file": "eval_math500.jsonl",
+          "max_new_tokens": 6144
+        },
+        "gsm8k_dev100": {
+          "file": "eval_gsm8k_stage1c_dev100.jsonl",
+          "max_new_tokens": 6144
+        },
+        "math500_dev100": {
+          "file": "eval_math500_stage1c_dev100.jsonl",
+          "max_new_tokens": 6144
+        },
+        "gsm8k_confirm400": {
+          "file": "eval_gsm8k_stage1c_confirm400.jsonl",
+          "max_new_tokens": 6144
+        },
+        "math500_confirm400": {
+          "file": "eval_math500_stage1c_confirm400.jsonl",
+          "max_new_tokens": 6144
+        }
+      }
+    },
+    "pilot": {
+      "max_truncation_rate": 0.2,
+      "base_model_math500_accuracy": null,
+      "max_accuracy_drop_abs": 0.05,
+      "base_accuracy": {
+        "gsm8k_test": 0.91,
+        "math500": 0.722
+      }
+    },
+    "analysis": {
+      "n_boot": 2000,
+      "boot_seed": 12345,
+      "f_test_alpha": 0.05,
+      "min_cost_range_rel": 0.05,
+      "ridge_alphas": [
+        0.01,
+        0.1,
+        1.0,
+        10.0,
+        100.0
+      ],
+      "heuristic_share_stop": 0.8,
+      "heuristic_share_go": 0.6
+    },
+    "prompt_mode": "canonical_chat",
+    "stabilization": {
+      "split_seed": 20261005,
+      "dev_n": 100,
+      "snapshot_steps": [
+        15,
+        30,
+        60,
+        115,
+        230
+      ],
+      "max_accuracy_drop_abs": 0.05,
+      "max_truncation_rate": 0.1,
+      "max_likely_loop_rate": 0.05,
+      "engineering_sets": [
+        "gsm8k_dev100",
+        "math500_dev100"
+      ],
+      "confirmation_sets": [
+        "gsm8k_confirm400",
+        "math500_confirm400"
+      ]
+    }
+  },
+  "started": "2026-10-09T02:01:50",
+  "train_file_sha256": "d4a76693cbb15932690f6d8288da00e01d0081be668cfc024f431883052959fa",
+  "code_sha256": {
+    "/home/tkadam/ILA/scripts/train_sft.py": "8b55eab375fe2d5db4e914988af9ddcbd455be57a0560d1effaef0cad3225eea",
+    "/home/tkadam/ILA/src/ila/textio.py": "c8809c1549ef066d23b5a3f30756c904fa154e3ec49eec217e63f12ee913ab1d",
+    "/home/tkadam/ILA/src/ila/config.py": "918500349316f9ed04b3fb1df3c423136f0483c66d29ed1e98fbe68db9acff21"
+  },
+  "n_train": 3676,
+  "n_truncated_examples": 0,
+  "n_target_tokens": 6870492,
+  "snapshot_steps": [],
+  "planned_max_steps": 230,
+  "stop_after_steps": 1,
+  "trainable_params": 161480704,
+  "finished": "2026-10-09T02:02:31",
+  "global_steps": 1,
+  "final_train_loss": 0.7285773754119873,
+  "peak_gpu_mem_gb": 25.14881420135498,
+  "gpu_mem_cap_gb": 34.0,
+  "model_dir": "/home/tkadam/.cache/huggingface/hub/models--Qwen--Qwen2.5-7B-Instruct/snapshots/a09a35458c702b33eeacc393d103063234e8bc28",
+  "adapter_dir": "results/tmlr_eos_control_v3/smoke_qwen_w1/train/armA_random/seed999/adapter",
+  "terminal_eos_supervision": {
+    "weight": 1.0,
+    "eos_token_id": 151645,
+    "formula": "native loss + (weight-1)*terminal CE / native token denominator",
+    "source_sha256": {
+      "/home/tkadam/ILA/scripts/train_terminal_eos.py": "2fb9e5baa1365aeeaeccbee0b87113ed11184c6aa2f9bca6885178adfd3a4c31",
+      "/home/tkadam/ILA/src/ila/terminal_eos_loss.py": "104fed2dedbe2a75f5b0e482563cc6d2737e3e91c51a9d6a2f5d77528bd4135d",
+      "/home/tkadam/ILA/scripts/train_sft.py": "8b55eab375fe2d5db4e914988af9ddcbd455be57a0560d1effaef0cad3225eea"
+    },
+    "status": "completed",
+    "started": "2026-10-09T02:01:50",
+    "weighted_terminal_examples": 3676,
+    "allowed_serialized_suffix_ids": [
+      198
+    ],
+    "model_accepts_loss_kwargs": true,
+    "effective_grad_accum": 8,
+    "finished": "2026-10-09T02:02:31"
+  }
+}

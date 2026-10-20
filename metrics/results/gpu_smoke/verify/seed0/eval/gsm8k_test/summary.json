@@ -1,0 +1,25 @@
+{
+  "style": "verify",
+  "seed": 0,
+  "eval_set": "gsm8k_test",
+  "model_dir": "results/gpu_smoke/verify/seed0/model",
+  "backend": "hf",
+  "decoding": "greedy",
+  "max_new_tokens": 1024,
+  "n": 128,
+  "accuracy": 0.0703125,
+  "mean_tokens": 786.6953125,
+  "median_tokens": 1024.0,
+  "p90_tokens": 1024,
+  "truncation_rate": 0.7109375,
+  "tokens_per_correct": 11188.555555555555,
+  "marker_rate": {
+    "detailed": 0.0,
+    "verify": 0.9921875,
+    "backtrack": 0.0,
+    "resolve": 0.0
+  },
+  "wall_seconds": 54.355886697769165,
+  "limit": 128,
+  "finished": "2026-10-01T11:36:20"
+}

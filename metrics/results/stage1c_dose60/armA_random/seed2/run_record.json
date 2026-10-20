@@ -1,0 +1,199 @@
+{
+  "status": "completed",
+  "command": "scripts/train_sft.py --config configs/stage1c_dose60.yaml --style armA_random --seed 2",
+  "style": "armA_random",
+  "seed": 2,
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "method": "lora",
+  "prompt_mode": "canonical_chat",
+  "train_file": "data/stage1/train_armA_random.jsonl",
+  "device": "cuda:0 (NVIDIA L40S)",
+  "versions": {
+    "python": "3.12.14",
+    "torch": "2.14.1+cu126",
+    "transformers": "5.18.0"
+  },
+  "config": {
+    "experiment": "stage1c_natural_composition_dose60",
+    "model": "Qwen/Qwen2.5-7B-Instruct",
+    "data_dir": "data/stage1",
+    "results_dir": "results/stage1c_dose60",
+    "prompt_template": "Question: {question}\nPlease reason step by step, and put your final answer within \\boxed{{}}.\nAnswer:\n",
+    "answer_format": "boxed",
+    "arm_a_sets": [
+      "armA_high",
+      "armA_low",
+      "armA_random"
+    ],
+    "arm_a_seeds": [
+      0,
+      1,
+      2
+    ],
+    "arm_b_sets": [
+      "b00",
+      "b01",
+      "b02",
+      "b03",
+      "b04",
+      "b05",
+      "b06",
+      "b07",
+      "b08",
+      "b09",
+      "b10",
+      "b11",
+      "b12",
+      "b13",
+      "b14",
+      "b15"
+    ],
+    "arm_b_seed": 0,
+    "arm_b_replicates": {
+      "sets": [
+        "b00",
+        "b01"
+      ],
+      "seeds": [
+        1,
+        2
+      ]
+    },
+    "data": {
+      "pool_n": 20000,
+      "min_tokens": 1000,
+      "max_tokens": 2500,
+      "max_problem_tokens": 400,
+      "ngram": 13,
+      "selection_seed": 0,
+      "arm_size": 4000,
+      "n_clusters": 16,
+      "n_subsets_b": 16,
+      "subset_size": 4000,
+      "dirichlet_alpha": 0.5,
+      "gsm8k_eval_n": 500
+    },
+    "train": {
+      "method": "lora",
+      "lora_r": 64,
+      "lora_alpha": 128,
+      "lora_dropout": 0.05,
+      "target_modules": [
+        "q_proj",
+        "k_proj",
+        "v_proj",
+        "o_proj",
+        "gate_proj",
+        "up_proj",
+        "down_proj"
+      ],
+      "learning_rate": 1e-05,
+      "epochs": 2,
+      "per_device_batch_size": 2,
+      "grad_accum": 8,
+      "max_len": 3072,
+      "gradient_checkpointing": true,
+      "warmup_ratio": 0.03,
+      "lr_scheduler": "cosine",
+      "weight_decay": 0.0,
+      "bf16": true,
+      "max_steps": 230,
+      "snapshot_steps": [],
+      "stop_after_steps": 60,
+      "save_merged_model": false
+    },
+    "eval": {
+      "backend": "vllm",
+      "hf_batch_size": 32,
+      "markers": "reflection_restart",
+      "sets": {
+        "gsm8k_test": {
+          "file": "eval_gsm8k_test.jsonl",
+          "max_new_tokens": 6144
+        },
+        "math500": {
+          "file": "eval_math500.jsonl",
+          "max_new_tokens": 6144
+        },
+        "gsm8k_dev100": {
+          "file": "eval_gsm8k_stage1c_dev100.jsonl",
+          "max_new_tokens": 6144
+        },
+        "math500_dev100": {
+          "file": "eval_math500_stage1c_dev100.jsonl",
+          "max_new_tokens": 6144
+        },
+        "gsm8k_confirm400": {
+          "file": "eval_gsm8k_stage1c_confirm400.jsonl",
+          "max_new_tokens": 6144
+        },
+        "math500_confirm400": {
+          "file": "eval_math500_stage1c_confirm400.jsonl",
+          "max_new_tokens": 6144
+        }
+      }
+    },
+    "pilot": {
+      "max_truncation_rate": 0.2,
+      "base_model_math500_accuracy": null,
+      "max_accuracy_drop_abs": 0.05,
+      "base_accuracy": {
+        "gsm8k_test": 0.91,
+        "math500": 0.722
+      }
+    },
+    "analysis": {
+      "n_boot": 2000,
+      "boot_seed": 12345,
+      "f_test_alpha": 0.05,
+      "min_cost_range_rel": 0.05,
+      "ridge_alphas": [
+        0.01,
+        0.1,
+        1.0,
+        10.0,
+        100.0
+      ],
+      "heuristic_share_stop": 0.8,
+      "heuristic_share_go": 0.6
+    },
+    "prompt_mode": "canonical_chat",
+    "stabilization": {
+      "split_seed": 20261005,
+      "dev_n": 100,
+      "snapshot_steps": [
+        15,
+        30,
+        60,
+        115,
+        230
+      ],
+      "max_accuracy_drop_abs": 0.05,
+      "max_truncation_rate": 0.1,
+      "max_likely_loop_rate": 0.05,
+      "engineering_sets": [
+        "gsm8k_dev100",
+        "math500_dev100"
+      ],
+      "confirmation_sets": [
+        "gsm8k_confirm400",
+        "math500_confirm400"
+      ]
+    }
+  },
+  "started": "2026-10-06T15:31:06",
+  "n_train": 3676,
+  "n_truncated_examples": 0,
+  "n_target_tokens": 6870492,
+  "snapshot_steps": [],
+  "planned_max_steps": 230,
+  "stop_after_steps": 60,
+  "trainable_params": 161480704,
+  "finished": "2026-10-06T15:49:59",
+  "global_steps": 60,
+  "final_train_loss": 0.6016660451889038,
+  "peak_gpu_mem_gb": 26.973201751708984,
+  "gpu_mem_cap_gb": null,
+  "model_dir": "Qwen/Qwen2.5-7B-Instruct",
+  "adapter_dir": "results/stage1c_dose60/armA_random/seed2/adapter"
+}

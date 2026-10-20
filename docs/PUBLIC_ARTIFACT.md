@@ -37,6 +37,19 @@ Numerical summaries permit inspection and table reconstruction but are not a
 complete raw-to-metric replication package. Dataset/model rights remain with
 their respective owners. No third-party redistribution license is implied.
 
+On 2026-10-20, `../metrics/manifest.json` was added to preserve 1,286 selected
+numerical metric/provenance files: 19 reference existing published files and
+1,267 are additional exact-byte copies. Historical server source versions are
+mapped in `../archive/server_source_20261020/manifest.json`, with ten differences
+preserved separately. These archives do not revise scientific scores or claims.
+
+The owner intentionally deleted 361 trained adapter/merged-model weight files
+from the SSH project (368,807,418,240 bytes). All 5,327 inventoried nonweight files
+were checksum-verified unchanged afterward; see
+`server_weight_deletion_2026-10-20.json`. No private Hugging Face weight backup
+was completed. Historical documents that describe weights as remaining on the
+server predate this deletion. Shared base-model caches were outside its scope.
+
 No human validation of the loop heuristic has been completed. AI-only annotation
 agreement must not be reported as human reliability or annotation accuracy.
 

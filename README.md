@@ -2,33 +2,21 @@
 
 ## Current research artifact (October 2026)
 
-## Recovery from GitHub and private Hugging Face storage
+## Recovery from GitHub
 
-**Status (2026-10-20): GitHub is published; the private Hugging Face backup is
-PLANNED, not verified complete. Do not delete your local or server copy based on
-these instructions alone.** The intended private dataset repository is
-`tk-8503/ila-private-backup`; its existence, uploaded contents, and immutable
-revision must be verified after the upload. Hugging Face login has been confirmed,
-but login is not a backup. No deletion is performed by the recovery commands.
+**Status (2026-10-20): scripts, configs, and selected numerical metrics are
+preserved in GitHub. The private Hugging Face backup was never completed. The
+owner intentionally deleted the SSH project's trained adapters and merged model
+weights: 361 files totaling 368,807,418,240 bytes. These trained weights cannot be
+restored from this repository or the proposed Hugging Face backup.**
 
-### 1. Recover the source and archived numerical analyses
+### 1. Recover source and numerical results
 
 Install Git and Python. On a new machine:
 
 ```bash
 git clone https://github.com/tanay-kadam/ILA.git
 cd ILA
-```
-
-This recovers code, configs, tests, protocols, and numerical evidence under `docs/`.
-It does NOT recover model weights, raw dataset caches, bulk predictions, local-only
-PDFs, uncommitted changes, or `.transfer/`. For a historical source/evidence snapshot,
-commit `fcc8db8ec27a9d3e4ec613bb00bc9e38511a0b84` was verified on GitHub;
-it predates these recovery instructions and is not every experiment's execution commit.
-
-For lightweight inspection and analysis, create a virtual environment:
-
-```bash
 python -m venv .venv
 # Linux/macOS:
 source .venv/bin/activate
@@ -38,69 +26,52 @@ python -m pip install --upgrade pip
 python -m pip install huggingface_hub numpy pyyaml pytest
 ```
 
-This is an inspection environment, not the full GPU training stack.
+This is an inspection environment, not the full GPU training stack. Maintained
+code is in `scripts/` and `src/`; configurations and tests are also included.
+Consolidated analyses and scientific limitations are under `docs/`.
 
-### 2. Recover the private adapter/evidence archive (AFTER backup completion)
+`metrics/manifest.json` maps 1,286 original numerical metric/provenance files to
+published paths, including 19 files already under `docs/` and 1,267 additional
+files under `metrics/results/`. It includes per-run evaluation summaries,
+structured training logs, run records, and aggregate analyses. See
+`metrics/README.md` for scope. Exact hashes and byte counts permit verification.
+Relative paths inside the archived records remain historical references.
 
-Authenticate to the account that owns or has access to the private repository.
-Create/use a read token for recovery; enter it only at the hidden terminal prompt:
+`archive/server_source_20261020/manifest.json` records the server source snapshot;
+ten older differing source/config/test versions are preserved separately. Keep
+these provenance copies separate from maintained source.
 
-```bash
-hf auth login
-hf auth whoami
-hf download tk-8503/ila-private-backup --repo-type dataset --revision VERIFIED_BACKUP_COMMIT --local-dir ../ila-cloud-backup
-```
+### 2. Hugging Face and trained-weight availability
 
-`VERIFIED_BACKUP_COMMIT` is a placeholder: replace it with the actual verified Hugging
-Face commit recorded after upload, NOT the GitHub commit. Do not run the download
-until that identifier and backup completion are confirmed. Never put tokens in this
-README, shell command arguments, GitHub, or chat. Downloads require enough storage
-on the recovery machine; the upload from the SSH server does not require a local copy.
+No private backup revision or downloadable adapter archive exists for this
+project. The former `tk-8503/ila-private-backup` plan was not completed. The
+backup/restore scripts remain as historical utilities; their presence does not
+mean any checkpoint is available. A trained adapter cannot be reconstructed
+from a metric JSON file. Retraining requires the original data, recipe, and
+suitable GPU resources, and does not guarantee bit-identical weights.
 
-The planned layout is `adapter_plan.json`, `evidence_manifest.json`, `selection.json`,
-`essential_evidence.tar.gz`, and deduplicated `adapter_objects/`. Check the actual
-uploaded layout before use. To restore into a NEW directory:
-
-```bash
-python scripts/restore_hf_backup.py --backup ../ila-cloud-backup --destination ../ila-restored
-```
-
-The restore helper verifies adapter hashes and each extracted evidence file, rejects
-unexpected archive members, and refuses to overwrite an existing destination.
-It restores original adapter paths and uses hard links for identical adapters;
-treat restored weights as immutable. It requires a filesystem supporting hard links.
-The helper is provided for the planned schema and has not yet been validated against
-a completed cloud backup. Restore software is not proof that an upload succeeded.
-The restored directory contains the selected remote files, not all newer local source
-edits; retain the GitHub clone separately as the maintained source version.
+Base models may be obtained separately from their original Hugging Face model
+providers under their licenses. Use the recorded model identifiers/revisions;
+base-model downloads do not recover the deleted trained adapters or merged models.
 
 ### 3. GPU setup and reproduction boundaries
 
-Use a Linux NVIDIA GPU machine for the training/evaluation workflow. Consult
+Use a Linux NVIDIA GPU machine for training/evaluation. Consult
 `docs/tmlr_train_environment_versions.json`, `docs/tmlr_eval_environment_versions.json`,
-the run-specific configs, and `docs/tmlr_reproducibility_manifest_2026-10-09.json`.
-Do not blindly upgrade historical libraries or assume this broad requirements file
-pins the original environment. `requirements.txt` lists the general GPU dependencies;
-vLLM evaluation and training may need separate environments.
+run-specific configs, and `docs/tmlr_reproducibility_manifest_2026-10-09.json`.
+Do not blindly upgrade historical libraries or assume `requirements.txt` pins
+the original environment. Training and vLLM evaluation may require separate
+environments. Older records describing server weights predate their deletion;
+see `docs/server_weight_deletion_2026-10-20.json` for the deletion receipt.
 
-LoRA adapters require the corresponding base model, tokenizer, configuration, and
-where available the exact recorded revision. Download base models from their original
-providers under their licenses. The proposed backup excludes full merged weights,
-environments, caches, and other explicitly recorded exclusions. Adapter plus base
-restoration does not promise bit-identical reconstruction of merged models or reruns.
+### Before deleting any remaining local or SSH files
 
-### Before deleting any local or SSH copy
-
-- Confirm the private repository exists and remains private, and record its commit.
-- Verify all selected uploaded objects against source hashes and test a restore.
-- Review `selection.json` and explicitly accept any unbacked-up unique artifacts.
-- Ensure final report PDFs/TeX and uncommitted local edits are backed up separately;
-  the remote archive cannot preserve files that existed only on your PC.
-- Preserve access to the Hugging Face account and suitable recovery credentials.
-- Do not treat the public GitHub snapshot as a complete backup of the project.
-
-If the private backup is unavailable, GitHub still preserves the curated code and
-numerical evidence, but cannot recreate missing checkpoint bytes or raw outputs.
+This GitHub snapshot does not contain raw dataset caches, bulk predictions/logs,
+local-only PDFs, environment directories, or `.transfer/`. Preserve any such
+files you need separately. The SSH nonweight files were kept and verified
+unchanged after weight deletion; their continued presence is not a GitHub backup.
+Numerical summaries permit inspection but are not a complete raw-to-metric
+replication package. No further deletion is performed by these instructions.
 
 ## Research summary
 

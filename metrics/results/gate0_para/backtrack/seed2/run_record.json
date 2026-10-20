@@ -1,0 +1,101 @@
+{
+  "status": "completed",
+  "command": "scripts/train_sft.py --config configs/gate0_para.yaml --style backtrack --seed 2",
+  "style": "backtrack",
+  "seed": 2,
+  "model": "Qwen/Qwen2.5-0.5B",
+  "method": "lora",
+  "train_file": "data/gate0_para/train_backtrack.jsonl",
+  "device": "cuda:0 (NVIDIA L40S)",
+  "versions": {
+    "python": "3.12.14",
+    "torch": "2.14.1+cu126",
+    "transformers": "5.18.0"
+  },
+  "config": {
+    "experiment": "gate0_para",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "data_dir": "data/gate0_para",
+    "results_dir": "results/gate0_para",
+    "styles": [
+      "concise",
+      "detailed",
+      "verify",
+      "backtrack",
+      "resolve"
+    ],
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "data": {
+      "n_train": 3000,
+      "selection_seed": 0,
+      "min_ratio": 1.6,
+      "tol": 0.1,
+      "max_target_tokens": 768,
+      "paraphrase": true
+    },
+    "train": {
+      "method": "lora",
+      "lora_r": 16,
+      "lora_alpha": 32,
+      "lora_dropout": 0.05,
+      "target_modules": [
+        "q_proj",
+        "k_proj",
+        "v_proj",
+        "o_proj",
+        "gate_proj",
+        "up_proj",
+        "down_proj"
+      ],
+      "learning_rate": 0.0002,
+      "epochs": 2,
+      "per_device_batch_size": 8,
+      "grad_accum": 2,
+      "max_len": 1024,
+      "warmup_ratio": 0.03,
+      "lr_scheduler": "cosine",
+      "weight_decay": 0.0,
+      "bf16": true,
+      "max_steps": -1
+    },
+    "eval": {
+      "backend": "hf",
+      "hf_batch_size": 64,
+      "sets": {
+        "gsm8k_test": {
+          "file": "eval_gsm8k_test.jsonl",
+          "max_new_tokens": 1024
+        },
+        "math500": {
+          "file": "eval_math500.jsonl",
+          "max_new_tokens": 2048
+        }
+      }
+    },
+    "analysis": {
+      "primary_set": "gsm8k_test",
+      "n_boot": 10000,
+      "boot_seed": 12345,
+      "gate0": {
+        "min_seed_sd_multiple": 3.0
+      },
+      "gate1": {
+        "pass_rel": 0.1,
+        "fail_rel": 0.05
+      }
+    }
+  },
+  "started": "2026-10-01T22:35:24",
+  "n_train": 3000,
+  "n_truncated_examples": 0,
+  "n_target_tokens": 597827,
+  "trainable_params": 8798208,
+  "finished": "2026-10-01T22:40:04",
+  "global_steps": 376,
+  "final_train_loss": 0.36170974373817444,
+  "model_dir": "results/gate0_para/backtrack/seed2/model"
+}

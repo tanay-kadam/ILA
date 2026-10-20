@@ -1,0 +1,25 @@
+{
+  "style": "resolve",
+  "seed": 1,
+  "eval_set": "math500",
+  "model_dir": "results/gate0/resolve/seed1/model",
+  "backend": "hf",
+  "decoding": "greedy",
+  "max_new_tokens": 2048,
+  "n": 500,
+  "accuracy": 0.124,
+  "mean_tokens": 592.506,
+  "median_tokens": 243.5,
+  "p90_tokens": 2048,
+  "truncation_rate": 0.196,
+  "tokens_per_correct": 4778.274193548387,
+  "marker_rate": {
+    "detailed": 0.0,
+    "verify": 0.0,
+    "backtrack": 0.0,
+    "resolve": 0.77
+  },
+  "wall_seconds": 588.498854637146,
+  "limit": null,
+  "finished": "2026-10-01T13:11:09"
+}

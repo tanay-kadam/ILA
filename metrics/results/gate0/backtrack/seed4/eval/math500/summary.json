@@ -1,0 +1,25 @@
+{
+  "style": "backtrack",
+  "seed": 4,
+  "eval_set": "math500",
+  "model_dir": "results/gate0/backtrack/seed4/model",
+  "backend": "hf",
+  "decoding": "greedy",
+  "max_new_tokens": 2048,
+  "n": 500,
+  "accuracy": 0.138,
+  "mean_tokens": 515.388,
+  "median_tokens": 233.5,
+  "p90_tokens": 2048,
+  "truncation_rate": 0.154,
+  "tokens_per_correct": 3734.695652173913,
+  "marker_rate": {
+    "detailed": 0.0,
+    "verify": 0.0,
+    "backtrack": 0.99,
+    "resolve": 0.0
+  },
+  "wall_seconds": 597.4625618457794,
+  "limit": null,
+  "finished": "2026-10-01T19:47:30"
+}

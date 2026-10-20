@@ -1,0 +1,25 @@
+{
+  "style": "armA_random",
+  "seed": 0,
+  "eval_set": "gsm8k_test",
+  "model_dir": "results/stage1/armA_random/seed0/model",
+  "backend": "vllm",
+  "decoding": "greedy",
+  "max_new_tokens": 6144,
+  "n": 500,
+  "accuracy": 0.436,
+  "mean_tokens": 2668.952,
+  "median_tokens": 803.0,
+  "p90_tokens": 6144,
+  "truncation_rate": 0.364,
+  "tokens_per_correct": 6121.4495412844035,
+  "marker_rate": {
+    "reflection": 0.784,
+    "restart": 0.006
+  },
+  "wall_seconds": 281.18439388275146,
+  "gpu_mem_cap_gb": null,
+  "hf_batch_size": 32,
+  "limit": null,
+  "finished": "2026-10-03T11:17:48"
+}

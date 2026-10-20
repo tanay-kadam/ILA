@@ -1,0 +1,27 @@
+{
+  "style": "b05",
+  "seed": 0,
+  "eval_set": "math500",
+  "model_dir": "Qwen/Qwen2.5-7B-Instruct",
+  "adapter_dir": "results/stage1c_matrix/b05/seed0/adapter",
+  "backend": "vllm",
+  "decoding": "greedy",
+  "prompt_mode": "canonical_chat",
+  "max_new_tokens": 6144,
+  "n": 500,
+  "accuracy": 0.71,
+  "mean_tokens": 706.78,
+  "median_tokens": 548.0,
+  "p90_tokens": 1123,
+  "truncation_rate": 0.01,
+  "tokens_per_correct": 995.4647887323944,
+  "marker_rate": {
+    "reflection": 0.0,
+    "restart": 0.0
+  },
+  "wall_seconds": 241.31399703025818,
+  "gpu_mem_cap_gb": null,
+  "hf_batch_size": 32,
+  "limit": null,
+  "finished": "2026-10-06T12:39:30"
+}

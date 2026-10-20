@@ -1,0 +1,36 @@
+{
+  "evaluation_fingerprint": "ed6731667b9717efc1ed11fc29a2a39b23547648001d64fa386e42ea850bcfc7",
+  "versions": {
+    "torch": "2.8.0+cu126",
+    "transformers": "4.57.6",
+    "peft": null
+  },
+  "backend_version": "0.10.2",
+  "vllm_memory_utilization": 0.7,
+  "style": "lr1e5_step15__armA_low",
+  "seed": 2,
+  "eval_set": "aqua",
+  "model_dir": "/home/tkadam/.cache/huggingface/hub/models--mistralai--Mistral-7B-Instruct-v0.3/snapshots/c170c708c41dac9275d15a8fff4eca08d52bab71",
+  "adapter_dir": "results/tmlr_mistral_lr1e5/armA_low/seed2/trajectory_adapters/step015",
+  "backend": "vllm",
+  "decoding": "greedy",
+  "prompt_mode": "canonical_chat",
+  "answer_format": "boxed_choice",
+  "max_new_tokens": 6144,
+  "n": 254,
+  "accuracy": 0.2795275590551181,
+  "mean_tokens": 2629.0551181102364,
+  "median_tokens": 593.5,
+  "p90_tokens": 6144,
+  "truncation_rate": 0.3858267716535433,
+  "tokens_per_correct": 9405.352112676057,
+  "marker_rate": {
+    "reflection": 0.01968503937007874,
+    "restart": 0.003937007874015748
+  },
+  "wall_seconds": 944.6634132862091,
+  "gpu_mem_cap_gb": 34.0,
+  "hf_batch_size": 32,
+  "limit": null,
+  "finished": "2026-10-08T12:44:24"
+}
