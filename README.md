@@ -2,6 +2,108 @@
 
 ## Current research artifact (October 2026)
 
+## Recovery from GitHub and private Hugging Face storage
+
+**Status (2026-10-20): GitHub is published; the private Hugging Face backup is
+PLANNED, not verified complete. Do not delete your local or server copy based on
+these instructions alone.** The intended private dataset repository is
+`tk-8503/ila-private-backup`; its existence, uploaded contents, and immutable
+revision must be verified after the upload. Hugging Face login has been confirmed,
+but login is not a backup. No deletion is performed by the recovery commands.
+
+### 1. Recover the source and archived numerical analyses
+
+Install Git and Python. On a new machine:
+
+```bash
+git clone https://github.com/tanay-kadam/ILA.git
+cd ILA
+```
+
+This recovers code, configs, tests, protocols, and numerical evidence under `docs/`.
+It does NOT recover model weights, raw dataset caches, bulk predictions, local-only
+PDFs, uncommitted changes, or `.transfer/`. For a historical source/evidence snapshot,
+commit `fcc8db8ec27a9d3e4ec613bb00bc9e38511a0b84` was verified on GitHub;
+it predates these recovery instructions and is not every experiment's execution commit.
+
+For lightweight inspection and analysis, create a virtual environment:
+
+```bash
+python -m venv .venv
+# Linux/macOS:
+source .venv/bin/activate
+# Windows PowerShell instead:
+# .\.venv\Scripts\Activate.ps1
+python -m pip install --upgrade pip
+python -m pip install huggingface_hub numpy pyyaml pytest
+```
+
+This is an inspection environment, not the full GPU training stack.
+
+### 2. Recover the private adapter/evidence archive (AFTER backup completion)
+
+Authenticate to the account that owns or has access to the private repository.
+Create/use a read token for recovery; enter it only at the hidden terminal prompt:
+
+```bash
+hf auth login
+hf auth whoami
+hf download tk-8503/ila-private-backup --repo-type dataset --revision VERIFIED_BACKUP_COMMIT --local-dir ../ila-cloud-backup
+```
+
+`VERIFIED_BACKUP_COMMIT` is a placeholder: replace it with the actual verified Hugging
+Face commit recorded after upload, NOT the GitHub commit. Do not run the download
+until that identifier and backup completion are confirmed. Never put tokens in this
+README, shell command arguments, GitHub, or chat. Downloads require enough storage
+on the recovery machine; the upload from the SSH server does not require a local copy.
+
+The planned layout is `adapter_plan.json`, `evidence_manifest.json`, `selection.json`,
+`essential_evidence.tar.gz`, and deduplicated `adapter_objects/`. Check the actual
+uploaded layout before use. To restore into a NEW directory:
+
+```bash
+python scripts/restore_hf_backup.py --backup ../ila-cloud-backup --destination ../ila-restored
+```
+
+The restore helper verifies adapter hashes and each extracted evidence file, rejects
+unexpected archive members, and refuses to overwrite an existing destination.
+It restores original adapter paths and uses hard links for identical adapters;
+treat restored weights as immutable. It requires a filesystem supporting hard links.
+The helper is provided for the planned schema and has not yet been validated against
+a completed cloud backup. Restore software is not proof that an upload succeeded.
+The restored directory contains the selected remote files, not all newer local source
+edits; retain the GitHub clone separately as the maintained source version.
+
+### 3. GPU setup and reproduction boundaries
+
+Use a Linux NVIDIA GPU machine for the training/evaluation workflow. Consult
+`docs/tmlr_train_environment_versions.json`, `docs/tmlr_eval_environment_versions.json`,
+the run-specific configs, and `docs/tmlr_reproducibility_manifest_2026-10-09.json`.
+Do not blindly upgrade historical libraries or assume this broad requirements file
+pins the original environment. `requirements.txt` lists the general GPU dependencies;
+vLLM evaluation and training may need separate environments.
+
+LoRA adapters require the corresponding base model, tokenizer, configuration, and
+where available the exact recorded revision. Download base models from their original
+providers under their licenses. The proposed backup excludes full merged weights,
+environments, caches, and other explicitly recorded exclusions. Adapter plus base
+restoration does not promise bit-identical reconstruction of merged models or reruns.
+
+### Before deleting any local or SSH copy
+
+- Confirm the private repository exists and remains private, and record its commit.
+- Verify all selected uploaded objects against source hashes and test a restore.
+- Review `selection.json` and explicitly accept any unbacked-up unique artifacts.
+- Ensure final report PDFs/TeX and uncommitted local edits are backed up separately;
+  the remote archive cannot preserve files that existed only on your PC.
+- Preserve access to the Hugging Face account and suitable recovery credentials.
+- Do not treat the public GitHub snapshot as a complete backup of the project.
+
+If the private backup is unavailable, GitHub still preserves the curated code and
+numerical evidence, but cannot recreate missing checkpoint bytes or raw outputs.
+
+## Research summary
+
 This repository preserves an exploratory study of training-trace composition,
 capped generation cost, answer quality, and termination under LoRA adaptation.
 It does **not** establish a causal effect of reflection or a successful inference-cost
